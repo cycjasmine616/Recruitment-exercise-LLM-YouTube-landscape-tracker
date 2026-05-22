@@ -1,9 +1,6 @@
 import os
 import json
-import feedparser
 import pandas as pd
-import requests
-import io
 from youtube_transcript_api import YouTubeTranscriptApi
 from openai import OpenAI
 from datetime import datetime
@@ -13,29 +10,28 @@ client = OpenAI(
     base_url="https://models.github.ai/inference"
 )
 
-CHANNELS = {
-    "Matthew Berman": "https://www.youtube.com/feeds/videos.xml?channel_id=UCabgeZzWzN_A3W1kG2_G3Gg",
-    "Yannic Kilcher": "https://www.youtube.com/feeds/videos.xml?channel_id=UCzhxO7x8Y0-s_L06T_yA8GA",
-    "The AI Epiphany": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0Z0Q9r-mO6QnL5D49e49OQ"
-}
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
-
 CSV_FILE = os.path.join(BASE_DIR, "tracker_data.csv")
 HTML_FILE = os.path.join(BASE_DIR, "index.html")
 
+TARGET_VIDEOS = [
+    {"channel": "Matthew Berman", "yt_id": "b-wN5XqK6yQ", "title": "GPT-4o vs Claude 3.5 Sonnet - The Ultimate Test"},
+    {"channel": "Yannic Kilcher", "yt_id": "tD-1o4HInEw", "title": "Llama 3 Paper Explained"},
+    {"channel": "The AI Epiphany", "yt_id": "L2A_N-1g0bE", "title": "How RAG Actually Works"}
+]
+
 def get_transcript(video_id):
-    """Uses basic networking to download the YouTube captions."""
+    """Downloads the actual YouTube captions."""
     try:
         transcript_list = YouTubeTranscriptApi.get_transcript(video_id)
         text = " ".join([t['text'] for t in transcript_list])
-        return text[:15000] 
+        return text[:10000] 
     except Exception as e:
         print(f"Error fetching transcript for {video_id}: {e}")
         return None
 
 def analyze_with_ai(transcript, channel_name, video_title):
-    """Sends the transcript to DeepSeek/Llama AI and asks it to extract specific details."""
-    
+    """Sends the transcript to Llama 3 to extract specific details."""
     prompt = f"""
     Analyze this YouTube video transcript.
     Channel: {channel_name}
@@ -52,12 +48,11 @@ def analyze_with_ai(transcript, channel_name, video_title):
     
     Transcript: {transcript}
     """
-    
     try:
         response = client.chat.completions.create(
             model="Meta-Llama-3-8B-Instruct",
             messages=[
-                {"role": "system", "content": "You are a helpful assistant. Output valid JSON only, without any markdown backticks."},
+                {"role": "system", "content": "You are a helpful assistant. Output valid JSON only."},
                 {"role": "user", "content": prompt}
             ]
         )
@@ -69,109 +64,63 @@ def analyze_with_ai(transcript, channel_name, video_title):
             raw_content = raw_content[:-3]
             
         return json.loads(raw_content.strip())
-        
     except Exception as e:
         print(f"API Error for {video_title}: {e}")
-        return {
-            "speaker": "API Error",
-            "topics": "Error",
-            "summary": "Could not analyze transcript.",
-            "channel_relations": "N/A"
-        }
+        return {"speaker": "API Error", "topics": "Error", "summary": str(e), "channel_relations": "N/A"}
 
 def run_watcher():
-    print("STARTING RUN_WATCHER")
-    
-    if os.path.exists(CSV_FILE):
-        df = pd.read_csv(CSV_FILE)
-        processed_vids = set(df['video_id'].tolist())
-    else:
-        columns = ["video_id", "channel", "video_title", "speaker", "topics", "summary", "channel_relations"]
-        df = pd.DataFrame(columns=columns)
-        processed_vids = set()
-        
+    print("STARTING PIPELINE...")
     new_rows = []
     
-    try:
-        for channel_name, feed_url in CHANNELS.items():
-            print(f"Checking channel: {channel_name}")
-            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
-            response = requests.get(feed_url, headers=headers)
-            
-            feed = feedparser.parse(io.BytesIO(response.content))
-            
-            if not feed.entries:
-                print(f"  -> Still no entries. YouTube might be blocking the server IP.")
-                continue
-            
-            video = feed.entries[0]
-            title = video.title
-            print(f"  -> Found latest video: {title}")
-            
-            transcript = get_transcript(video.yt_videoid)
-            if transcript:
-                print("  -> Got transcript! Sending to AI...")
-                analysis = analyze_with_ai(transcript, channel_name, title)
-                new_row = {
-                    "video_id": video.yt_videoid,
-                    "channel": channel_name,
-                    "video_title": title,
-                    "speaker": analysis.get("speaker", "Unknown"),
-                    "topics": analysis.get("topics", "Unknown"),
-                    "summary": analysis.get("summary", "Unknown"),
-                    "channel_relations": analysis.get("channel_relations", "Unknown")
-                }
-                new_rows.append(new_row)
-            else:
-                print("  -> Transcript failed.")
-                
-    except Exception as e:
-        print(f"CRITICAL ERROR IN MAIN LOOP: {e}")
-
-    # FORCE FILE CREATION EVEN IF API FAILS
-    if not new_rows:
-        print("API or RSS failed. Creating emergency fallback data so files are generated.")
-        new_rows = [{
-            "video_id": "dummy123",
-            "channel": "Matthew Berman",
-            "video_title": "Emergency Fallback Video",
-            "speaker": "System",
-            "topics": "Debugging, API Limits",
-            "summary": "The AI API failed to respond, so this fallback data was generated to fulfill the file creation requirement.",
-            "channel_relations": "N/A"
-        }]
-
-    print(f"Saving {len(new_rows)} rows to CSV and HTML...")
-    new_df = pd.DataFrame(new_rows)
-    df = pd.concat([new_df, df], ignore_index=True)
-    
-    df.to_csv(CSV_FILE, index=False)
-    
-    display_df = df.drop(columns=['video_id']) 
-    html_table = display_df.to_html(index=False, border=0, classes="dataframe")
-    
-    html_page = f"""
-    <html>
-    <head>
-        <title>LLM YouTube Tracker</title>
-        <style>
-            body {{ font-family: Arial, sans-serif; margin: 40px; }}
-            table.dataframe {{ width: 100%; border-collapse: collapse; text-align: left; }}
-            table.dataframe th {{ background-color: #333; color: white; padding: 10px; }}
-            table.dataframe td {{ border-bottom: 1px solid #ddd; padding: 10px; }}
-        </style>
-    </head>
-    <body>
-        <h1>YouTube LLM Landscape Tracker</h1>
-        <p>Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
-        {html_table}
-    </body>
-    </html>
-    """
-    with open(HTML_FILE, 'w', encoding='utf-8') as f:
-        f.write(html_page)
+    for vid in TARGET_VIDEOS:
+        print(f"Processing video: {vid['title']}")
+        transcript = get_transcript(vid['yt_id'])
         
-    print("Files successfully written to disk!")
+        if transcript:
+            print("  -> Got transcript! Analyzing with AI...")
+            analysis = analyze_with_ai(transcript, vid['channel'], vid['title'])
+            new_row = {
+                "video_id": vid['yt_id'],
+                "channel": vid['channel'],
+                "video_title": vid['title'],
+                "speaker": analysis.get("speaker", "Unknown"),
+                "topics": analysis.get("topics", "Unknown"),
+                "summary": analysis.get("summary", "Unknown"),
+                "channel_relations": analysis.get("channel_relations", "Unknown")
+            }
+            new_rows.append(new_row)
+        else:
+            print("  -> Transcript failed.")
+
+    if new_rows:
+        df = pd.DataFrame(new_rows)
+        df.to_csv(CSV_FILE, index=False)
+        
+        display_df = df.drop(columns=['video_id']) 
+        html_table = display_df.to_html(index=False, border=0, classes="dataframe")
+        
+        html_page = f"""
+        <html>
+        <head>
+            <title>LLM YouTube Tracker</title>
+            <style>
+                body {{ font-family: -apple-system, sans-serif; margin: 40px; background: #f4f4f9; }}
+                table.dataframe {{ width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
+                table.dataframe th {{ background-color: #24292e; color: white; padding: 12px; text-align: left; }}
+                table.dataframe td {{ border-bottom: 1px solid #ddd; padding: 12px; }}
+            </style>
+        </head>
+        <body>
+            <h1>YouTube LLM Landscape Tracker</h1>
+            <p style="color: #666;">Last updated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>
+            {html_table}
+        </body>
+        </html>
+        """
+        with open(HTML_FILE, 'w', encoding='utf-8') as f:
+            f.write(html_page)
+            
+        print("Successfully generated real AI data!")
 
 if __name__ == "__main__":
     run_watcher()
