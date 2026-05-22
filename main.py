@@ -32,32 +32,50 @@ def get_transcript(video_id):
         return None
 
 def analyze_with_ai(transcript, channel_name, video_title):
-    """Sends the transcript to DeepSeek AI and asks it to extract specific details."""
+    """Sends the transcript to DeepSeek/Llama AI and asks it to extract specific details."""
     
     prompt = f"""
     Analyze this YouTube video transcript.
     Channel: {channel_name}
     Title: {video_title}
     
-    Extract these details and reply ONLY in JSON format:
-    - "speaker": The name of the person speaking.
-    - "topics": A list of technical topics discussed.
-    - "summary": A 2-sentence summary of the video.
-    - "channel_relations": How this channel relates to other AI channels.
+    Extract these details and reply ONLY with a valid JSON object. Do not include markdown formatting like ```json.
+    Use this exact format:
+    {{
+        "speaker": "The name of the person speaking",
+        "topics": "A comma-separated list of technical topics discussed",
+        "summary": "A 2-sentence summary of the video",
+        "channel_relations": "How this channel relates to other AI channels"
+    }}
     
     Transcript: {transcript}
     """
     
-    response = client.chat.completions.create(
-        model="Meta-Llama-3-8B-Instruct",
-        response_format={ "type": "json_object" }, 
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant. Output valid JSON only."},
-            {"role": "user", "content": prompt}
-        ]
-    )
-    
-    return json.loads(response.choices[0].message.content)
+    try:
+        response = client.chat.completions.create(
+            model="Meta-Llama-3-8B-Instruct",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant. Output valid JSON only, without any markdown backticks."},
+                {"role": "user", "content": prompt}
+            ]
+        )
+        
+        raw_content = response.choices.message.content.strip()
+        if raw_content.startswith("```json"):
+            raw_content = raw_content[7:]
+        if raw_content.endswith("```"):
+            raw_content = raw_content[:-3]
+            
+        return json.loads(raw_content.strip())
+        
+    except Exception as e:
+        print(f"API Error for {video_title}: {e}")
+        return {
+            "speaker": "API Error",
+            "topics": "Error",
+            "summary": "Could not analyze transcript.",
+            "channel_relations": "N/A"
+        }
 
 def run_watcher():
     if os.path.exists(CSV_FILE):
@@ -79,7 +97,7 @@ def run_watcher():
             video_id = video.yt_videoid
             title = video.title
             
-            if video_id not in processed_vids:
+            if True:
                 print(f"Processing video: {title}")
                 transcript = get_transcript(video_id)
                 
