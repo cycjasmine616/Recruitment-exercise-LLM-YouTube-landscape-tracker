@@ -7,8 +7,8 @@ from openai import OpenAI
 from datetime import datetime
 
 client = OpenAI(
-    api_key=os.environ.get("DEEPSEEK_API_KEY"), 
-    base_url="https://api.deepseek.com"
+    api_key=os.environ.get("GITHUB_TOKEN"),
+    base_url="https://models.github.ai/inference"
 )
 
 CHANNELS = {
@@ -49,7 +49,7 @@ def analyze_with_ai(transcript, channel_name, video_title):
     """
     
     response = client.chat.completions.create(
-        model="deepseek-chat",
+        model="Meta-Llama-3-8B-Instruct",
         response_format={ "type": "json_object" }, 
         messages=[
             {"role": "system", "content": "You are a helpful assistant. Output valid JSON only."},
