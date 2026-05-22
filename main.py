@@ -2,6 +2,8 @@ import os
 import json
 import feedparser
 import pandas as pd
+import requests
+import io
 from youtube_transcript_api import YouTubeTranscriptApi
 from openai import OpenAI
 from datetime import datetime
@@ -93,10 +95,13 @@ def run_watcher():
     try:
         for channel_name, feed_url in CHANNELS.items():
             print(f"Checking channel: {channel_name}")
-            feed = feedparser.parse(feed_url)
+            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}
+            response = requests.get(feed_url, headers=headers)
+            
+            feed = feedparser.parse(io.BytesIO(response.content))
             
             if not feed.entries:
-                print(f"  -> No entries found in feed for {channel_name}")
+                print(f"  -> Still no entries. YouTube might be blocking the server IP.")
                 continue
             
             video = feed.entries[0]
