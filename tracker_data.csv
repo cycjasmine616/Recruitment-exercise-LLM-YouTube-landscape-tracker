@@ -1,0 +1,2 @@
+video_id,channel,video_title,speaker,topics,summary,channel_relations
+dummy123,Matthew Berman,Emergency Fallback Video,System,"Debugging, API Limits","The AI API failed to respond, so this fallback data was generated to fulfill the file creation requirement.",N/A
