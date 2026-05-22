@@ -16,9 +16,10 @@ CHANNELS = {
     "Yannic Kilcher": "https://www.youtube.com/feeds/videos.xml?channel_id=UCzhxO7x8Y0-s_L06T_yA8GA",
     "The AI Epiphany": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0Z0Q9r-mO6QnL5D49e49OQ"
 }
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-CSV_FILE = "tracker_data.csv"
-HTML_FILE = "index.html"
+CSV_FILE = os.path.join(BASE_DIR, "tracker_data.csv")
+HTML_FILE = os.path.join(BASE_DIR, "index.html")
 
 def get_transcript(video_id):
     """Uses basic networking to download the YouTube captions."""
