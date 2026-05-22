@@ -30,6 +30,9 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: python main.py
         
+      - name: Debug - List generated files
+        run: ls -la
+        
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
