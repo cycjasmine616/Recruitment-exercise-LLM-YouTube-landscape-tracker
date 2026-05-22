@@ -7,7 +7,7 @@ from openai import OpenAI
 from datetime import datetime
 
 client = OpenAI(
-    api_key=os.environ.get("GITHUB_TOKEN"),
+    api_key=os.environ.get("OGITHUB_TOKEN"),
     base_url="https://models.github.ai/inference"
 )
 
