@@ -34,6 +34,13 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add index.html tracker_data.csv
-          git commit -m "Update tracker data" || echo "No changes to commit"
-          git push
+          
+          if [ -f "index.html" ]; then git add index.html; fi
+          if [ -f "tracker_data.csv" ]; then git add tracker_data.csv; fi
+          
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update tracker data"
+            git push
+          else
+            echo "No new videos found, nothing to commit."
+          fi
