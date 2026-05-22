@@ -6,8 +6,8 @@ from openai import OpenAI
 from datetime import datetime
 
 client = OpenAI(
-    api_key=os.environ.get("OGITHUB_TOKEN"),
-    base_url="https://models.github.ai/inference"
+    api_key=os.environ.get("OGITHUB_TOKEN"), 
+    base_url="https://api.groq.com/openai/v1" 
 )
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -55,9 +55,9 @@ def analyze_with_ai(transcript, channel_name, video_title):
     """
     try:
         response = client.chat.completions.create(
-            model="Meta-Llama-3-8B-Instruct",
+            model="llama3-8b-8192", 
             messages=[
-                {"role": "system", "content": "You are a helpful assistant. Output valid JSON only without markdown formatting."},
+                {"role": "system", "content": "You are a helpful assistant. Output valid JSON only."},
                 {"role": "user", "content": prompt}
             ]
         )
