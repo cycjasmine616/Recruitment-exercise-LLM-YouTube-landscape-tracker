@@ -73,30 +73,32 @@ def run_watcher():
         feed = feedparser.parse(feed_url)
         if not feed.entries:
             continue
-            
-        latest_video = feed.entries[0]
-        video_id = latest_video.yt_videoid
-        title = latest_video.title
         
-        if True:
-            print(f"New video found: {title}")
-            transcript = get_transcript(video_id)
+        for video in feed.entries[:5]:
+            video_id = video.yt_videoid
+            title = video.title
             
-            if transcript:
-                print("Analyzing with DeepSeek AI...")
-                analysis = analyze_with_ai(transcript, channel_name, title)
+            if video_id not in processed_vids:
+                print(f"Processing video: {title}")
+                transcript = get_transcript(video_id)
                 
-                new_row = {
-                    "video_id": video_id,
-                    "channel": channel_name,
-                    "video_title": title,
-                    "speaker": analysis.get("speaker", "Unknown"),
-                    "topics": analysis.get("topics", ""),
-                    "summary": analysis.get("summary", ""),
-                    "channel_relations": analysis.get("channel_relations", "")
-                }
-                new_rows.append(new_row)
-                processed_vids.add(video_id)
+                if transcript:
+                    print("Analyzing with DeepSeek AI...")
+                    analysis = analyze_with_ai(transcript, channel_name, title)
+                    
+                    new_row = {
+                        "video_id": video_id,
+                        "channel": channel_name,
+                        "video_title": title,
+                        "speaker": analysis.get("speaker", "Unknown"),
+                        "topics": analysis.get("topics", ""),
+                        "summary": analysis.get("summary", ""),
+                        "channel_relations": analysis.get("channel_relations", "")
+                    }
+                    new_rows.append(new_row)
+                    processed_vids.add(video_id)
+                else:
+                    print(f"Skipping video: {title} (No transcript found)")
 
     if new_rows:
         new_df = pd.DataFrame(new_rows)
