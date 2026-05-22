@@ -78,7 +78,7 @@ def run_watcher():
         video_id = latest_video.yt_videoid
         title = latest_video.title
         
-        if video_id not in processed_vids:
+        if True:
             print(f"New video found: {title}")
             transcript = get_transcript(video_id)
             
