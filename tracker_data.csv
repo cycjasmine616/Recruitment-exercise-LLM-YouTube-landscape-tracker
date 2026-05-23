@@ -1,4 +1,0 @@
-channel,video_title,speaker,topics,summary,channel_relations
-Matthew Berman,GPT-4o vs Claude 3.5 Sonnet,Matthew Berman,"GPT-4o, Claude 3.5 Sonnet, Coding Benchmarks",A detailed comparison showing Claude 3.5 Sonnet excels at coding tasks while GPT-4o remains highly versatile.,General AI news and practical model comparisons.
-Yannic Kilcher,Llama 3 Paper Explained,Yannic Kilcher,"Llama 3, Open Source, Grouped Query Attention","Deep dive into Meta's Llama 3 architecture, analyzing its training data and open-weight impact.","Highly technical, research-paper focused."
-The AI Epiphany,How RAG Actually Works,AI Epiphany Host,"RAG, Vector Databases, LangChain",A practical engineering guide on how to build Retrieval-Augmented Generation systems to reduce AI hallucinations.,Applied AI engineering and tutorials.
