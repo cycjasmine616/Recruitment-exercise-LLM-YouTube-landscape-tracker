@@ -17,9 +17,9 @@ CSV_FILE = os.path.join(BASE_DIR, "tracker_data.csv")
 HTML_FILE = os.path.join(BASE_DIR, "index.html")
 
 CHANNELS = {
-    "Matthew Berman": "https://www.youtube.com/feeds/videos.xml?channel_id=UCabgeZzWzN_A3W1kG2_G3Gg",
-    "Yannic Kilcher": "https://www.youtube.com/feeds/videos.xml?channel_id=UCzhxO7x8Y0-s_L06T_yA8GA",
-    "The AI Epiphany": "https://www.youtube.com/feeds/videos.xml?channel_id=UC0Z0Q9r-mO6QnL5D49e49OQ"
+    "Matthew Berman": "https://www.youtube.com/@matthew_berman",
+    "Yannic Kilcher": "https://www.youtube.com/@YannicKilcher/videos",
+    "The AI Epiphany": "https://www.youtube.com/@TheAIEpiphany"
 }
 
 FALLBACK_VIDEOS = {
