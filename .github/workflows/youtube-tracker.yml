@@ -1,0 +1,82 @@
+name: LLM YouTube Tracker Pipeline
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch: 
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/youtube-tracker.yml'
+      - 'requirements-minimal.txt'
+      - 'config.py'
+      - 'database.py'
+      - 'youtube_fetcher.py'
+      - 'transcript_fetcher.py'
+      - 'ai_analyzer_hf_light.py'
+      - 'data_pipeline.py'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  run-tracker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+        cache: 'pip'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements-minimal.txt
+        
+    - name: Create data directory
+      run: mkdir -p data
+      
+    - name: Run data pipeline
+      env:
+        YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      run: |
+        python run_pipeline_standalone.py
+        
+    - name: Generate static report
+      run: |
+        python generate_static_report.py
+        
+    - name: Setup GitHub Pages
+      uses: actions/configure-pages@v4
+      
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: './public'
+        
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
+        
+    - name: Commit and push database changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        
+        # Only commit if database has changed
+        if [ -f "data/youtube_tracker.db" ]; then
+          cp data/youtube_tracker.db data/youtube_tracker_latest.db
+          git add data/youtube_tracker_latest.db
+          git add public/ -f
+          git commit -m " Auto-update: LLM YouTube tracker data [skip ci]" || echo "No changes to commit"
+          git push
+        fi
