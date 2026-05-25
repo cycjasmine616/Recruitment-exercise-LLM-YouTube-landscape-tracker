@@ -3,14 +3,48 @@ import os
 from datetime import datetime
 
 def generate_report():
-    data_dir = 'public/data'
-    
     try:
-        with open(f'{data_dir}/videos.json', 'r') as f:
+        with open('public/data/videos.json', 'r') as f:
             videos = json.load(f)
     except:
         videos = []
     
+    try:
+        with open('public/data/metadata.json', 'r') as f:
+            metadata = json.load(f)
+    except:
+        metadata = {'total_videos': 0, 'total_channels': 0, 'last_updated': ''}
+    
+    cards_html = ""
+    for v in videos[:30]:
+        topics = v.get('topics', [])
+        if isinstance(topics, str):
+            try:
+                topics = json.loads(topics)
+            except:
+                topics = []
+        
+        tags = ''.join([f'<span style="display:inline-block;padding:4px 10px;background:#f0f0f0;border-radius:15px;font-size:12px;margin:2px;">{t["topic"]}</span>' for t in topics[:4]])
+        date = v.get('published_at', '')[:10] if v.get('published_at') else ''
+        views = f"{(v.get('view_count', 0)/1000):.1f}K" if v.get('view_count') else ''
+        thumbnail = v.get('thumbnail_url', '')
+        
+        cards_html += f"""
+        <div style="border:1px solid #ddd;border-radius:10px;overflow:hidden;margin-bottom:20px;transition:0.2s;">
+            <img src="{thumbnail}" style="width:100%;height:200px;object-fit:cover;background:#f5f5f5;" 
+                 onerror="this.src='https://via.placeholder.com/400x200?text=YouTube+Video'">
+            <div style="padding:15px;">
+                <div style="color:#667eea;font-weight:600;font-size:14px;margin-bottom:5px;">📺 {v.get('channel_name', 'Unknown')}</div>
+                <div style="font-weight:600;margin-bottom:10px;">{v.get('title', 'Untitled')}</div>
+                <div>{tags}</div>
+                <div style="color:#888;font-size:13px;margin-top:8px;"> {date} •  {views} views</div>
+            </div>
+        </div>"""
+    
+    if not cards_html:
+        cards_html = '<p style="text-align:center;padding:40px;color:#888;">🔄 Videos will appear here after the pipeline runs successfully...</p>'
+    
+    # Build full HTML
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,36 +52,45 @@ def generate_report():
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LLM YouTube Tracker</title>
     <style>
-        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-        body {{ font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: linear-gradient(135deg, #667eea, #764ba2); min-height: 100vh; padding: 20px; }}
-        .container {{ max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }}
-        .header {{ background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 40px; text-align: center; }}
-        .header h1 {{ font-size: 2.5em; margin-bottom: 10px; }}
-        .video-grid {{ display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; padding: 30px; }}
-        .video-card {{ border: 1px solid #dee2e6; border-radius: 12px; overflow: hidden; transition: transform 0.2s; }}
-        .video-card:hover {{ transform: translateY(-3px); box-shadow: 0 8px 25px rgba(0,0,0,0.1); }}
-        .video-thumbnail {{ width: 100%; height: 200px; object-fit: cover; }}
-        .video-info {{ padding: 15px; }}
-        .channel-name {{ color: #667eea; font-weight: 600; margin-bottom: 8px; }}
-        .video-title {{ font-size: 16px; font-weight: 600; margin-bottom: 10px; }}
-        .topic-tag {{ display: inline-block; padding: 4px 10px; background: #e9ecef; border-radius: 15px; font-size: 12px; margin: 2px; }}
-        .summary {{ font-size: 14px; color: #4a5568; margin-top: 10px; }}
-        .footer {{ text-align: center; padding: 20px; color: #6c757d; }}
+        body {{ font-family: -apple-system, BlinkMacSystemFont, sans-serif; margin:0; padding:20px; background:linear-gradient(135deg,#667eea,#764ba2); min-height:100vh; }}
+        .container {{ max-width:1200px; margin:0 auto; background:white; border-radius:20px; overflow:hidden; }}
+        .header {{ background:linear-gradient(135deg,#667eea,#764ba2); color:white; padding:40px; text-align:center; }}
+        .header h1 {{ font-size:2.5em; margin:0 0 10px 0; }}
+        .stats {{ display:flex; justify-content:center; gap:40px; margin-top:20px; }}
+        .stat {{ text-align:center; }}
+        .stat-num {{ font-size:32px; font-weight:bold; }}
+        .stat-label {{ font-size:14px; opacity:0.9; }}
+        .grid {{ display:grid; grid-template-columns:repeat(auto-fill, minmax(350px,1fr)); gap:20px; padding:30px; }}
+        .footer {{ text-align:center; padding:20px; color:#888; font-size:14px; border-top:1px solid #eee; }}
+        @media (max-width:768px) {{ .grid {{ grid-template-columns:1fr; }} }}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1> LLM YouTube Tracker</h1>
-            <p>Auto-updated every 12 hours via GitHub Actions</p>
-            <p style="margin-top: 10px;">Last updated: {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}</p>
-            <p>{len(videos)} videos tracked</p>
+            <p>Tracking the latest LLM content across YouTube</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-num">{metadata.get('total_videos', 0)}</div>
+                    <div class="stat-label">Videos Tracked</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">{metadata.get('total_channels', 0)}</div>
+                    <div class="stat-label">Channels</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">12h</div>
+                    <div class="stat-label">Update Cycle</div>
+                </div>
+            </div>
+            <p style="font-size:12px;opacity:0.8;margin-top:15px;">Last updated: {metadata.get('last_updated', 'Waiting...')[:19]}</p>
         </div>
-        <div class="video-grid">
-            {generate_cards(videos)}
+        <div class="grid">
+            {cards_html}
         </div>
         <div class="footer">
-            <p>Powered by GitHub Actions • Free & Open Source</p>
+            <p> Powered by GitHub Actions | Updated every 12 hours | Free & Open Source</p>
         </div>
     </div>
 </body>
@@ -58,29 +101,6 @@ def generate_report():
         f.write(html)
     
     print(f"Report generated with {len(videos)} videos")
-
-def generate_cards(videos):
-    cards = []
-    for v in videos[:20]:
-        topics = v.get('topics', [])
-        tags = ''.join([f'<span class="topic-tag">{t["topic"]}</span>' for t in topics[:3]])
-        date = v.get('published_at', '')[:10] if v.get('published_at') else ''
-        views = f"{(v.get('view_count', 0)/1000):.1f}K views" if v.get('view_count') else ''
-        summary = v.get('summary', '')[:150]
-        
-        cards.append(f"""
-        <div class="video-card">
-            <img src="{v.get('thumbnail_url', '')}" class="video-thumbnail" onerror="this.style.display='none'">
-            <div class="video-info">
-                <div class="channel-name">{v.get('channel_name', 'Unknown')}</div>
-                <div class="video-title">{v.get('title', 'Untitled')}</div>
-                <div>{tags}</div>
-                <div style="color: #6c757d; font-size: 13px; margin-top: 5px;">{date} • {views}</div>
-                <div class="summary">{summary}...</div>
-            </div>
-        </div>""")
-    
-    return ''.join(cards) if cards else '<p style="text-align:center;padding:50px;">No videos yet. Check back soon!</p>'
 
 if __name__ == "__main__":
     generate_report()
