@@ -1,21 +1,9 @@
 name: LLM YouTube Tracker Pipeline
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
-  workflow_dispatch: 
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/youtube-tracker.yml'
-      - 'requirements-minimal.txt'
-      - 'config.py'
-      - 'database.py'
-      - 'youtube_fetcher.py'
-      - 'transcript_fetcher.py'
-      - 'ai_analyzer_hf_light.py'
-      - 'data_pipeline.py'
+    - cron: '0 */12 * * *'
 
 permissions:
   contents: write
@@ -25,7 +13,7 @@ permissions:
 jobs:
   run-tracker:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 20
     
     steps:
     - name: Checkout repository
@@ -35,7 +23,14 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.10'
-        cache: 'pip'
+        
+    - name: Verify files exist
+      run: |
+        echo "=== Checking files ==="
+        pwd
+        ls -la
+        echo "=== requirements-minimal.txt ==="
+        cat requirements-minimal.txt || echo "FILE NOT FOUND!"
         
     - name: Install dependencies
       run: |
@@ -43,19 +38,19 @@ jobs:
         pip install -r requirements-minimal.txt
         
     - name: Create data directory
-      run: mkdir -p data
+      run: mkdir -p data public/data
       
     - name: Run data pipeline
       env:
         YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
-      run: |
-        python run_pipeline_standalone.py
+      run: python run_pipeline_standalone.py
+      continue-on-error: true
         
     - name: Generate static report
-      run: |
-        python generate_static_report.py
+      run: python generate_static_report.py
+      continue-on-error: true
         
-    - name: Setup GitHub Pages
+    - name: Setup Pages
       uses: actions/configure-pages@v4
       
     - name: Upload artifact
@@ -66,17 +61,3 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-        
-    - name: Commit and push database changes
-      run: |
-        git config --local user.email "github-actions[bot]@users.noreply.github.com"
-        git config --local user.name "github-actions[bot]"
-        
-        # Only commit if database has changed
-        if [ -f "data/youtube_tracker.db" ]; then
-          cp data/youtube_tracker.db data/youtube_tracker_latest.db
-          git add data/youtube_tracker_latest.db
-          git add public/ -f
-          git commit -m " Auto-update: LLM YouTube tracker data [skip ci]" || echo "No changes to commit"
-          git push
-        fi
