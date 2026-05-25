@@ -3,6 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
 from config import Config
+import json
 
 Base = declarative_base()
 
@@ -28,10 +29,8 @@ class Video(Base):
     key_insights = Column(Text)
     fetched_at = Column(DateTime, default=datetime.utcnow)
     updated_at = Column(DateTime, default=datetime.utcnow)
-    related_videos = Column(JSON)
     
     def to_dict(self):
-        import json
         return {
             'id': self.id,
             'title': self.title,
