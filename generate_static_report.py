@@ -144,3 +144,8 @@ def build_relations_html(relations):
 
 if __name__ == "__main__":
     generate_report()
+    
+    if os.path.exists('public/index.html'):
+        print(" public/index.html created successfully")
+    else:
+        print(" ERROR: public/index.html was not created!")
