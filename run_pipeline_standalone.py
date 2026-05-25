@@ -130,14 +130,14 @@ def main():
                 
                 db.commit()
                 processed += 1
-                logger.info("  ✅ Saved")
+                logger.info("   Saved")
                 
             except Exception as e:
-                logger.error(f"  ❌ Error: {e}")
+                logger.error(f"   Error: {e}")
                 db.rollback()
                 continue
         
-        logger.info(f"\n✅ Processed {processed} videos")
+        logger.info(f"\n Processed {processed} videos")
         
         try:
             from database import Video as V, ChannelRelation as CR
@@ -182,7 +182,7 @@ def main():
         export_data(db)
         db.close()
         
-        logger.info("\n✅ PIPELINE COMPLETE")
+        logger.info("\n PIPELINE COMPLETE")
         
     except Exception as e:
         logger.error(f"Fatal error: {e}")
@@ -233,7 +233,7 @@ def export_data(db):
     with open('public/data/metadata.json', 'w') as f:
         json.dump(metadata, f, indent=2)
     
-    logger.info(f"✅ Exported {len(videos_data)} videos, {len(relations_data)} relations")
+    logger.info(f" Exported {len(videos_data)} videos, {len(relations_data)} relations")
 
 def create_fallback_files():
     """Create fallback files if pipeline fails"""
