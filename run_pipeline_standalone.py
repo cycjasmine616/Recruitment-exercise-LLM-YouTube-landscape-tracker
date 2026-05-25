@@ -177,10 +177,10 @@ def main():
                     
                     db.commit()
                     processed += 1
-                    logger.info(f"  ✅ Successfully saved to database")
+                    logger.info(f"   Successfully saved to database")
                     
                 except Exception as e:
-                    logger.error(f"  ❌ Error: {e}")
+                    logger.error(f"   Error: {e}")
                     db.rollback()
                     failed += 1
                     continue
@@ -188,10 +188,10 @@ def main():
             logger.info(f"\n{'=' * 60}")
             logger.info(f"PIPELINE COMPLETE")
             logger.info(f"{'=' * 60}")
-            logger.info(f"  ✅ Processed: {processed}")
-            logger.info(f"  ⏭️  Skipped: {skipped}")
-            logger.info(f"  ❌ Failed: {failed}")
-            logger.info(f"  📊 Total in DB: {db.query(Video).count()}")
+            logger.info(f"   Processed: {processed}")
+            logger.info(f"    Skipped: {skipped}")
+            logger.info(f"   Failed: {failed}")
+            logger.info(f"   Total in DB: {db.query(Video).count()}")
             
             export_to_json(db)
             
