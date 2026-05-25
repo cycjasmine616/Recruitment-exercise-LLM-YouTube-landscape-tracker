@@ -5,40 +5,31 @@ class Config:
     DATABASE_URL = 'sqlite:///data/youtube_tracker.db'
     
     LLM_CHANNELS = {
-        'UCSHZKyawb77ixDdsGog4iWA': 'Lex Fridman',
-        
-        'UCfdQGKElLZjB1UFCx2G2hDw': 'AI Explained',
+        'UCSHZKyawb77ixDdsGog4iWA': 'Andrej Karpathy',
         
         'UC2vXPoFhVpIb3xMPAKaBAnA': 'Yannic Kilcher',
         
         'UCMLtBahI5DMrt0Jvx6LwQwg': 'Machine Learning Street Talk',
         
-        'UCXUPKbNHQVp8eJxRqk7Zq3A': 'Andrej Karpathy',
+        'UCiT9RITQ9PW6BhXK0y2jaeg': 'AI Explained',
         
         'UCHtQ8aGzXzj6B-0BZ0n1BXA': 'Nicholas Renotte',
-        
-        'UCtatfZMf-8EkIwASXM4ts0A': 'AssemblyAI',
-        
-        'UCiT9RITQ9PW6BhXK0y2jaeg': 'Data with Zablo',
-        
-        'UC2KfmR-Y2nSBeH1zV8JHQxA': 'Prompt Engineering',
-        
-        'UC1KqLiF9G5Y7B16sVkNJ2BQ': 'AI Jason',
     }
+    
     USE_SEARCH = True  
     SEARCH_QUERIES = [
-        "large language model tutorial",
-        "GPT-4 explained",
+        "large language model explained 2024",
+        "GPT-4 tutorial how to use",
         "LLM fine-tuning guide",
-        "RAG system tutorial",
-        "prompt engineering 2024",
-        "open source LLM review",
-        "Claude AI explained",
-        "LLaMA model tutorial",
-        "Mistral AI review",
-        "AI agent tutorial"
+        "RAG retrieval augmented generation",
+        "prompt engineering tutorial",
+        "Llama 3 model review",
+        "Mistral AI explained",
+        "Claude AI tutorial",
+        "open source LLM comparison 2024",
+        "AI agents tutorial langchain"
     ]
     
     UPDATE_INTERVAL_HOURS = 12
-    MAX_VIDEOS_PER_CHANNEL = 10
-    MAX_SEARCH_RESULTS = 20
+    MAX_VIDEOS_PER_CHANNEL = 5
+    MAX_SEARCH_RESULTS = 5 
