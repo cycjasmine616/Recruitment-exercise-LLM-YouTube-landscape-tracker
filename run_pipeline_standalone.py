@@ -27,7 +27,7 @@ def main():
             return
         
         logger.info(f"✓ API Key configured")
-
+        
         Base.metadata.create_all(engine)
         logger.info("✓ Database ready")
         
@@ -104,7 +104,8 @@ def main():
             
             logger.info(f"Processed {processed} videos")
             
-            export_videos(db)
+            videos_list = db.query(Video).order_by(Video.published_at.desc()).all()
+            export_videos_to_json(videos_list)
             
         finally:
             db.close()
@@ -114,33 +115,39 @@ def main():
         import traceback
         traceback.print_exc()
 
-def export_videos(db):
-    """Export videos to JSON files"""
+def export_videos_to_json(videos_list):
+    """Export videos list to JSON files"""
     os.makedirs('public/data', exist_ok=True)
     
-    videos = db.query(Video).order_by(Video.published_at.desc()).all()
-    
     videos_data = []
-    for v in videos:
+    for v in videos_list:
         try:
             d = v.to_dict()
             videos_data.append(d)
-        except:
+        except Exception as e:
+            logger.error(f"Error converting video: {e}")
             continue
     
     with open('public/data/videos.json', 'w') as f:
         json.dump(videos_data, f, indent=2, default=str)
     
+    channels = {}
+    for v in videos_data:
+        ch = v.get('channel_name', 'Unknown')
+        channels[ch] = channels.get(ch, 0) + 1
+    
     metadata = {
         'last_updated': datetime.utcnow().isoformat(),
         'total_videos': len(videos_data),
-        'total_channels': len(set(v.channel_name for v in videos))
+        'total_channels': len(channels),
+        'channels': [{'name': k, 'count': v} for k, v in channels.items()]
     }
     
     with open('public/data/metadata.json', 'w') as f:
         json.dump(metadata, f, indent=2)
     
-    logger.info(f"Exported {len(videos_data)} videos to JSON")
+    logger.info(f" Exported {len(videos_data)} videos from {len(channels)} channels")
+    logger.info(f" Files saved to public/data/")
 
 def create_empty_files():
     """Create empty data files"""
@@ -148,7 +155,12 @@ def create_empty_files():
     with open('public/data/videos.json', 'w') as f:
         json.dump([], f)
     with open('public/data/metadata.json', 'w') as f:
-        json.dump({'last_updated': datetime.utcnow().isoformat(), 'total_videos': 0}, f)
+        json.dump({
+            'last_updated': datetime.utcnow().isoformat(),
+            'total_videos': 0,
+            'total_channels': 0
+        }, f)
+    logger.info("Created empty data files")
 
 def create_error_files(error):
     """Create error data files"""
@@ -161,6 +173,7 @@ def create_error_files(error):
             'total_videos': 0,
             'error': error
         }, f)
+    logger.info(f"Created error files: {error}")
 
 if __name__ == "__main__":
     main()
