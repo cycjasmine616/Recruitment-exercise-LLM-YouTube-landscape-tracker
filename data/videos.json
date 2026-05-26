@@ -42,7 +42,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-03-23T16:24:14",
     "duration": null,
-    "view_count": 1162067,
+    "view_count": 1162073,
     "thumbnail_url": "https://i.ytimg.com/vi/vif8NQcjVf0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=vif8NQcjVf0",
     "transcript_available": false,
@@ -78,7 +78,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-03-03T12:30:21",
     "duration": null,
-    "view_count": 49874,
+    "view_count": 49872,
     "thumbnail_url": "https://i.ytimg.com/vi/SHlrUAkkWI0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=SHlrUAkkWI0",
     "transcript_available": false,
@@ -101,7 +101,7 @@
     "channel_name": "Ken Jee",
     "published_at": "2026-01-05T13:00:13",
     "duration": null,
-    "view_count": 4790,
+    "view_count": 4791,
     "thumbnail_url": "https://i.ytimg.com/vi/3CRBW-0PuqA/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=3CRBW-0PuqA",
     "transcript_available": false,
@@ -119,7 +119,7 @@
     "channel_name": "Ken Jee",
     "published_at": "2025-12-18T16:33:17",
     "duration": null,
-    "view_count": 2330,
+    "view_count": 2331,
     "thumbnail_url": "https://i.ytimg.com/vi/KZnmtGMCbH8/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=KZnmtGMCbH8",
     "transcript_available": false,
@@ -129,6 +129,29 @@
     "creator_stance": null,
     "key_claims": [],
     "practical_insights": "AI Will Take My Job. Here's 5 Things I'm Doing About It In this video I outline my personal strategy for thriving in an AI-dominated future. I shares five actionable approaches: starting AI-powered businesses, building trust through content creation, choosing AI-resistant industries, investing in AI"
+  },
+  {
+    "id": "avjX3QrYkls",
+    "title": "Transformers Step-by-Step Explained (Attention Is All You Need)",
+    "description": "Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n\n--\nWe just launched the all-in-one tech interview prep platform, covering coding, system design, OOD, and machine learning.\n\nLaunch sale: 50% off. Check it out: https://bit.ly/bbg-yt",
+    "channel_name": "ByteByteGo",
+    "published_at": "2025-12-11T16:30:01",
+    "duration": null,
+    "view_count": 79655,
+    "thumbnail_url": "https://i.ytimg.com/vi/avjX3QrYkls/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=avjX3QrYkls",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Transformers Step-by-Step Explained (Attention Is All You Need) Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n\n--\nWe just launched the all-in-one tech interview prep platform, covering coding, system design, OOD, and machine learning.\n\nLaunch sale"
   },
   {
     "id": "uokE-FiDUVw",
@@ -172,6 +195,33 @@
     "practical_insights": "Why I\u2019m Building a SaaS (before AI takes over) I'm starting over. I'm building a SaaS before AI takes over. \n\nI believe we have a 1.5 - 2 year window where technical skills are still a valuable advantage for creating. I'm going to capitalize on this golden window with my new company Newsletter hero."
   },
   {
+    "id": "g80Q1sVtikE",
+    "title": "Fine-tune your own LLM in 13 minutes, here\u2019s how",
+    "description": "Wanna master AI coding? Go here: https://www.skool.com/new-society\n\nFollow me on Instagram - https://www.instagram.com/davidondrej1/\nFollow me on Twitter - https://x.com/DavidOndrej1\n\nHost your n8n agents on Hostinger: https://www.hostinger.com/david\n\nGoogle Colab - https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-(20B)-Fine-tuning.ipynb\nUnsloth - https://unsloth.ai/\nThe dataset - https://huggingface.co/datasets/internlm/Agent-FLAN\nSubscribe if you're serious about AI.\n\nFine-tune any AI model for free\n\nwww.vectal.ai",
+    "channel_name": "David Ondrej",
+    "published_at": "2025-10-13T09:35:47",
+    "duration": null,
+    "view_count": 146156,
+    "thumbnail_url": "https://i.ytimg.com/vi/g80Q1sVtikE/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=g80Q1sVtikE",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "AI Agents",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Fine-tune your own LLM in 13 minutes, here\u2019s how Wanna master AI coding? Go here: https://www.skool.com/new-society\n\nFollow me on Instagram - https://www.instagram.com/davidondrej1/\nFollow me on Twitter - https://x.com/DavidOndrej1\n\nHost your n8n agents on Hostinger: https://www.hostinger.com/david\n"
+  },
+  {
     "id": "vK_qvUeuNRE",
     "title": "How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide",
     "description": "Learn how to easily generate AI transcripts for YouTube videos using OpenAI\u2019s Whisper API and DaVinci Resolve. In this step-by-step tutorial, I\u2019ll show you how to split audio into one-minute chunks, process them through Whisper, and use the transcripts to boost your SEO with titles, hashtags, and more.\n\nThis method is perfect if you want to:\n\nImprove YouTube search rankings with full transcripts.\n\nSave time and money with free tools like DaVinci Resolve.\n\nGet better suggestions from AI for titles, tags, and descriptions.\n\n\ud83d\udca1 Cost example: About $0.08 for 3 minutes of video (prices vary).\n\u26a1 Bonus tip: Automate multiple audio chunks on Windows for faster processing.\n\n\ud83d\udc49 Stick around to the end for the exact export settings I used in DaVinci Resolve to make Whisper work smoothly.\n\n0:00 \u2013 Why transcripts help SEO & YouTube growth\n0:25 \u2013 Using GPT for SEO title + hashtag ideas\n0:35 \u2013 Whisper API for transcription (limitations & timeouts)\n1:03 \u2013 Fix: Splitting video/audio into 1-minute chunks in DaVinci Resolve\n1:31 \u2013 Exporting audio clips (MP3 settings)\n2:10 \u2013 Cost breakdown & final workflow\n2:22 \u2013 Running Whisper API on all chunks at once\n\n#YouTubeSEO #WhisperAI #DaVinciResolve #AITranscripts #contentcreation \n\nFull Transcript (auto-caption backup):\nHey everybody, just a quick note on how to get audio transcripts easily from an AI. \nI have been wanting to increase the views of my YouTube videos so I asked GPT for \nsome SEO suggestions. One thing it suggested which is both helpful for search engines and nice was to \nput a transcript to everybody was to put a transcript with each video. The other good thing this does\nis when you have a transcript, you can hand it to GPT and GPT can suggest a good title and hashtags \nand all that kind of good SEO stuff.\nSo, I needed a transcript and I work with AIs all the time and so the first thing that occurred to me was that I had a \ncommand line tool called that Simon Willison wrote and that it interacted with \nthe OpenAI API and had something called in uses OpenAI's Whisper API, awesome. \nSo I went off, I asked that to make me a transcript, that's what Whisper can do, and it \nkept timing out over and over and over. That is when I surmised, and I was correct, I looked it up, \nthat Whisper likes about one minute chunks of audio at a time. And so this is where DaVinci Resolve comes in. \nDaVinci Resolve is a free download video editor, and I went into DaVinci Resolve and I split my audio, or my video, \nwith the audio into one minute chunks using breaks, or Ctrl-B. So I went Ctrl-B, Ctrl-B, Ctrl-B. Then \nI went to the delivery section and turned off video export, told it I did want to export audio. I made sure that I...\nI'm that this is mp3 and mp3 and they matched went to the file section said I wanted individual clips \nSo now each break is going to be an individual clip Told it to use custom names. So they're easy to work with \nAnd told it to use unique file names. So my custom name is going to come from up here And lo and behold \nI got the entire transcript out there it is just so you know As far as I know, the cost was about \n$0.08 for about 3 minutes of video For me, on this weekend. I know the costs change over time \nNow, for folks like me that are stuck on Windows You can have it work on all the blocks at once \nHave the LLM Whisper API work on all the blocks at once You have to jump through a few hoops \nYou have to tell it to do something\nDo something like this which which gets all the mp3s and then passes it through this for api \nAnd that is all thanks everybody. Have a good day",
@@ -193,6 +243,56 @@
     "creator_stance": null,
     "key_claims": [],
     "practical_insights": "How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide Learn how to easily generate AI transcripts for YouTube videos using OpenAI\u2019s Whisper API and DaVinci Resolve. In this step-by-step tutorial, I\u2019ll show you how to split audio into one-minute chunks, process them through"
+  },
+  {
+    "id": "RNF0FvRjGZk",
+    "title": "I Visualised Attention in Transformers",
+    "description": "To try everything Brilliant has to offer\u2014free\u2014for a full 30 days, visit https://brilliant.org/GalLahat/ . You\u2019ll also get 20% off an annual premium subscription.\n\nVoice type with Peach Beta \ud83c\udf51:\nhttps://peach-voice.com\n\nThis video was sponsored by Brilliant\n\nThe music is created by my partner (AI) and me, feel free to use it commercially for your own projects but make sure to credit this video when you do:\nhttps://drive.google.com/drive/folders/1WSKmpkQGOHb_jij4Ut2NpivTcljc7qLS?usp=sharing",
+    "channel_name": "Gal Lahat",
+    "published_at": "2025-06-30T16:24:54",
+    "duration": null,
+    "view_count": 268623,
+    "thumbnail_url": "https://i.ytimg.com/vi/RNF0FvRjGZk/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=RNF0FvRjGZk",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      },
+      {
+        "topic": "Multimodal",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "I Visualised Attention in Transformers To try everything Brilliant has to offer\u2014free\u2014for a full 30 days, visit https://brilliant.org/GalLahat/ . You\u2019ll also get 20% off an annual premium subscription.\n\nVoice type with Peach Beta \ud83c\udf51:\nhttps://peach-voice.com\n\nThis video was sponsored by Brilliant\n\nThe "
+  },
+  {
+    "id": "KMHkbXzHn7s",
+    "title": "How Attention Mechanism Works in Transformer Architecture",
+    "description": "#llm #embedding #gpt \nThe attention mechanism in transformers is a key component that allows models to focus on different parts of an input sequence when making predictions. Attention assigns varying degrees of importance to different parts of the input, enabling the model to capture contextual relationships effectively. The most widely used form of attention in transformers is self-attention, where each token in a sequence attends to all other tokens, capturing long-range dependencies. This mechanism is further enhanced by multi-head attention, which enables the model to focus on multiple aspects of the data simultaneously.\n\nThere are several types of attention mechanisms, including self-attention, which is used in transformers to relate different words in the same sentence, and cross-attention, which is commonly seen in tasks like machine translation where the model attends to a separate input sequence. \n\nIn the video, I have visually explained each of these attention mechanisms with clear animations and step-by-step breakdowns.\n\nTimestamps:\n\n0:00 - Embedding and Attention\n2:12 - Self Attention Mechanism\n10:52 - Causal Self Attention\n14:12 - Multi Head Attention\n16:50 - Attention in Transformer Architecture\n17:54 - GPT-2 Model\n21:30 - Outro\n\nAttention is all you need paper: https://arxiv.org/abs/1706.03762\n\nMusic by Vincent Rubinetti\nDownload the music on Bandcamp:\nhttps://vincerubinetti.bandcamp.com\nStream the music on Spotify:\nhttps://open.spotify.com/artist/2SRhEEt2tlDQWxzwfUo9Dl",
+    "channel_name": "Under The Hood",
+    "published_at": "2025-03-08T08:54:17",
+    "duration": null,
+    "view_count": 111599,
+    "thumbnail_url": "https://i.ytimg.com/vi/KMHkbXzHn7s/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=KMHkbXzHn7s",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 8
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How Attention Mechanism Works in Transformer Architecture #llm #embedding #gpt \nThe attention mechanism in transformers is a key component that allows models to focus on different parts of an input sequence when making predictions. Attention assigns varying degrees of importance to different parts o"
   },
   {
     "id": "WoCtFUZXVsY",
@@ -263,6 +363,29 @@
     "practical_insights": "Feed Your OWN Documents to a Local Large Language Model! Dave explains how retraining, RAG (retrieval augmented generation) and context documents serve to expand the functionality of existing models, both local and online.  For my book on the autism spectrum, check out: https://amzn.to/3zBinWM\n\nDave"
   },
   {
+    "id": "FrshQV0PRq4",
+    "title": "Fine-tuning ChatGPT made EASY (No Coding Required)",
+    "description": "Ready to scale with fine-tuned AI models? Book a call here: https://www.simpliscale.io\n\nWe'll breaking down the exact steps we use to fine-tune AI models for your specific needs. From preparing your dataset to using your custom model, we cover it all.\n\nThis proven method has helped countless businesses achieve more precise and consistent AI outputs without complex coding.\n\nThink about it... Who doesn't want BETTER RESULTS and INCREASED EFFICIENCY?\n\nYou're using AI in your business, but you're not seeing the tailored outputs you know you're capable of. Every day you spend with a generic model is costing you valuable time and potential innovations.\n\nOpenAI Fine-tuning Documentation: https://platform.openai.com/docs/guides/fine-tuning/use-a-fine-tuned-model\n\nSimpliscale Fine-tuning CustomGPT: https://chatgpt.com/g/g-SMhVBhWbs-simpliscale-fine-tuning-formatter\n\nOpenAI Prompt Engineering Guide:\nhttps://platform.openai.com/docs/guides/prompt-engineering\n\nLearn how to navigate the four stages of fine-tuning and supercharge your AI capabilities now: https://www.simpliscale.io\n\nFollow my Instagram: /thenickcornelius",
+    "channel_name": "Nick Cornelius",
+    "published_at": "2024-10-08T20:45:17",
+    "duration": null,
+    "view_count": 3886,
+    "thumbnail_url": "https://i.ytimg.com/vi/FrshQV0PRq4/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=FrshQV0PRq4",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Fine-tuning ChatGPT made EASY (No Coding Required) Ready to scale with fine-tuned AI models? Book a call here: https://www.simpliscale.io\n\nWe'll breaking down the exact steps we use to fine-tune AI models for your specific needs. From preparing your dataset to using your custom model, we cover it al"
+  },
+  {
     "id": "lqOrULJvYXg",
     "title": "So You Think You Can ANALYZE? (Data Content Creator Hackathon)",
     "description": "Watch your favorite data science content creators compete for a piece of history. They will either prove their skills in front of the world or fail in the pursuit of eternal glory. This is so you think you can analyze.\n\nSpecial thanks to Posit for sponsoring this competition and make this all possible! \n\nCompetitors:\nTeam Jack\n@averysmith \nJack Blandin\n@KeithGalli \n\nTeam MMA \n@AlexTheAnalyst \n@nerdnourishment \n@Miki_ML \n\nTeam Null\nNick Singh \nMark Freeman\n@SeattleDataGuy \n\nTeam Shashank\n@ShashankData \n\nTeam Posit-ively Skewed\nGreg Coquillo \n@datascienceharp \nRichad Nieves-Becker\nIan Greengross\n\nInterviewer:\nElijah Butler - https://www.tiktok.com/@imelijahbutler\n\nPosit Team\n- Michael Chow \n- Joe Cheng\n- Carolos Scheidegger\n- Julia Silge \nSponsors, Affiliates, and Partners:\n- Pathrise - http://pathrise.com/KenJee | Career mentorship for job applicants (Free till you land a job)\n- Taro - http://jointaro.com/r/kenj308 (20% discount) | Career mentorship if you already have a job \n- 365 Data Science (57% discount) - https://365datascience.pxf.io/P0jbBY | Learn data science today\n- Interview Query (10% discount) - https://www.interviewquery.com/?ref=kenjee |  Interview prep questions\n\nMORE DATA SCIENCE CONTENT HERE:\n\ud83d\udc24My Twitter - https://twitter.com/KenJee_DS\n\ud83d\udc54 LinkedIn -  https://www.linkedin.com/in/kenjee/\n\ud83d\udcc8 Kaggle - https://www.kaggle.com/kenjee\n\ud83d\udcd1 Medium Articles - https://medium.com/@kenneth.b.jee\n\ud83d\udcbb Github - https://github.com/PlayingNumbers\n\ud83c\udfc0 My Sports Blog -https://www.playingnumbers.com\n\nCheck These Videos Out Next! \nMy Leaderboard Project: https://www.youtube.com/watch?v=myhoWUrSP7o&ab_channel=KenJee\n66 Days of Data: https://www.youtube.com/watch?v=qV_AlRwhI3I&ab_channel=KenJee\nHow I Would Learn Data Science in 2021: https://www.youtube.com/watch?v=41Clrh6nv1s&ab_channel=KenJee\n\nMy Playlists \nData Science Beginners: https://www.youtube.com/playlist?list=PL2zq7klxX5ATMsmyRazei7ZXkP1GHt-vs\nProject From Scratch: https://www.youtube.com/watch?v=MpF9HENQjDo&list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t&ab_channel=KenJee\nKaggle Projects: https://www.youtube.com/playlist?list=PL2zq7klxX5AQXzNSLtc_LEKFPh2mAvHIO",
@@ -306,5 +429,136 @@
     "creator_stance": null,
     "key_claims": [],
     "practical_insights": "EASIEST Way to Fine-Tune a LLM and Use It With Ollama In this video, we go over how you can fine-tune Llama 3.1 and run it locally on your machine using Ollama! We use the open source repository \"Unsloth\" to do all of the fine tuning on an SQL dataset!\n\nThroughout this video, we discuss the ins and "
+  },
+  {
+    "id": "00Q0G84kq3M",
+    "title": "RAG vs. Fine Tuning",
+    "description": "Get the guide to GAI, learn more \u2192 https://ibm.biz/BdKTbF\nLearn more about the technology \u2192 https://ibm.biz/BdKTbX\n\nJoin Cedric Clyburn as he explores the differences and use cases of Retrieval Augmented Generation (RAG) and fine-tuning in enhancing large language models. This video covers the strengths, weaknesses, and common applications of both techniques, and provides insights on how to choose between them using machine learning and natural language processing principles\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://www.ibm.com/account/reg/us-en/signup?formid=news-urx-52120\n\n#AI #LargeLanguageModels #FineTuning #RAG #ReinforcementLearning #MachineLearning #NaturalLanguageProcessing",
+    "channel_name": "IBM Technology",
+    "published_at": "2024-09-09T15:00:00",
+    "duration": null,
+    "view_count": 427591,
+    "thumbnail_url": "https://i.ytimg.com/vi/00Q0G84kq3M/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=00Q0G84kq3M",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "RAG Systems",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "RAG vs. Fine Tuning Get the guide to GAI, learn more \u2192 https://ibm.biz/BdKTbF\nLearn more about the technology \u2192 https://ibm.biz/BdKTbX\n\nJoin Cedric Clyburn as he explores the differences and use cases of Retrieval Augmented Generation (RAG) and fine-tuning in enhancing large language models. This vi"
+  },
+  {
+    "id": "eMlx5fFNoYc",
+    "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+    "description": "Demystifying attention, the key mechanism inside transformers and LLMs.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nSpecial thanks to these supporters: https://www.3blue1brown.com/lessons/attention#thanks\nAn equally valuable form of support is to simply share the videos.\n\nDemystifying self-attention, multiple heads, and cross-attention.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\n\nThe first pass for the translated subtitles here is machine-generated and, therefore, notably imperfect. To contribute edits or fixes, visit https://www.criblate.com\n\n\u0417\u0432\u0443\u043a\u043e\u0432\u0430\u044f \u0434\u043e\u0440\u043e\u0436\u043a\u0430 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435: \u0412\u043b\u0430\u0434 \u0411\u0443\u0440\u043c\u0438\u0441\u0442\u0440\u043e\u0432.\n\n------------------\n\nHere are a few other relevant resources\n\nBuild a GPT from scratch, by Andrej Karpathy\nhttps://youtu.be/kCc8FmEb1nY\n\nIf you want a conceptual understanding of language models from the ground up, @vcubingx just started a short series of videos on the topic:\nhttps://youtu.be/1il-s4mgNdI?si=XaVxj6bsdy3VkgEX\n\nIf you're interested in the herculean task of interpreting what these large networks might actually be doing, the Transformer Circuits posts by Anthropic are great. In particular, it was only after reading one of these that I started thinking of the combination of the value and output matrices as being a combined low-rank map from the embedding space to itself, which, at least in my mind, made things much clearer than other sources.\nhttps://transformer-circuits.pub/2021/framework/index.html\n\nSite with exercises related to ML programming and GPTs\nhttps://www.gptandchill.ai/codingproblems\n\nHistory of language models by Brit Cruise, \u00a0@ArtOfTheProblem\u00a0 \nhttps://youtu.be/OFS90-FX6pg\n\nAn early paper on how directions in embedding spaces have meaning:\nhttps://arxiv.org/pdf/1301.3781.pdf\n\n------------------\n\nTimestamps:\n0:00 - Recap on embeddings\n1:39 - Motivating examples\n4:29 - The attention pattern\n11:08 - Masking\n12:42 - Context size\n13:10 - Values\n15:44 - Counting parameters\n18:21 - Cross-attention\n19:19 - Multiple heads\n22:16 - The output matrix\n23:19 - Going deeper\n24:54 - Ending\n\n------------------\n\nThese animations are largely made using a custom Python library, manim.  See the FAQ comments here:\nhttps://3b1b.co/faq#manim\nhttps://github.com/3b1b/manim\nhttps://github.com/ManimCommunity/manim/\n\nAll code for specific videos is visible here:\nhttps://github.com/3b1b/videos/\n\nThe music is by Vincent Rubinetti.\nhttps://www.vincentrubinetti.com\nhttps://vincerubinetti.bandcamp.com/album/the-music-of-3blue1brown\nhttps://open.spotify.com/album/1dVyjwS8FBqXhRunaG5W5u\n\n------------------\n\n3blue1brown is a channel about animating math, in all senses of the word animate. If you're reading the bottom of a video description, I'm guessing you're more interested than the average viewer in lessons here. It would mean a lot to me if you chose to stay up to date on new ones, either by subscribing here on YouTube or otherwise following on whichever platform below you check most regularly.\n\nMailing list: https://3blue1brown.substack.com\nTwitter: https://twitter.com/3blue1brown\nInstagram: https://www.instagram.com/3blue1brown\nReddit: https://www.reddit.com/r/3blue1brown\nFacebook: https://www.facebook.com/3blue1brown\nPatreon: https://patreon.com/3blue1brown\nWebsite: https://www.3blue1brown.com",
+    "channel_name": "3Blue1Brown",
+    "published_at": "2024-04-07T12:53:54",
+    "duration": null,
+    "view_count": 4119534,
+    "thumbnail_url": "https://i.ytimg.com/vi/eMlx5fFNoYc/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 7
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Attention in transformers, step-by-step | Deep Learning Chapter 6 Demystifying attention, the key mechanism inside transformers and LLMs.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nSpecial thanks to these supporters: https://www.3blue1brown.c"
+  },
+  {
+    "id": "GZ4W1nRw_Ac",
+    "title": "Fine Tuning OpenAI Models Walkthrough - How and Why",
+    "description": "Providing context for fine-tuning LLMs and walking through why I chose to fine tune an instance of GPT-3.5-Turbo, my specific use case exploration, and all of the steps I took to get there!\n\nThe Code: https://github.com/ALucek/ft-openai-video\nOutput Comparison: https://docs.google.com/spreadsheets/d/1-8SzT4tZBS0Nti5oEzECwhZMgtUZK0mL/edit?usp=sharing&ouid=111470686465205488170&rtpof=true&sd=true\n\nGoEmotions Dataset: https://huggingface.co/datasets/go_emotions?row=0\nFine Tuning Graphic: https://miro.medium.com/v2/resize:fit:1400/1*JSJBBnslBE9S5i77Rz9r_g.png\nOpenAI Fine Tuning Documentation: https://platform.openai.com/docs/guides/fine-tuning\nOpenAI Cookbook - Fine Tuning Data Prep : https://cookbook.openai.com/examples/chat_finetuning_data_prep\n\nChapters:\n00:00 - Intro\n00:21 - What is Fine Tuning?\n01:40 - OpenAI Fine Tuning Documentation\n03:51 - Why I Fine Tune Models\n05:04 - Dataset of Interest\n06:44 - Training Data Format\n07:18 - Loading and Examining the Dataset\n10:24 - Generating a GPT-4-T Baseline\n13:00 - Formatting Dataset into JSONL\n15:47 - Validating Training Data & Price Estimation\n19:13 - Starting the Fine Tuning Job\n19:47 - Fine Tuned Model Metrics Overview\n20:31 - Talking About Training Loss\n23:29 - Running Inference With the Fine Tuned Model\n24:02 - Output Comparisons & Discussion\n27:01 - Outro",
+    "channel_name": "Adam Lucek",
+    "published_at": "2024-03-25T22:35:28",
+    "duration": null,
+    "view_count": 3960,
+    "thumbnail_url": "https://i.ytimg.com/vi/GZ4W1nRw_Ac/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=GZ4W1nRw_Ac",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "Model Evaluation",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Fine Tuning OpenAI Models Walkthrough - How and Why Providing context for fine-tuning LLMs and walking through why I chose to fine tune an instance of GPT-3.5-Turbo, my specific use case exploration, and all of the steps I took to get there!\n\nThe Code: https://github.com/ALucek/ft-openai-video\nOutpu"
+  },
+  {
+    "id": "VVKcSf6r3CM",
+    "title": "How To Fine-Tune ChatGPT For Beginners",
+    "description": "subscribe for more \u25ba https://bit.ly/3zlUmiS\nwatch me live \u25ba https://www.twitch.tv/itscorbinbrown\nfollow me on twitter \u25ba https://twitter.com/corbin_braun\nfollow me on instagram \u25ba https://www.instagram.com/corbin_braunlich\nfollow me on tiktok \u25ba https://www.tiktok.com/@corbin_braunlich\njoin our ai community (free) \u25ba https://www.skool.com/ai-for-your-business\njoin my software \u25ba https://bumpups.com/\nsteal my software \u25ba https://github.com/coffeefuelbump\nLINK TO EVERYTHING \u25ba https://linktr.ee/corbin_brown\n\nmy recording setup: https://www.amazon.com/shop/corbinbrown\n\n#corbin #openai #api  \n\nBecome a Builder + Perks \ud83d\udee0\ufe0f\nhttps://www.youtube.com/channel/UCJFMlSxcvlZg5yZUYJT0Pug/join\n\nFine-tuning OpenAI Documentation\nLearn how to customize a model for your application.\nhttps://platform.openai.com/docs/guides/fine-tuning/fine-tuning\n\nData preparation and analysis for chat model fine-tuning\nhttps://cookbook.openai.com/examples/chat_finetuning_data_prep",
+    "channel_name": "corbin",
+    "published_at": "2024-03-05T18:00:22",
+    "duration": null,
+    "view_count": 141667,
+    "thumbnail_url": "https://i.ytimg.com/vi/VVKcSf6r3CM/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=VVKcSf6r3CM",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Open Source LLMs",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How To Fine-Tune ChatGPT For Beginners subscribe for more \u25ba https://bit.ly/3zlUmiS\nwatch me live \u25ba https://www.twitch.tv/itscorbinbrown\nfollow me on twitter \u25ba https://twitter.com/corbin_braun\nfollow me on instagram \u25ba https://www.instagram.com/corbin_braunlich\nfollow me on tiktok \u25ba https://www.tiktok"
+  },
+  {
+    "id": "fjJOgb-E41w",
+    "title": "Attention mechanism: Overview",
+    "description": "This video introduces you to the attention mechanism, a powerful technique that allows neural networks to focus on specific parts of an input sequence. Attention is used to improve the performance of a variety of machine learning tasks, including machine translation, text summarization, and question answering.\n\nEnroll in this course on Google Cloud Skills Boost \u2192 https://goo.gle/436ZFPR\nView the Generative AI Learning path playlist \u2192 https://goo.gle/LearnGenAI\n\nSubscribe to Google Cloud Tech \u2192 https://goo.gle/GoogleCloudTech",
+    "channel_name": "Google Cloud Tech",
+    "published_at": "2023-06-05T18:21:12",
+    "duration": null,
+    "view_count": 239308,
+    "thumbnail_url": "https://i.ytimg.com/vi/fjJOgb-E41w/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=fjJOgb-E41w",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 3
+      },
+      {
+        "topic": "LLM Applications",
+        "mentions": 2
+      },
+      {
+        "topic": "Model Evaluation",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Attention mechanism: Overview This video introduces you to the attention mechanism, a powerful technique that allows neural networks to focus on specific parts of an input sequence. Attention is used to improve the performance of a variety of machine learning tasks, including machine translation, te"
   }
 ]

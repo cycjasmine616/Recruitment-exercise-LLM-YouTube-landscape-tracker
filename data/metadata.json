@@ -1,15 +1,25 @@
 {
-  "last_updated": "2026-05-26T16:12:48.297393",
-  "total_videos": 15,
-  "total_channels": 7,
+  "last_updated": "2026-05-26T16:12:59.557007",
+  "total_videos": 25,
+  "total_channels": 17,
   "channels": [
-    "Dave's Garage",
-    "Warp",
-    "Lex Fridman",
-    "Kevin Stratvert",
+    "David Ondrej",
+    "Gal Lahat",
+    "Google Cloud Tech",
     "Ken Jee",
+    "Warp",
     "antigravkids",
-    "Curious Steve"
+    "Lex Fridman",
+    "Adam Lucek",
+    "IBM Technology",
+    "Kevin Stratvert",
+    "3Blue1Brown",
+    "Curious Steve",
+    "corbin",
+    "ByteByteGo",
+    "Under The Hood",
+    "Nick Cornelius",
+    "Dave's Garage"
   ],
   "total_relations": 0,
   "videos_with_transcripts": 0
