@@ -3,79 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LLM YouTube Tracker</title>
+    <title>LLM YouTube Landscape Tracker</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .header { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 30px; border-radius: 10px; text-align: center; margin-bottom: 20px; }
-        .header h1 { margin: 0 0 10px 0; }
-        .stats { display: flex; justify-content: center; gap: 20px; margin-top: 15px; }
-        .stat { background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 8px; }
-        .stat-value { font-size: 24px; font-weight: bold; }
-        table { width: 100%; background: white; border-collapse: collapse; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
-        th { background: #333; color: white; padding: 12px; text-align: left; }
-        td { padding: 10px 12px; border-bottom: 1px solid #eee; }
-        tr:hover { background: #f8f8f8; }
-        .tag { display: inline-block; padding: 3px 8px; background: #e8e8e8; border-radius: 10px; font-size: 11px; margin: 2px; }
-        .footer { text-align: center; padding: 20px; color: #888; font-size: 14px; }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#f0f2f5; padding:20px; color:#333; }
+        .container { max-width:1400px; margin:0 auto; }
+        .header { background:linear-gradient(135deg,#1a1a2e,#16213e); color:white; padding:30px; border-radius:12px; margin-bottom:25px; text-align:center; }
+        .header h1 { font-size:2em; margin-bottom:8px; }
+        .header p { opacity:0.9; }
+        .stats { display:flex; justify-content:center; gap:25px; margin-top:20px; flex-wrap:wrap; }
+        .stat { background:rgba(255,255,255,0.12); padding:15px 25px; border-radius:10px; }
+        .stat-num { font-size:30px; font-weight:bold; }
+        .stat-label { font-size:13px; opacity:0.85; margin-top:3px; }
+        
+        .section-title { font-size:1.4em; margin:30px 0 15px 0; color:#1a1a2e; }
+        
+        table { width:100%; background:white; border-collapse:collapse; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.08); margin-bottom:30px; }
+        th { background:#1a1a2e; color:white; padding:14px 15px; text-align:left; font-size:13px; font-weight:600; }
+        td { padding:12px 15px; border-bottom:1px solid #eee; font-size:13px; vertical-align:top; }
+        tr:hover { background:#f8f9ff; }
+        
+        .channel-badge { display:inline-block; padding:4px 12px; background:#e8eaf6; color:#3949ab; border-radius:12px; font-weight:600; font-size:12px; }
+        .topic-tag { display:inline-block; padding:3px 9px; background:#e8f5e9; color:#2e7d32; border-radius:10px; font-size:11px; margin:2px; }
+        .quote { font-size:12px; color:#555; font-style:italic; line-height:1.5; }
+        .quote::before { content:'"'; }
+        .quote::after { content:'"'; }
+        
+        .relations-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(350px,1fr)); gap:15px; }
+        .relation-card { background:white; padding:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); border-left:4px solid #667eea; }
+        .relation-card h3 { color:#1a1a2e; margin-bottom:8px; font-size:16px; }
+        .relation-score { display:inline-block; padding:4px 12px; background:#667eea; color:white; border-radius:15px; font-size:13px; font-weight:600; }
+        .common-topics { margin-top:8px; }
+        
+        .transcript-badge { display:inline-block; padding:2px 8px; border-radius:8px; font-size:11px; }
+        .has-transcript { background:#e8f5e9; color:#2e7d32; }
+        .no-transcript { background:#fff3e0; color:#e65100; }
+        
+        @media (max-width:768px) {
+            table { font-size:11px; }
+            th, td { padding:8px 10px; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1> LLM YouTube Landscape Tracker</h1>
-            <p>Tracking what creators say about Large Language Models</p>
+            <p>What popular creators actually say about Large Language Models</p>
             <div class="stats">
                 <div class="stat">
-                    <div class="stat-value">3</div>
-                    <div>Videos Analyzed</div>
+                    <div class="stat-num">25</div>
+                    <div class="stat-label">Videos Analyzed</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">19:43</div>
-                    <div>Last Updated (UTC)</div>
+                    <div class="stat-num">17</div>
+                    <div class="stat-label">Channels Tracked</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">0</div>
+                    <div class="stat-label">With Transcripts</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-num">0</div>
+                    <div class="stat-label">Channel Relations</div>
                 </div>
             </div>
+            <p style="margin-top:15px;font-size:12px;opacity:0.75;"> Last updated: 2026-05-26T15:16:48 UTC</p>
         </div>
         
-        <h2> Latest Videos</h2>
+        <h2 class="section-title"> Video Analysis: What Creators Say About LLMs</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Channel</th>
-                    <th>Video Title</th>
-                    <th>LLM Topics</th>
-                    <th>Analysis</th>
+                    <th style="width:12%;">Channel</th>
+                    <th style="width:20%;">Video</th>
+                    <th style="width:15%;">LLM Topics Covered</th>
+                    <th style="width:38%;">What They Said About LLMs</th>
+                    <th style="width:15%;">Transcript</th>
                 </tr>
             </thead>
             <tbody>
                 
             <tr>
-                <td><strong>Lex Fridman</strong></td>
-                <td><a href="https://www.youtube.com/watch?v=nepKKz-MzFM" target="_blank" style="color:#333;text-decoration:none;">FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Pod</a></td>
-                <td><span class="tag">Open Source LLMs</span></td>
-                <td style="font-size:12px;color:#666;">Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, ...</td>
+                <td><span class="channel-badge">Lex Fridman</span></td>
+                <td><a href="https://www.youtube.com/watch?v=nepKKz-MzFM" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Pod</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Pod Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor,...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
             </tr>
         
             <tr>
-                <td><strong>Lex Fridman</strong></td>
-                <td><a href="https://www.youtube.com/watch?v=iKx3gAODybU" target="_blank" style="color:#333;text-decoration:none;">Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age | Lex Fri</a></td>
-                <td>-</td>
-                <td style="font-size:12px;color:#666;">Lars Brownworth is a historian, teacher, podcaster, and author specializing in Viking history, medieval Europe, and the ...</td>
+                <td><span class="channel-badge">Lex Fridman</span></td>
+                <td><a href="https://www.youtube.com/watch?v=iKx3gAODybU" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age | Lex Fri</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age | Lex Fri Lars Brownworth is a historian, teacher, podcaster, and author specializing in Viking history, medieval Europe, and the...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
             </tr>
         
             <tr>
-                <td><strong>Lex Fridman</strong></td>
-                <td><a href="https://www.youtube.com/watch?v=vif8NQcjVf0" target="_blank" style="color:#333;text-decoration:none;">Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman</a></td>
-                <td>-</td>
-                <td style="font-size:12px;color:#666;">Jensen Huang is the co-founder and CEO of NVIDIA, the world's most valuable company and the engine powering the AI compu...</td>
+                <td><span class="channel-badge">Lex Fridman</span></td>
+                <td><a href="https://www.youtube.com/watch?v=vif8NQcjVf0" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman Jensen Huang is the co-founder and CEO of NVIDIA, the world's most valuable company and the engine powering the AI comp...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Lex Fridman</span></td>
+                <td><a href="https://www.youtube.com/watch?v=H9rF1CSSh-w" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming | Lex </a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming | Lex  Jeff Kaplan is a legendary Blizzard lead game designer of World of Warcraft and Overwatch, now preparing to launch a ne...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Lex Fridman</span></td>
+                <td><a href="https://www.youtube.com/watch?v=SHlrUAkkWI0" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI</a></td>
+                <td><span class="topic-tag">Model Training</span></td>
+                <td style="font-size:12px;">Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI Training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me 🙏 Fu...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Ken Jee</span></td>
+                <td><a href="https://www.youtube.com/watch?v=3CRBW-0PuqA" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">"Radicalized" About AI.</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">"Radicalized" About AI. I explain my transformation from AI skeptic to believer. In this video I include five key reasons why I believes AI disruption is inevitable. Drawing on insights from friends a...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Ken Jee</span></td>
+                <td><a href="https://www.youtube.com/watch?v=KZnmtGMCbH8" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">AI Will Take My Job. Here's 5 Things I'm Doing About It</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">AI Will Take My Job. Here's 5 Things I'm Doing About It In this video I outline my personal strategy for thriving in an AI-dominated future. I shares five actionable approaches: starting AI-powered bu...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">ByteByteGo</span></td>
+                <td><a href="https://www.youtube.com/watch?v=avjX3QrYkls" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Transformers Step-by-Step Explained (Attention Is All You Need)</a></td>
+                <td><span class="topic-tag">Transformer Architecture</span></td>
+                <td style="font-size:12px;">Transformers Step-by-Step Explained (Attention Is All You Need) Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n
+--
+We just launched the all-in-one t...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Ken Jee</span></td>
+                <td><a href="https://www.youtube.com/watch?v=uokE-FiDUVw" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">How I Built a Profitable AI Product in 43 Days</a></td>
+                <td><span class="topic-tag">AI Agents</span></td>
+                <td style="font-size:12px;">How I Built a Profitable AI Product in 43 Days I built my SaaS Newsletter Hero in 43 days in order to prepare for the massive AI disruption I see coming. This was my process, the lows and the highs. 
+...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Ken Jee</span></td>
+                <td><a href="https://www.youtube.com/watch?v=S2Cm5ogG3Ps" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Why I’m Building a SaaS (before AI takes over)</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">Why I’m Building a SaaS (before AI takes over) I'm starting over. I'm building a SaaS before AI takes over. 
+
+I believe we have a 1.5 - 2 year window where technical skills are still a valuable advant...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">David Ondrej</span></td>
+                <td><a href="https://www.youtube.com/watch?v=g80Q1sVtikE" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Fine-tune your own LLM in 13 minutes, here’s how</a></td>
+                <td><span class="topic-tag">Model Training</span> <span class="topic-tag">AI Agents</span></td>
+                <td style="font-size:12px;">Fine-tune your own LLM in 13 minutes, here’s how Wanna master AI coding? Go here: https://www.skool.com/new-society
+
+Follow me on Instagram - https://www.instagram.com/davidondrej1/
+Follow me on Twitt...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">antigravkids</span></td>
+                <td><a href="https://www.youtube.com/watch?v=vK_qvUeuNRE" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide</a></td>
+                <td><span class="topic-tag">Multimodal</span></td>
+                <td style="font-size:12px;">How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide Learn how to easily generate AI transcripts for YouTube videos using OpenAI’s Whisper API and DaVinci Resolve. In this ...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Gal Lahat</span></td>
+                <td><a href="https://www.youtube.com/watch?v=RNF0FvRjGZk" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">I Visualised Attention in Transformers</a></td>
+                <td><span class="topic-tag">Transformer Architecture</span> <span class="topic-tag">Multimodal</span></td>
+                <td style="font-size:12px;">I Visualised Attention in Transformers To try everything Brilliant has to offer—free—for a full 30 days, visit https://brilliant.org/GalLahat/ . You’ll also get 20% off an annual premium subscription....</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Under The Hood</span></td>
+                <td><a href="https://www.youtube.com/watch?v=KMHkbXzHn7s" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">How Attention Mechanism Works in Transformer Architecture</a></td>
+                <td><span class="topic-tag">Transformer Architecture</span></td>
+                <td style="font-size:12px;">How Attention Mechanism Works in Transformer Architecture #llm #embedding #gpt 
+The attention mechanism in transformers is a key component that allows models to focus on different parts of an input se...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Curious Steve</span></td>
+                <td><a href="https://www.youtube.com/watch?v=WoCtFUZXVsY" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">How LLM Works (Explained) | The Ultimate Guide To LLM | Day 1:Tokenization 🔥 #sh</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">How LLM Works (Explained) | The Ultimate Guide To LLM | Day 1:Tokenization 🔥 #sh 🚀 **Master Large Language Models (LLMs) in Minutes!** 🚀  
+Confused about ChatGPT, Gemini, or DeepSeek R1? This **ultima...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Kevin Stratvert</span></td>
+                <td><a href="https://www.youtube.com/watch?v=ygUEbCpOOLg" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop</a></td>
+                <td><span class="topic-tag">Model Evaluation</span></td>
+                <td style="font-size:12px;">LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop In this video, I'll show you how to run large language models (LLMs) right on your laptop using LM Studio! LM Studio uses GPU offload...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Dave's Garage</span></td>
+                <td><a href="https://www.youtube.com/watch?v=fFgyOucIFuk" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Feed Your OWN Documents to a Local Large Language Model!</a></td>
+                <td><span class="topic-tag">Model Training</span> <span class="topic-tag">RAG Systems</span></td>
+                <td style="font-size:12px;">Feed Your OWN Documents to a Local Large Language Model! Dave explains how retraining, RAG (retrieval augmented generation) and context documents serve to expand the functionality of existing models, ...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Nick Cornelius</span></td>
+                <td><a href="https://www.youtube.com/watch?v=FrshQV0PRq4" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Fine-tuning ChatGPT made EASY (No Coding Required)</a></td>
+                <td><span class="topic-tag">Model Training</span></td>
+                <td style="font-size:12px;">Fine-tuning ChatGPT made EASY (No Coding Required) Ready to scale with fine-tuned AI models? Book a call here: https://www.simpliscale.io
+
+We'll breaking down the exact steps we use to fine-tune AI mo...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Ken Jee</span></td>
+                <td><a href="https://www.youtube.com/watch?v=lqOrULJvYXg" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">So You Think You Can ANALYZE? (Data Content Creator Hackathon)</a></td>
+                <td>General AI</td>
+                <td style="font-size:12px;">So You Think You Can ANALYZE? (Data Content Creator Hackathon) Watch your favorite data science content creators compete for a piece of history. They will either prove their skills in front of the wor...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Warp</span></td>
+                <td><a href="https://www.youtube.com/watch?v=pxhkDaKzBaY" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">EASIEST Way to Fine-Tune a LLM and Use It With Ollama</a></td>
+                <td><span class="topic-tag">Model Training</span> <span class="topic-tag">Open Source LLMs</span></td>
+                <td style="font-size:12px;">EASIEST Way to Fine-Tune a LLM and Use It With Ollama In this video, we go over how you can fine-tune Llama 3.1 and run it locally on your machine using Ollama! We use the open source repository "Unsl...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">IBM Technology</span></td>
+                <td><a href="https://www.youtube.com/watch?v=00Q0G84kq3M" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">RAG vs. Fine Tuning</a></td>
+                <td><span class="topic-tag">Model Training</span> <span class="topic-tag">RAG Systems</span></td>
+                <td style="font-size:12px;">RAG vs. Fine Tuning Get the guide to GAI, learn more → https://ibm.biz/BdKTbF
+Learn more about the technology → https://ibm.biz/BdKTbX
+
+Join Cedric Clyburn as he explores the differences and use cases...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">3Blue1Brown</span></td>
+                <td><a href="https://www.youtube.com/watch?v=eMlx5fFNoYc" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Attention in transformers, step-by-step | Deep Learning Chapter 6</a></td>
+                <td><span class="topic-tag">Transformer Architecture</span></td>
+                <td style="font-size:12px;">Attention in transformers, step-by-step | Deep Learning Chapter 6 Demystifying attention, the key mechanism inside transformers and LLMs.
+Instead of sponsored ad reads, these lessons are funded direct...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Adam Lucek</span></td>
+                <td><a href="https://www.youtube.com/watch?v=GZ4W1nRw_Ac" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Fine Tuning OpenAI Models Walkthrough - How and Why</a></td>
+                <td><span class="topic-tag">Model Training</span> <span class="topic-tag">Model Evaluation</span></td>
+                <td style="font-size:12px;">Fine Tuning OpenAI Models Walkthrough - How and Why Providing context for fine-tuning LLMs and walking through why I chose to fine tune an instance of GPT-3.5-Turbo, my specific use case exploration, ...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">corbin</span></td>
+                <td><a href="https://www.youtube.com/watch?v=VVKcSf6r3CM" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">How To Fine-Tune ChatGPT For Beginners</a></td>
+                <td><span class="topic-tag">Open Source LLMs</span></td>
+                <td style="font-size:12px;">How To Fine-Tune ChatGPT For Beginners subscribe for more ► https://bit.ly/3zlUmiS
+watch me live ► https://www.twitch.tv/itscorbinbrown
+follow me on twitter ► https://twitter.com/corbin_braun
+follow m...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Google Cloud Tech</span></td>
+                <td><a href="https://www.youtube.com/watch?v=fjJOgb-E41w" target="_blank" style="color:#1a73e8;text-decoration:none;font-weight:500;">Attention mechanism: Overview</a></td>
+                <td><span class="topic-tag">Transformer Architecture</span> <span class="topic-tag">LLM Applications</span> <span class="topic-tag">Model Evaluation</span></td>
+                <td style="font-size:12px;">Attention mechanism: Overview This video introduces you to the attention mechanism, a powerful technique that allows neural networks to focus on specific parts of an input sequence. Attention is used ...</td>
+                <td><span class="transcript-badge no-transcript">Description only</span></td>
             </tr>
         
             </tbody>
         </table>
         
-        <div class="footer">
-            <p>Auto-updated every 12 hours via GitHub Actions</p>
+        <h2 class="section-title">🔗 How Channels Relate on LLM Themes</h2>
+        <div class="relations-grid">
+            <p style="grid-column:1/-1;text-align:center;padding:30px;color:#888;">Channel relationships will appear after analyzing multiple channels...</p>
         </div>
+        
+        <p style="text-align:center;margin-top:40px;color:#888;font-size:13px;">
+             Auto-updated via GitHub Actions | Analyzed from video transcripts
+        </p>
     </div>
 </body>
 </html>

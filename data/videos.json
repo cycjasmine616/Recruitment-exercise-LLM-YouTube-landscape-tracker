@@ -1,63 +1,564 @@
 [
   {
     "id": "nepKKz-MzFM",
-    "title": "FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Pod",
+    "title": "FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Podcast #496",
     "description": "Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, codec engineer, and the person behind the now-infamous FFmpeg account on X.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep496-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcript:*\nhttps://lexfridman.com/ffmpeg-transcript\n\n*CONTACT LEX:*\n*Feedback* - give feedback to Lex: https://lexfridman.com/survey\n*AMA* - submit questions, videos or call-in: https://lexfridman.com/ama\n*Hiring* - join our team: https://lexfridman.com/hiring\n*Other* - other ways to get in touch: https://lexfridman.com/contact\n\n*EPISODE LINKS:*\nFFmpeg on X: https://x.com/FFmpeg\nFFmpeg: https://ffmpeg.org/\nVideoLAN (VLC): https://www.videolan.org/\nVideoLAN on X: https://x.com/videolan\nJean-Baptiste's Website: https://jbkempf.com/\nJean-Baptiste's LinkedIn: https://www.linkedin.com/in/jbkempf/\nJean-Baptiste's GitHub: https://github.com/jbkempf\nKieran's X: https://x.com/kierank_\nKieran's LinkedIn: https://bit.ly/3OORhmC\nKieran's GitHub: https://github.com/kierank\n\n*SPONSORS:*\nTo support this podcast, check out our sponsors & get discounts:\n*Larridin:* Measure AI adoption in your business.\nGo to https://lexfridman.com/s/larridin-ep496-sb\n*Blitzy:* AI agent for large enterprise codebases.\nGo to https://lexfridman.com/s/blitzy-ep496-sb\n*BetterHelp:* Online therapy and counseling.\nGo to https://lexfridman.com/s/betterhelp-ep496-sb\n*Fin:* AI agent for customer service.\nGo to https://lexfridman.com/s/fin-ep496-sb\n*LMNT:* Zero-sugar electrolyte drink mix.\nGo to https://lexfridman.com/s/lmnt-ep496-sb\n*Perplexity:* AI-powered answer engine.\nGo to https://lexfridman.com/s/perplexity-ep496-sb\n\n*OUTLINE:*\n0:00 - Episode highlight\n2:17 - Introduction\n5:35 - Weirdest things VLC opens\n9:59 - How video playback works\n19:20 - Video codecs and containers\n30:07 - FFmpeg explained\n51:07 - Linus Torvalds\n55:46 - Turning down millions to keep VLC ad-free\n1:10:04 - FFmpeg & Google drama\n1:29:18 - FFmpeg developers\n1:35:55 - VLC and FFmpeg\n1:40:29 - History of FFmpeg\n1:43:46 - Reverse engineering codecs\n1:57:01 - FFmpeg testing\n2:01:08 - Assembly code (handwritten)\n2:25:26 - Rust programming language\n2:34:42 - FFmpeg and Libav fork\n2:43:04 - Open source burnout\n2:50:51 - x264 and internet video\n3:04:07 - Video compression basics\n3:11:04 - CIA and fake VLC\n3:21:39 - Ultra low latency streaming\n3:39:07 - AV2 codec and video patents\n3:48:59 - VLC backdoors\n3:59:14 - Video archiving\n4:05:51 - Future of FFmpeg and VLC\n\n*PODCAST LINKS:*\n- Podcast Website: https://lexfridman.com/podcast\n- Apple Podcasts: https://apple.co/2lwqZIr\n- Spotify: https://spoti.fi/2nEwCF8\n- RSS: https://lexfridman.com/feed/podcast/\n- Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4\n- Clips Channel: https://www.youtube.com/lexclips\n\n*SOCIAL LINKS:*\n- X: https://x.com/lexfridman\n- Instagram: https://instagram.com/lexfridman\n- TikTok: https://tiktok.com/@lexfridman\n- LinkedIn: https://linkedin.com/in/lexfridman\n- Facebook: https://facebook.com/lexfridman\n- Patreon: https://patreon.com/lexfridman\n- Telegram: https://t.me/lexfridman\n- Reddit: https://reddit.com/r/lexfridman",
     "channel_name": "Lex Fridman",
     "published_at": "2026-05-06T22:03:16",
     "duration": null,
-    "view_count": 261143,
-    "thumbnail_url": "https://i.ytimg.com/vi/nepKKz-MzFM/maxresdefault.jpg",
+    "view_count": 263798,
+    "thumbnail_url": "https://i.ytimg.com/vi/nepKKz-MzFM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=nepKKz-MzFM",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Pod Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, codec engineer, and the person behind the now-infamous FFmpeg account on X.\nThank you for listening"
+  },
+  {
+    "id": "iKx3gAODybU",
+    "title": "Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age | Lex Fridman Podcast #495",
+    "description": "Lars Brownworth is a historian, teacher, podcaster, and author specializing in Viking history, medieval Europe, and the Byzantine Empire.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep495-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcript:*\nhttps://lexfridman.com/lars-brownworth-transcript\n\n*CONTACT LEX:*\n*Feedback* - give feedback to Lex: https://lexfridman.com/survey\n*AMA* - submit questions, videos or call-in: https://lexfridman.com/ama\n*Hiring* - join our team: https://lexfridman.com/hiring\n*Other* - other ways to get in touch: https://lexfridman.com/contact\n\n*EPISODE LINKS:*\nLars's Website: https://larsbrownworth.com/\nThe Sea Wolves (book): https://www.amazon.com/Sea-Wolves-History-Vikings/dp/1909979120\nLars's Books: https://amzn.to/4sHY0xw\n12 Byzantine Rulers Podcast : https://12byzantinerulers.com/\nNorman Centuries Podcast: https://apple.co/4sgSxNi\n\n*SPONSORS:*\nTo support this podcast, check out our sponsors & get discounts:\n*Larridin:* Measure AI adoption in your business.\nGo to https://lexfridman.com/s/larridin-ep495-sb\n*BetterHelp:* Online therapy and counseling.\nGo to https://lexfridman.com/s/betterhelp-ep495-sb\n*LMNT:* Zero-sugar electrolyte drink mix.\nGo to https://lexfridman.com/s/lmnt-ep495-sb\n*Fin:* AI agent for customer service.\nGo to https://lexfridman.com/s/fin-ep495-sb\n*Shopify:* Sell stuff online.\nGo to https://lexfridman.com/s/shopify-ep495-sb\n*Perplexity:* AI-powered answer engine.\nGo to https://lexfridman.com/s/perplexity-ep495-sb\n\n*OUTLINE:*\n0:00 - Episode highlight\n1:17 - Introduction\n2:37 - The start of the Viking Age\n12:30 - Viking military strategy, tactics & technology\n26:13 - Ragnar Lothbrok\n35:40 - The Great Heathen Army\n40:23 - Rollo and Normandy\n50:34 - Viking religion and Valhalla\n1:01:06 - Viking explorers\n1:06:13 - Vikings in North America\n1:19:35 - Vikings in the East\n1:39:14 - Byzantine Empire\n1:47:57 - History and human nature\n\n*PODCAST LINKS:*\n- Podcast Website: https://lexfridman.com/podcast\n- Apple Podcasts: https://apple.co/2lwqZIr\n- Spotify: https://spoti.fi/2nEwCF8\n- RSS: https://lexfridman.com/feed/podcast/\n- Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4\n- Clips Channel: https://www.youtube.com/lexclips\n\n*SOCIAL LINKS:*\n- X: https://x.com/lexfridman\n- Instagram: https://instagram.com/lexfridman\n- TikTok: https://tiktok.com/@lexfridman\n- LinkedIn: https://linkedin.com/in/lexfridman\n- Facebook: https://facebook.com/lexfridman\n- Patreon: https://patreon.com/lexfridman\n- Telegram: https://t.me/lexfridman\n- Reddit: https://reddit.com/r/lexfridman",
+    "channel_name": "Lex Fridman",
+    "published_at": "2026-04-09T17:35:20",
+    "duration": null,
+    "view_count": 989138,
+    "thumbnail_url": "https://i.ytimg.com/vi/iKx3gAODybU/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=iKx3gAODybU",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age | Lex Fri Lars Brownworth is a historian, teacher, podcaster, and author specializing in Viking history, medieval Europe, and the Byzantine Empire.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors"
+  },
+  {
+    "id": "vif8NQcjVf0",
+    "title": "Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman Podcast #494",
+    "description": "Jensen Huang is the co-founder and CEO of NVIDIA, the world's most valuable company and the engine powering the AI computing revolution.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep494-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcript:*\nhttps://lexfridman.com/jensen-huang-transcript\n\n*CONTACT LEX:*\n*Feedback* - give feedback to Lex: https://lexfridman.com/survey\n*AMA* - submit questions, videos or call-in: https://lexfridman.com/ama\n*Hiring* - join our team: https://lexfridman.com/hiring\n*Other* - other ways to get in touch: https://lexfridman.com/contact\n\n*EPISODE LINKS:*\nNVIDIA: https://nvidia.com\nNVIDIA on X: https://x.com/nvidia\nNVIDIA AI on X: https://x.com/NVIDIAAI\nNVIDIA on YouTube: https://youtube.com/@NVIDIA\nNVIDIA on Instagram: https://www.instagram.com/nvidia/\nNVIDIA on LinkedIn: https://www.linkedin.com/company/nvidia/\nNVIDIA on Facebook: https://www.facebook.com/NVIDIA/\nNVIDIA on GitHub: https://github.com/NVIDIA\nNemotron: https://developer.nvidia.com/nemotron\n\n*SPONSORS:*\nTo support this podcast, check out our sponsors & get discounts:\n*Perplexity:* AI-powered answer engine.\nGo to https://lexfridman.com/s/perplexity-ep494-sb\n*Shopify:* Sell stuff online.\nGo to https://lexfridman.com/s/shopify-ep494-sb\n*LMNT:* Zero-sugar electrolyte drink mix.\nGo to https://lexfridman.com/s/lmnt-ep494-sb\n*Fin:* AI agent for customer service.\nGo to https://lexfridman.com/s/fin-ep494-sb\n*Quo:* Phone system (calls, texts, contacts) for businesses.\nGo to https://lexfridman.com/s/quo-ep494-sb\n\n*OUTLINE:*\n0:00 - Introduction\n0:33 - Extreme co-design and rack-scale engineering\n3:18 - How Jensen runs NVIDIA\n22:40 - AI scaling laws\n37:40 - Biggest blockers to AI scaling laws\n39:23 - Supply chain\n41:18 - Memory\n47:24 - Power\n52:43 - Elon and Colossus\n56:11 - Jensen's approach to engineering and leadership\n1:01:37 - China\n1:09:50 - TSMC and Taiwan\n1:15:04 - NVIDIA's moat\n1:20:41 - AI data centers in space\n1:24:30 - Will NVIDIA be worth $10 trillion?\n1:34:39 - Leadership under pressure\n1:48:25 - Video games\n1:55:16 - AGI timeline\n1:57:29 - Future of programming\n2:11:01 - Consciousness\n2:17:22 - Mortality\n\n*PODCAST LINKS:*\n- Podcast Website: https://lexfridman.com/podcast\n- Apple Podcasts: https://apple.co/2lwqZIr\n- Spotify: https://spoti.fi/2nEwCF8\n- RSS: https://lexfridman.com/feed/podcast/\n- Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4\n- Clips Channel: https://www.youtube.com/lexclips\n\n*SOCIAL LINKS:*\n- X: https://x.com/lexfridman\n- Instagram: https://instagram.com/lexfridman\n- TikTok: https://tiktok.com/@lexfridman\n- LinkedIn: https://linkedin.com/in/lexfridman\n- Facebook: https://facebook.com/lexfridman\n- Patreon: https://patreon.com/lexfridman\n- Telegram: https://t.me/lexfridman\n- Reddit: https://reddit.com/r/lexfridman",
+    "channel_name": "Lex Fridman",
+    "published_at": "2026-03-23T16:24:14",
+    "duration": null,
+    "view_count": 1161898,
+    "thumbnail_url": "https://i.ytimg.com/vi/vif8NQcjVf0/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=vif8NQcjVf0",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman Jensen Huang is the co-founder and CEO of NVIDIA, the world's most valuable company and the engine powering the AI computing revolution.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/"
+  },
+  {
+    "id": "H9rF1CSSh-w",
+    "title": "Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming | Lex Fridman Podcast #493",
+    "description": "Jeff Kaplan is a legendary Blizzard lead game designer of World of Warcraft and Overwatch, now preparing to launch a new game, The Legend of California, from his new studio Kintsugiyama - available to wishlist on Steam today, with alpha later in March.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep493-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcript:*\nhttps://lexfridman.com/jeff-kaplan-transcript\n\n*CONTACT LEX:*\n*Feedback* - give feedback to Lex: https://lexfridman.com/survey\n*AMA* - submit questions, videos or call-in: https://lexfridman.com/ama\n*Hiring* - join our team: https://lexfridman.com/hiring\n*Other* - other ways to get in touch: https://lexfridman.com/contact\n\n*EPISODE LINKS:*\nThe Legend of California (Steam Page): https://store.steampowered.com/app/2550530/The_Legend_of_California\nJeff's Game Studio: https://www.kintsugiyama.com/\n\n*SPONSORS:*\nTo support this podcast, check out our sponsors & get discounts:\n*Fin:* AI agent for customer service.\nGo to https://lexfridman.com/s/fin-ep493-sb\n*Blitzy:* AI agent for large enterprise codebases.\nGo to https://lexfridman.com/s/blitzy-ep493-sb\n*BetterHelp:* Online therapy and counseling.\nGo to https://lexfridman.com/s/betterhelp-ep493-sb\n*Shopify:* Sell stuff online.\nGo to https://lexfridman.com/s/shopify-ep493-sb\n*CodeRabbit:* AI-powered code reviews.\nGo to https://lexfridman.com/s/coderabbit-ep493-sb\n*Perplexity:* AI-powered answer engine.\nGo to https://lexfridman.com/s/perplexity-ep493-sb\n\n*OUTLINE:*\n0:00 - Episode highlight\n1:27 - Introduction\n4:07 - Early games: Pac-Man, Zork, Doom, Quake\n18:33 - Writing career - 170 rejection letters\n34:06 - EverQuest obsession\n47:04 - Getting hired at Blizzard\n1:02:32 - Lowest point in Jeff's life\n1:08:37 - One of Us\n1:12:54 - Early Blizzard culture\n1:32:36 - Building World of Warcraft\n1:50:20 - How WoW changed video games\n2:07:42 - Single-player vs Multi-player\n2:28:35 - How Blizzard made great video games\n2:54:25 - Online toxicity\n3:01:59 - Why Titan failed\n3:19:09 - Overwatch in six weeks\n3:46:07 - Best Overwatch heroes\n3:54:37 - The challenge of matchmaking\n3:58:01 - Rust\n4:08:22 - Why Jeff left Blizzard\n4:30:35 - Diablo IV\n4:32:03 - Getting back to making video games\n4:40:59 - The Legend of California\n4:54:44 - Greatest video game of all time\n5:02:51 - AI and future of video games\n\n*PODCAST LINKS:*\n- Podcast Website: https://lexfridman.com/podcast\n- Apple Podcasts: https://apple.co/2lwqZIr\n- Spotify: https://spoti.fi/2nEwCF8\n- RSS: https://lexfridman.com/feed/podcast/\n- Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4\n- Clips Channel: https://www.youtube.com/lexclips\n\n*SOCIAL LINKS:*\n- X: https://x.com/lexfridman\n- Instagram: https://instagram.com/lexfridman\n- TikTok: https://tiktok.com/@lexfridman\n- LinkedIn: https://linkedin.com/in/lexfridman\n- Facebook: https://facebook.com/lexfridman\n- Patreon: https://patreon.com/lexfridman\n- Telegram: https://t.me/lexfridman\n- Reddit: https://reddit.com/r/lexfridman",
+    "channel_name": "Lex Fridman",
+    "published_at": "2026-03-11T20:21:39",
+    "duration": null,
+    "view_count": 876898,
+    "thumbnail_url": "https://i.ytimg.com/vi/H9rF1CSSh-w/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=H9rF1CSSh-w",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Jeff Kaplan: World of Warcraft, Overwatch, Blizzard, and Future of Gaming | Lex  Jeff Kaplan is a legendary Blizzard lead game designer of World of Warcraft and Overwatch, now preparing to launch a new game, The Legend of California, from his new studio Kintsugiyama - available to wishlist on Steam "
+  },
+  {
+    "id": "SHlrUAkkWI0",
+    "title": "Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI",
+    "description": "Training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me \ud83d\ude4f Full video is on YouTube.",
+    "channel_name": "Lex Fridman",
+    "published_at": "2026-03-03T12:30:21",
+    "duration": null,
+    "view_count": 49867,
+    "thumbnail_url": "https://i.ytimg.com/vi/SHlrUAkkWI0/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=SHlrUAkkWI0",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Lex trains w/ Khabib Nurmagomedov | Exclusive Footage at UFC PI Training with Khabib Nurmagomedov, one of the greatest fighters of all time and a great human being. This was truly an honor for me \ud83d\ude4f Full video is on YouTube."
+  },
+  {
+    "id": "3CRBW-0PuqA",
+    "title": "\"Radicalized\" About AI.",
+    "description": "I explain my transformation from AI skeptic to believer. In this video I include five key reasons why I believes AI disruption is inevitable. Drawing on insights from friends at major tech companies and massive investment data, I argue that the writing is on the wall for radical change and share my preparation strategy.\n\nIf you want to grow a newsletter faster, try Newsletter Hero AI. Use code BETA45 for more than 50 percent off the monthly plan https://www.newsletterhero.ai/ \n\nKey Insights\n\nTech insiders know something we don't - People working at the biggest AI companies are privately preparing for massive disruption while publicly staying quiet to protect their jobs and income.\n\nHistorical patterns repeat - AI mirrors the electricity revolution: impressive but impractical early stages followed by complete societal reorganization once the \"light bulb moment\" hits.\n\nThe investment scale is unprecedented - $1.6 trillion invested in AI since 2013, with $5.2 trillion more needed by 2030 for data centers alone.\n\nZero-cost preparation strategy - Preparing for AI disruption through building businesses, creating content, and developing resilient skills has no downside even if the timeline is wrong.\n\n\n\ud83d\udc24My Twitter - https://twitter.com/KenJee_DS\n\ud83d\udc54 LinkedIn -  https://www.linkedin.com/in/kenjee/",
+    "channel_name": "Ken Jee",
+    "published_at": "2026-01-05T13:00:13",
+    "duration": null,
+    "view_count": 4790,
+    "thumbnail_url": "https://i.ytimg.com/vi/3CRBW-0PuqA/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=3CRBW-0PuqA",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "\"Radicalized\" About AI. I explain my transformation from AI skeptic to believer. In this video I include five key reasons why I believes AI disruption is inevitable. Drawing on insights from friends at major tech companies and massive investment data, I argue that the writing is on the wall for radi"
+  },
+  {
+    "id": "KZnmtGMCbH8",
+    "title": "AI Will Take My Job. Here's 5 Things I'm Doing About It",
+    "description": "In this video I outline my personal strategy for thriving in an AI-dominated future. I shares five actionable approaches: starting AI-powered businesses, building trust through content creation, choosing AI-resistant industries, investing in AI infrastructure, and mastering AI tools to stay competitive in a rapidly changing landscape.\n\n01:30 Start an AI-Powered Business \n04:45 Create Content to Build Trust \n06:30 Why newsletters specifically\n08:15 Choose AI-Resistant Industries \n10:30 Invest in AI Infrastructure \n11:45 Buy Existing Local Businesses \n12:45 BONUS Strategy\n\nIf you want to grow a newsletter faster, try Newsletter Hero AI. Use code BETA45 for more than 50 percent off the monthly plan https://www.newsletterhero.ai/ \n\nJoin my Newsletter: https://ai-survival-guide.beehiiv.com/\n\ud83d\udc24My Twitter - https://twitter.com/KenJee_DS\n\ud83d\udc54 LinkedIn -  https://www.linkedin.com/in/kenjee/",
+    "channel_name": "Ken Jee",
+    "published_at": "2025-12-18T16:33:17",
+    "duration": null,
+    "view_count": 2331,
+    "thumbnail_url": "https://i.ytimg.com/vi/KZnmtGMCbH8/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=KZnmtGMCbH8",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "AI Will Take My Job. Here's 5 Things I'm Doing About It In this video I outline my personal strategy for thriving in an AI-dominated future. I shares five actionable approaches: starting AI-powered businesses, building trust through content creation, choosing AI-resistant industries, investing in AI"
+  },
+  {
+    "id": "avjX3QrYkls",
+    "title": "Transformers Step-by-Step Explained (Attention Is All You Need)",
+    "description": "Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n\n--\nWe just launched the all-in-one tech interview prep platform, covering coding, system design, OOD, and machine learning.\n\nLaunch sale: 50% off. Check it out: https://bit.ly/bbg-yt",
+    "channel_name": "ByteByteGo",
+    "published_at": "2025-12-11T16:30:01",
+    "duration": null,
+    "view_count": 79655,
+    "thumbnail_url": "https://i.ytimg.com/vi/avjX3QrYkls/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=avjX3QrYkls",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Transformers Step-by-Step Explained (Attention Is All You Need) Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n\n--\nWe just launched the all-in-one tech interview prep platform, covering coding, system design, OOD, and machine learning.\n\nLaunch sale"
+  },
+  {
+    "id": "uokE-FiDUVw",
+    "title": "How I Built a Profitable AI Product in 43 Days",
+    "description": "I built my SaaS Newsletter Hero in 43 days in order to prepare for the massive AI disruption I see coming. This was my process, the lows and the highs. \n\nCheck it out here: https://www.newsletterhero.ai/ \nCode: BETA45 ($99 for the full year - more than 50% off the monthly rate)\n\n00:45 Days 1-10: Foundation & Planning - Team organization took unexpected energy and time - Multiple decisions required before writing any code - Key lesson: \"Working with a human team forced accountability\"\n\n02:15 Days 11-24: Market Research & MVP  - Newsletter market chosen after extensive analysis - Three core pain points identified through creator interviews: - Writing faster in personal voice - Stronger subject lines - Easier multi-platform distribution - [03:45] MVP features: custom templates, subject line generation, user profiles, credits, payments\n\n05:30 Days 25-35: Launch Reality Check - Major assumption proven wrong: Users wanted control, not one-click solutions -  Marketing became unexpectedly difficult despite existing audience - Multiple integrations added: Kit, Mailchimp, podcast uploads - Key insight: \"Building a product and getting people to care about a product are two completely different games\"\n\n07:45 Day 35: First Paying Customer  - Customer acquired through Reddit comment on micro-SaaS celebration post - Validation moment: Stranger paid for the product - Customer feedback immediately integrated, especially onboarding improvements\n\n09:15 Days 36-43: Growth & Learning - Additional paying customers from existing network - Product responsibility realization as users depend on it for income - Honest admission: \"I am currently just ass at marketing\"",
+    "channel_name": "Ken Jee",
+    "published_at": "2025-11-28T11:01:50",
+    "duration": null,
+    "view_count": 1507,
+    "thumbnail_url": "https://i.ytimg.com/vi/uokE-FiDUVw/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=uokE-FiDUVw",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "AI Agents",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How I Built a Profitable AI Product in 43 Days I built my SaaS Newsletter Hero in 43 days in order to prepare for the massive AI disruption I see coming. This was my process, the lows and the highs. \n\nCheck it out here: https://www.newsletterhero.ai/ \nCode: BETA45 ($99 for the full year - more than "
+  },
+  {
+    "id": "S2Cm5ogG3Ps",
+    "title": "Why I\u2019m Building a SaaS (before AI takes over)",
+    "description": "I'm starting over. I'm building a SaaS before AI takes over. \n\nI believe we have a 1.5 - 2 year window where technical skills are still a valuable advantage for creating. I'm going to capitalize on this golden window with my new company Newsletter hero. \n\nMy goal is to get good at building and scaling companies in this window. I would like to spin up 3-5 before we face the mass uncertainty that AI brings. \n\nAfter that, I'm buying a farm! Like/ Subscribe if you want to join me there :)\n\nFollow my Journey Here:\n\ud83e\uddb8Newsletter Hero - https://www.newsletterhero.ai/ - If you're interested in newsletters, check us out! \n\ud83d\udc24My Twitter - https://twitter.com/KenJee_DS\n\ud83d\udc54 LinkedIn -  https://www.linkedin.com/in/kenjee/",
+    "channel_name": "Ken Jee",
+    "published_at": "2025-11-10T12:00:54",
+    "duration": null,
+    "view_count": 3096,
+    "thumbnail_url": "https://i.ytimg.com/vi/S2Cm5ogG3Ps/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=S2Cm5ogG3Ps",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Why I\u2019m Building a SaaS (before AI takes over) I'm starting over. I'm building a SaaS before AI takes over. \n\nI believe we have a 1.5 - 2 year window where technical skills are still a valuable advantage for creating. I'm going to capitalize on this golden window with my new company Newsletter hero."
+  },
+  {
+    "id": "g80Q1sVtikE",
+    "title": "Fine-tune your own LLM in 13 minutes, here\u2019s how",
+    "description": "Wanna master AI coding? Go here: https://www.skool.com/new-society\n\nFollow me on Instagram - https://www.instagram.com/davidondrej1/\nFollow me on Twitter - https://x.com/DavidOndrej1\n\nHost your n8n agents on Hostinger: https://www.hostinger.com/david\n\nGoogle Colab - https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/gpt-oss-(20B)-Fine-tuning.ipynb\nUnsloth - https://unsloth.ai/\nThe dataset - https://huggingface.co/datasets/internlm/Agent-FLAN\nSubscribe if you're serious about AI.\n\nFine-tune any AI model for free\n\nwww.vectal.ai",
+    "channel_name": "David Ondrej",
+    "published_at": "2025-10-13T09:35:47",
+    "duration": null,
+    "view_count": 146122,
+    "thumbnail_url": "https://i.ytimg.com/vi/g80Q1sVtikE/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=g80Q1sVtikE",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "AI Agents",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Fine-tune your own LLM in 13 minutes, here\u2019s how Wanna master AI coding? Go here: https://www.skool.com/new-society\n\nFollow me on Instagram - https://www.instagram.com/davidondrej1/\nFollow me on Twitter - https://x.com/DavidOndrej1\n\nHost your n8n agents on Hostinger: https://www.hostinger.com/david\n"
+  },
+  {
+    "id": "vK_qvUeuNRE",
+    "title": "How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide",
+    "description": "Learn how to easily generate AI transcripts for YouTube videos using OpenAI\u2019s Whisper API and DaVinci Resolve. In this step-by-step tutorial, I\u2019ll show you how to split audio into one-minute chunks, process them through Whisper, and use the transcripts to boost your SEO with titles, hashtags, and more.\n\nThis method is perfect if you want to:\n\nImprove YouTube search rankings with full transcripts.\n\nSave time and money with free tools like DaVinci Resolve.\n\nGet better suggestions from AI for titles, tags, and descriptions.\n\n\ud83d\udca1 Cost example: About $0.08 for 3 minutes of video (prices vary).\n\u26a1 Bonus tip: Automate multiple audio chunks on Windows for faster processing.\n\n\ud83d\udc49 Stick around to the end for the exact export settings I used in DaVinci Resolve to make Whisper work smoothly.\n\n0:00 \u2013 Why transcripts help SEO & YouTube growth\n0:25 \u2013 Using GPT for SEO title + hashtag ideas\n0:35 \u2013 Whisper API for transcription (limitations & timeouts)\n1:03 \u2013 Fix: Splitting video/audio into 1-minute chunks in DaVinci Resolve\n1:31 \u2013 Exporting audio clips (MP3 settings)\n2:10 \u2013 Cost breakdown & final workflow\n2:22 \u2013 Running Whisper API on all chunks at once\n\n#YouTubeSEO #WhisperAI #DaVinciResolve #AITranscripts #contentcreation \n\nFull Transcript (auto-caption backup):\nHey everybody, just a quick note on how to get audio transcripts easily from an AI. \nI have been wanting to increase the views of my YouTube videos so I asked GPT for \nsome SEO suggestions. One thing it suggested which is both helpful for search engines and nice was to \nput a transcript to everybody was to put a transcript with each video. The other good thing this does\nis when you have a transcript, you can hand it to GPT and GPT can suggest a good title and hashtags \nand all that kind of good SEO stuff.\nSo, I needed a transcript and I work with AIs all the time and so the first thing that occurred to me was that I had a \ncommand line tool called that Simon Willison wrote and that it interacted with \nthe OpenAI API and had something called in uses OpenAI's Whisper API, awesome. \nSo I went off, I asked that to make me a transcript, that's what Whisper can do, and it \nkept timing out over and over and over. That is when I surmised, and I was correct, I looked it up, \nthat Whisper likes about one minute chunks of audio at a time. And so this is where DaVinci Resolve comes in. \nDaVinci Resolve is a free download video editor, and I went into DaVinci Resolve and I split my audio, or my video, \nwith the audio into one minute chunks using breaks, or Ctrl-B. So I went Ctrl-B, Ctrl-B, Ctrl-B. Then \nI went to the delivery section and turned off video export, told it I did want to export audio. I made sure that I...\nI'm that this is mp3 and mp3 and they matched went to the file section said I wanted individual clips \nSo now each break is going to be an individual clip Told it to use custom names. So they're easy to work with \nAnd told it to use unique file names. So my custom name is going to come from up here And lo and behold \nI got the entire transcript out there it is just so you know As far as I know, the cost was about \n$0.08 for about 3 minutes of video For me, on this weekend. I know the costs change over time \nNow, for folks like me that are stuck on Windows You can have it work on all the blocks at once \nHave the LLM Whisper API work on all the blocks at once You have to jump through a few hoops \nYou have to tell it to do something\nDo something like this which which gets all the mp3s and then passes it through this for api \nAnd that is all thanks everybody. Have a good day",
+    "channel_name": "antigravkids",
+    "published_at": "2025-09-15T20:48:28",
+    "duration": null,
+    "view_count": 278,
+    "thumbnail_url": "https://i.ytimg.com/vi/vK_qvUeuNRE/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=vK_qvUeuNRE",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Multimodal",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide Learn how to easily generate AI transcripts for YouTube videos using OpenAI\u2019s Whisper API and DaVinci Resolve. In this step-by-step tutorial, I\u2019ll show you how to split audio into one-minute chunks, process them through"
+  },
+  {
+    "id": "RNF0FvRjGZk",
+    "title": "I Visualised Attention in Transformers",
+    "description": "To try everything Brilliant has to offer\u2014free\u2014for a full 30 days, visit https://brilliant.org/GalLahat/ . You\u2019ll also get 20% off an annual premium subscription.\n\nVoice type with Peach Beta \ud83c\udf51:\nhttps://peach-voice.com\n\nThis video was sponsored by Brilliant\n\nThe music is created by my partner (AI) and me, feel free to use it commercially for your own projects but make sure to credit this video when you do:\nhttps://drive.google.com/drive/folders/1WSKmpkQGOHb_jij4Ut2NpivTcljc7qLS?usp=sharing",
+    "channel_name": "Gal Lahat",
+    "published_at": "2025-06-30T16:24:54",
+    "duration": null,
+    "view_count": 268610,
+    "thumbnail_url": "https://i.ytimg.com/vi/RNF0FvRjGZk/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=RNF0FvRjGZk",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      },
+      {
+        "topic": "Multimodal",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "I Visualised Attention in Transformers To try everything Brilliant has to offer\u2014free\u2014for a full 30 days, visit https://brilliant.org/GalLahat/ . You\u2019ll also get 20% off an annual premium subscription.\n\nVoice type with Peach Beta \ud83c\udf51:\nhttps://peach-voice.com\n\nThis video was sponsored by Brilliant\n\nThe "
+  },
+  {
+    "id": "KMHkbXzHn7s",
+    "title": "How Attention Mechanism Works in Transformer Architecture",
+    "description": "#llm #embedding #gpt \nThe attention mechanism in transformers is a key component that allows models to focus on different parts of an input sequence when making predictions. Attention assigns varying degrees of importance to different parts of the input, enabling the model to capture contextual relationships effectively. The most widely used form of attention in transformers is self-attention, where each token in a sequence attends to all other tokens, capturing long-range dependencies. This mechanism is further enhanced by multi-head attention, which enables the model to focus on multiple aspects of the data simultaneously.\n\nThere are several types of attention mechanisms, including self-attention, which is used in transformers to relate different words in the same sentence, and cross-attention, which is commonly seen in tasks like machine translation where the model attends to a separate input sequence. \n\nIn the video, I have visually explained each of these attention mechanisms with clear animations and step-by-step breakdowns.\n\nTimestamps:\n\n0:00 - Embedding and Attention\n2:12 - Self Attention Mechanism\n10:52 - Causal Self Attention\n14:12 - Multi Head Attention\n16:50 - Attention in Transformer Architecture\n17:54 - GPT-2 Model\n21:30 - Outro\n\nAttention is all you need paper: https://arxiv.org/abs/1706.03762\n\nMusic by Vincent Rubinetti\nDownload the music on Bandcamp:\nhttps://vincerubinetti.bandcamp.com\nStream the music on Spotify:\nhttps://open.spotify.com/artist/2SRhEEt2tlDQWxzwfUo9Dl",
+    "channel_name": "Under The Hood",
+    "published_at": "2025-03-08T08:54:17",
+    "duration": null,
+    "view_count": 111601,
+    "thumbnail_url": "https://i.ytimg.com/vi/KMHkbXzHn7s/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=KMHkbXzHn7s",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 8
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How Attention Mechanism Works in Transformer Architecture #llm #embedding #gpt \nThe attention mechanism in transformers is a key component that allows models to focus on different parts of an input sequence when making predictions. Attention assigns varying degrees of importance to different parts o"
+  },
+  {
+    "id": "WoCtFUZXVsY",
+    "title": "How LLM Works (Explained) | The Ultimate Guide To LLM | Day 1:Tokenization \ud83d\udd25 #shorts #ai",
+    "description": "\ud83d\ude80 **Master Large Language Models (LLMs) in Minutes!** \ud83d\ude80  \nConfused about ChatGPT, Gemini, or DeepSeek R1? This **ultimate guide** breaks down LLMs from scratch \u2014 no jargon, no fluff. Learn how these AI models work, why they\u2019re revolutionizing tech, and how YOU can use them like a pro!  \n\n\ud83d\udd0d **What You\u2019ll Learn**:  \n\u2705 **LLM Basics**: What are Large Language Models? (Think: AI brains!)  \n\u2705 **Behind the Scenes**: How ChatGPT, Gemini, and DeepSeek R1 actually learn.  \n\u2705 **Real-World Uses**: Writing, coding, research \u2014 unleash LLMs\u2019 power!  \n\u2705 **Future of AI**: Will LLMs replace jobs? The truth revealed.  \n\n\ud83d\udca5 **Why Watch This?**  \n- **Beginners Welcome**: Zero prior knowledge needed.  \n- **Actionable Tips**: Tools and prompts to try TODAY.  \n- **No Hype**: Honest pros, cons, and limitations of LLMs.  \n\n\ud83d\udc47 **Watch Now** \u2192 Stop feeling left behind in the AI revolution!  \n\n\ud83d\udccc **Keywords**: LLM guide, Large Language Models, ChatGPT explained, Gemini AI, DeepSeek R1, AI tutorial, LLM basics, AI for beginners, How LLMs work, AI tools 2024, Future of AI, AI crash course.  \n\n\ud83d\udd14 **Subscribe** for more AI deep dives, tech breakdowns, and guides that make you smarter in minutes! #AI #LLM #ChatGPT  \n\n\ud83d\udcac **Got Questions?** Drop them below \u2014 I\u2019ll answer in the next video! \ud83d\udd25",
+    "channel_name": "Curious Steve",
+    "published_at": "2025-02-05T17:33:57",
+    "duration": null,
+    "view_count": 577149,
+    "thumbnail_url": "https://i.ytimg.com/vi/WoCtFUZXVsY/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=WoCtFUZXVsY",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How LLM Works (Explained) | The Ultimate Guide To LLM | Day 1:Tokenization \ud83d\udd25 #sh \ud83d\ude80 **Master Large Language Models (LLMs) in Minutes!** \ud83d\ude80  \nConfused about ChatGPT, Gemini, or DeepSeek R1? This **ultimate guide** breaks down LLMs from scratch \u2014 no jargon, no fluff. Learn how these AI models work, why "
+  },
+  {
+    "id": "ygUEbCpOOLg",
+    "title": "LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop",
+    "description": "In this video, I'll show you how to run large language models (LLMs) right on your laptop using LM Studio! LM Studio uses GPU offloading to break down complex AI models, allowing you to run them smoothly on almost any laptop. With LM Studio accelerated by NVIDIA RTX GPUs, you unlock faster performance and better handling of larger models, giving you power and speed for advanced workflows. Whether you're generating text, summarizing documents, or asking questions, I'll guide you through the installation process, how to load and use models like Llama and Gemma, and even how to upload files for analysis\u2014all while keeping your data secure on your PC. Perfect for those who want to explore AI without relying on cloud services!\n\nHost: Kevin Stratvert\n\n\ud83d\udcda RESOURCES\n- Learn more and download LM Studio here: https://nvda.ws/3YhC91P\n\n\u231a TIMESTAMPS\n0:00 - Introduce LM Studio\n0:41 - Download and Install LM Studio\n1:41 - Download and Load Your First LLM (Llama 3.2 1B)\n2:48 - Interact with AI in LM Studio (Chocolate Chip Cookie Example)\n3:18 - Upload Documents and Interact with Them\n3:50 - Explore Other LLMs in LM Studio (Mistral, Gemma)\n5:36 - Wrap Up\n \n\ud83d\udce9 NEWSLETTER\n- Get the latest high-quality tutorial and tips and tricks videos emailed to your inbox each week: https://kevinstratvert.com/newsletter/\n\n\ud83d\udd3d CONNECT WITH ME\n- Official website: http://www.kevinstratvert.com\n- LinkedIn: https://www.linkedin.com/in/kevinstratvert/\n- Discord: https://bit.ly/KevinStratvertDiscord\n- Twitter: https://twitter.com/kevstrat\n- Facebook: https://www.facebook.com/Kevin-Stratvert-101912218227818\n- TikTok: https://www.tiktok.com/@kevinstratvert\n- Instagram: https://www.instagram.com/kevinstratvert/\n\n\ud83c\udf81 TOOLS AND DISCOUNTS\n\u2705 \ud83c\udf99\ufe0f Voicemod AI Voice Changer | 5% off | https://link.xsolla.com/KZBi89AY\n\u2705 \ud83d\udcfa Descript AI Video Editor | https://get.descript.com/sf22jb63w2tx\n\u2705 \ud83d\udcb5 QuickBooks Online: https://bit.ly/intuitquickbooksonline\n\u2705 \ud83c\udf10 Squarespace Websites | https://squarespace.syuh.net/XYaqYM\n\u2705 \ud83d\udd0d Grammarly | https://grammarly.go2cloud.org/SH3nL\n\u2705 \ud83d\udcf9 CapCut Video Editor | https://bit.ly/installcapcut\n\u2705 \ud83d\udecd\ufe0f Shopify | https://shopify.pxf.io/XY9rPa\n\u2705 \ud83d\udccb Notion | https://affiliate.notion.so/rffva4tr71ax\n\u2705 \ud83e\udd16 ElevenLabs Text-to-Speech | https://try.elevenlabs.io/taqepq60mptr\n\n\ud83c\udf92 MY COURSES\n- Go from Excel novice to data analysis ninja in just 2 hours: https://kevinstratvert.thinkific.com/\n\n\ud83d\ude4f REQUEST VIDEOS\nhttps://forms.gle/BDrTNUoxheEoMLGt5\n\n\ud83d\udd14 SUBSCRIBE ON YOUTUBE\nhttps://www.youtube.com/user/kevlers?sub_confirmation=1\n\n\ud83d\ude4c SUPPORT THE CHANNEL\n- Hit the THANKS button in any video!\n- Amazon affiliate link: https://amzn.to/3kCP2yz\n\n\u2696 DISCLOSURE\nSome links are affiliate links. Purchasing through these links gives me a small commission to support videos on this channel. The price to you is the same.\n\n#stratvert #lmstudio",
+    "channel_name": "Kevin Stratvert",
+    "published_at": "2024-10-24T07:00:37",
+    "duration": null,
+    "view_count": 184567,
+    "thumbnail_url": "https://i.ytimg.com/vi/ygUEbCpOOLg/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=ygUEbCpOOLg",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Evaluation",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop In this video, I'll show you how to run large language models (LLMs) right on your laptop using LM Studio! LM Studio uses GPU offloading to break down complex AI models, allowing you to run them smoothly on almost any laptop. With LM"
+  },
+  {
+    "id": "fFgyOucIFuk",
+    "title": "Feed Your OWN Documents to a Local Large Language Model!",
+    "description": "Dave explains how retraining, RAG (retrieval augmented generation) and context documents serve to expand the functionality of existing models, both local and online.  For my book on the autism spectrum, check out: https://amzn.to/3zBinWM\n\nDave's Attic - Friday 4PM Podcast - https://www.youtube.com/@UCtb6a_CnmGbSns9G8W2Ny0w \n\nFollow me for updates!  \nTwitter:   @davepl1968 davepl1968\nFacebook: fb.com/davepl",
+    "channel_name": "Dave's Garage",
+    "published_at": "2024-10-08T20:55:18",
+    "duration": null,
+    "view_count": 922329,
+    "thumbnail_url": "https://i.ytimg.com/vi/fFgyOucIFuk/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=fFgyOucIFuk",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "RAG Systems",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Feed Your OWN Documents to a Local Large Language Model! Dave explains how retraining, RAG (retrieval augmented generation) and context documents serve to expand the functionality of existing models, both local and online.  For my book on the autism spectrum, check out: https://amzn.to/3zBinWM\n\nDave"
+  },
+  {
+    "id": "FrshQV0PRq4",
+    "title": "Fine-tuning ChatGPT made EASY (No Coding Required)",
+    "description": "Ready to scale with fine-tuned AI models? Book a call here: https://www.simpliscale.io\n\nWe'll breaking down the exact steps we use to fine-tune AI models for your specific needs. From preparing your dataset to using your custom model, we cover it all.\n\nThis proven method has helped countless businesses achieve more precise and consistent AI outputs without complex coding.\n\nThink about it... Who doesn't want BETTER RESULTS and INCREASED EFFICIENCY?\n\nYou're using AI in your business, but you're not seeing the tailored outputs you know you're capable of. Every day you spend with a generic model is costing you valuable time and potential innovations.\n\nOpenAI Fine-tuning Documentation: https://platform.openai.com/docs/guides/fine-tuning/use-a-fine-tuned-model\n\nSimpliscale Fine-tuning CustomGPT: https://chatgpt.com/g/g-SMhVBhWbs-simpliscale-fine-tuning-formatter\n\nOpenAI Prompt Engineering Guide:\nhttps://platform.openai.com/docs/guides/prompt-engineering\n\nLearn how to navigate the four stages of fine-tuning and supercharge your AI capabilities now: https://www.simpliscale.io\n\nFollow my Instagram: /thenickcornelius",
+    "channel_name": "Nick Cornelius",
+    "published_at": "2024-10-08T20:45:17",
+    "duration": null,
+    "view_count": 3886,
+    "thumbnail_url": "https://i.ytimg.com/vi/FrshQV0PRq4/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=FrshQV0PRq4",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Fine-tuning ChatGPT made EASY (No Coding Required) Ready to scale with fine-tuned AI models? Book a call here: https://www.simpliscale.io\n\nWe'll breaking down the exact steps we use to fine-tune AI models for your specific needs. From preparing your dataset to using your custom model, we cover it al"
+  },
+  {
+    "id": "lqOrULJvYXg",
+    "title": "So You Think You Can ANALYZE? (Data Content Creator Hackathon)",
+    "description": "Watch your favorite data science content creators compete for a piece of history. They will either prove their skills in front of the world or fail in the pursuit of eternal glory. This is so you think you can analyze.\n\nSpecial thanks to Posit for sponsoring this competition and make this all possible! \n\nCompetitors:\nTeam Jack\n@averysmith \nJack Blandin\n@KeithGalli \n\nTeam MMA \n@AlexTheAnalyst \n@nerdnourishment \n@Miki_ML \n\nTeam Null\nNick Singh \nMark Freeman\n@SeattleDataGuy \n\nTeam Shashank\n@ShashankData \n\nTeam Posit-ively Skewed\nGreg Coquillo \n@datascienceharp \nRichad Nieves-Becker\nIan Greengross\n\nInterviewer:\nElijah Butler - https://www.tiktok.com/@imelijahbutler\n\nPosit Team\n- Michael Chow \n- Joe Cheng\n- Carolos Scheidegger\n- Julia Silge \nSponsors, Affiliates, and Partners:\n- Pathrise - http://pathrise.com/KenJee | Career mentorship for job applicants (Free till you land a job)\n- Taro - http://jointaro.com/r/kenj308 (20% discount) | Career mentorship if you already have a job \n- 365 Data Science (57% discount) - https://365datascience.pxf.io/P0jbBY | Learn data science today\n- Interview Query (10% discount) - https://www.interviewquery.com/?ref=kenjee |  Interview prep questions\n\nMORE DATA SCIENCE CONTENT HERE:\n\ud83d\udc24My Twitter - https://twitter.com/KenJee_DS\n\ud83d\udc54 LinkedIn -  https://www.linkedin.com/in/kenjee/\n\ud83d\udcc8 Kaggle - https://www.kaggle.com/kenjee\n\ud83d\udcd1 Medium Articles - https://medium.com/@kenneth.b.jee\n\ud83d\udcbb Github - https://github.com/PlayingNumbers\n\ud83c\udfc0 My Sports Blog -https://www.playingnumbers.com\n\nCheck These Videos Out Next! \nMy Leaderboard Project: https://www.youtube.com/watch?v=myhoWUrSP7o&ab_channel=KenJee\n66 Days of Data: https://www.youtube.com/watch?v=qV_AlRwhI3I&ab_channel=KenJee\nHow I Would Learn Data Science in 2021: https://www.youtube.com/watch?v=41Clrh6nv1s&ab_channel=KenJee\n\nMy Playlists \nData Science Beginners: https://www.youtube.com/playlist?list=PL2zq7klxX5ATMsmyRazei7ZXkP1GHt-vs\nProject From Scratch: https://www.youtube.com/watch?v=MpF9HENQjDo&list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t&ab_channel=KenJee\nKaggle Projects: https://www.youtube.com/playlist?list=PL2zq7klxX5AQXzNSLtc_LEKFPh2mAvHIO",
+    "channel_name": "Ken Jee",
+    "published_at": "2024-09-21T15:46:36",
+    "duration": null,
+    "view_count": 44141,
+    "thumbnail_url": "https://i.ytimg.com/vi/lqOrULJvYXg/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=lqOrULJvYXg",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "So You Think You Can ANALYZE? (Data Content Creator Hackathon) Watch your favorite data science content creators compete for a piece of history. They will either prove their skills in front of the world or fail in the pursuit of eternal glory. This is so you think you can analyze.\n\nSpecial thanks to"
+  },
+  {
+    "id": "pxhkDaKzBaY",
+    "title": "EASIEST Way to Fine-Tune a LLM and Use It With Ollama",
+    "description": "In this video, we go over how you can fine-tune Llama 3.1 and run it locally on your machine using Ollama! We use the open source repository \"Unsloth\" to do all of the fine tuning on an SQL dataset!\n\nThroughout this video, we discuss the ins and outs of what fine-tuning an LLM is, how you can work with your data so that the LLM can process it and then importing it into Ollama for you to run locally on your machine!\n\nOllama is available on all platforms!\n\nDataset used: https://huggingface.co/datasets/gretelai/synthetic_text_to_sql\nOllama: https://github.com/ollama/ollama\nUnsloth: https://github.com/unslothai/unsloth\n\nMake sure you follow for more content!\n___________________________\n\nTry Warp now for FREE \ud83d\udc49 bit.ly/warpdotdev\n\nTwitter \ud83d\udc26\nhttps://twitter.com/warpdotdev\n\nTikTok \ud83d\udcf1\nhttps://www.tiktok.com/@warp.dev\n\nTIMESTAMPS\n0:00 Intro\n0:10 Getting the dataset\n0:45 The Tech Stack\n1:18 Installing Dependencies\n1:48 Fast Language Model Explained\n2:35 LORA Adaptes Explained\n3:02 Converting your data to fine-tune\n3:36 Training the Model....\n4:01 Converting to Ollama compatibility\n4:11 Creating a Modelfile for Ollama\n4:50 Final Output!\n5:01 Check out Ollama in 2 minutes!",
+    "channel_name": "Warp",
+    "published_at": "2024-09-12T14:30:31",
+    "duration": null,
+    "view_count": 801503,
+    "thumbnail_url": "https://i.ytimg.com/vi/pxhkDaKzBaY/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=pxhkDaKzBaY",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "Open Source LLMs",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "EASIEST Way to Fine-Tune a LLM and Use It With Ollama In this video, we go over how you can fine-tune Llama 3.1 and run it locally on your machine using Ollama! We use the open source repository \"Unsloth\" to do all of the fine tuning on an SQL dataset!\n\nThroughout this video, we discuss the ins and "
+  },
+  {
+    "id": "00Q0G84kq3M",
+    "title": "RAG vs. Fine Tuning",
+    "description": "Get the guide to GAI, learn more \u2192 https://ibm.biz/BdKTbF\nLearn more about the technology \u2192 https://ibm.biz/BdKTbX\n\nJoin Cedric Clyburn as he explores the differences and use cases of Retrieval Augmented Generation (RAG) and fine-tuning in enhancing large language models. This video covers the strengths, weaknesses, and common applications of both techniques, and provides insights on how to choose between them using machine learning and natural language processing principles\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://www.ibm.com/account/reg/us-en/signup?formid=news-urx-52120\n\n#AI #LargeLanguageModels #FineTuning #RAG #ReinforcementLearning #MachineLearning #NaturalLanguageProcessing",
+    "channel_name": "IBM Technology",
+    "published_at": "2024-09-09T15:00:00",
+    "duration": null,
+    "view_count": 427591,
+    "thumbnail_url": "https://i.ytimg.com/vi/00Q0G84kq3M/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=00Q0G84kq3M",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "RAG Systems",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "RAG vs. Fine Tuning Get the guide to GAI, learn more \u2192 https://ibm.biz/BdKTbF\nLearn more about the technology \u2192 https://ibm.biz/BdKTbX\n\nJoin Cedric Clyburn as he explores the differences and use cases of Retrieval Augmented Generation (RAG) and fine-tuning in enhancing large language models. This vi"
+  },
+  {
+    "id": "eMlx5fFNoYc",
+    "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
+    "description": "Demystifying attention, the key mechanism inside transformers and LLMs.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nSpecial thanks to these supporters: https://www.3blue1brown.com/lessons/attention#thanks\nAn equally valuable form of support is to simply share the videos.\n\nDemystifying self-attention, multiple heads, and cross-attention.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\n\nThe first pass for the translated subtitles here is machine-generated and, therefore, notably imperfect. To contribute edits or fixes, visit https://www.criblate.com\n\n\u0417\u0432\u0443\u043a\u043e\u0432\u0430\u044f \u0434\u043e\u0440\u043e\u0436\u043a\u0430 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435: \u0412\u043b\u0430\u0434 \u0411\u0443\u0440\u043c\u0438\u0441\u0442\u0440\u043e\u0432.\n\n------------------\n\nHere are a few other relevant resources\n\nBuild a GPT from scratch, by Andrej Karpathy\nhttps://youtu.be/kCc8FmEb1nY\n\nIf you want a conceptual understanding of language models from the ground up, @vcubingx just started a short series of videos on the topic:\nhttps://youtu.be/1il-s4mgNdI?si=XaVxj6bsdy3VkgEX\n\nIf you're interested in the herculean task of interpreting what these large networks might actually be doing, the Transformer Circuits posts by Anthropic are great. In particular, it was only after reading one of these that I started thinking of the combination of the value and output matrices as being a combined low-rank map from the embedding space to itself, which, at least in my mind, made things much clearer than other sources.\nhttps://transformer-circuits.pub/2021/framework/index.html\n\nSite with exercises related to ML programming and GPTs\nhttps://www.gptandchill.ai/codingproblems\n\nHistory of language models by Brit Cruise, \u00a0@ArtOfTheProblem\u00a0 \nhttps://youtu.be/OFS90-FX6pg\n\nAn early paper on how directions in embedding spaces have meaning:\nhttps://arxiv.org/pdf/1301.3781.pdf\n\n------------------\n\nTimestamps:\n0:00 - Recap on embeddings\n1:39 - Motivating examples\n4:29 - The attention pattern\n11:08 - Masking\n12:42 - Context size\n13:10 - Values\n15:44 - Counting parameters\n18:21 - Cross-attention\n19:19 - Multiple heads\n22:16 - The output matrix\n23:19 - Going deeper\n24:54 - Ending\n\n------------------\n\nThese animations are largely made using a custom Python library, manim.  See the FAQ comments here:\nhttps://3b1b.co/faq#manim\nhttps://github.com/3b1b/manim\nhttps://github.com/ManimCommunity/manim/\n\nAll code for specific videos is visible here:\nhttps://github.com/3b1b/videos/\n\nThe music is by Vincent Rubinetti.\nhttps://www.vincentrubinetti.com\nhttps://vincerubinetti.bandcamp.com/album/the-music-of-3blue1brown\nhttps://open.spotify.com/album/1dVyjwS8FBqXhRunaG5W5u\n\n------------------\n\n3blue1brown is a channel about animating math, in all senses of the word animate. If you're reading the bottom of a video description, I'm guessing you're more interested than the average viewer in lessons here. It would mean a lot to me if you chose to stay up to date on new ones, either by subscribing here on YouTube or otherwise following on whichever platform below you check most regularly.\n\nMailing list: https://3blue1brown.substack.com\nTwitter: https://twitter.com/3blue1brown\nInstagram: https://www.instagram.com/3blue1brown\nReddit: https://www.reddit.com/r/3blue1brown\nFacebook: https://www.facebook.com/3blue1brown\nPatreon: https://patreon.com/3blue1brown\nWebsite: https://www.3blue1brown.com",
+    "channel_name": "3Blue1Brown",
+    "published_at": "2024-04-07T12:53:54",
+    "duration": null,
+    "view_count": 4119293,
+    "thumbnail_url": "https://i.ytimg.com/vi/eMlx5fFNoYc/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 7
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Attention in transformers, step-by-step | Deep Learning Chapter 6 Demystifying attention, the key mechanism inside transformers and LLMs.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nSpecial thanks to these supporters: https://www.3blue1brown.c"
+  },
+  {
+    "id": "GZ4W1nRw_Ac",
+    "title": "Fine Tuning OpenAI Models Walkthrough - How and Why",
+    "description": "Providing context for fine-tuning LLMs and walking through why I chose to fine tune an instance of GPT-3.5-Turbo, my specific use case exploration, and all of the steps I took to get there!\n\nThe Code: https://github.com/ALucek/ft-openai-video\nOutput Comparison: https://docs.google.com/spreadsheets/d/1-8SzT4tZBS0Nti5oEzECwhZMgtUZK0mL/edit?usp=sharing&ouid=111470686465205488170&rtpof=true&sd=true\n\nGoEmotions Dataset: https://huggingface.co/datasets/go_emotions?row=0\nFine Tuning Graphic: https://miro.medium.com/v2/resize:fit:1400/1*JSJBBnslBE9S5i77Rz9r_g.png\nOpenAI Fine Tuning Documentation: https://platform.openai.com/docs/guides/fine-tuning\nOpenAI Cookbook - Fine Tuning Data Prep : https://cookbook.openai.com/examples/chat_finetuning_data_prep\n\nChapters:\n00:00 - Intro\n00:21 - What is Fine Tuning?\n01:40 - OpenAI Fine Tuning Documentation\n03:51 - Why I Fine Tune Models\n05:04 - Dataset of Interest\n06:44 - Training Data Format\n07:18 - Loading and Examining the Dataset\n10:24 - Generating a GPT-4-T Baseline\n13:00 - Formatting Dataset into JSONL\n15:47 - Validating Training Data & Price Estimation\n19:13 - Starting the Fine Tuning Job\n19:47 - Fine Tuned Model Metrics Overview\n20:31 - Talking About Training Loss\n23:29 - Running Inference With the Fine Tuned Model\n24:02 - Output Comparisons & Discussion\n27:01 - Outro",
+    "channel_name": "Adam Lucek",
+    "published_at": "2024-03-25T22:35:28",
+    "duration": null,
+    "view_count": 3960,
+    "thumbnail_url": "https://i.ytimg.com/vi/GZ4W1nRw_Ac/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=GZ4W1nRw_Ac",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "Model Evaluation",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "Fine Tuning OpenAI Models Walkthrough - How and Why Providing context for fine-tuning LLMs and walking through why I chose to fine tune an instance of GPT-3.5-Turbo, my specific use case exploration, and all of the steps I took to get there!\n\nThe Code: https://github.com/ALucek/ft-openai-video\nOutpu"
+  },
+  {
+    "id": "VVKcSf6r3CM",
+    "title": "How To Fine-Tune ChatGPT For Beginners",
+    "description": "subscribe for more \u25ba https://bit.ly/3zlUmiS\nwatch me live \u25ba https://www.twitch.tv/itscorbinbrown\nfollow me on twitter \u25ba https://twitter.com/corbin_braun\nfollow me on instagram \u25ba https://www.instagram.com/corbin_braunlich\nfollow me on tiktok \u25ba https://www.tiktok.com/@corbin_braunlich\njoin our ai community (free) \u25ba https://www.skool.com/ai-for-your-business\njoin my software \u25ba https://bumpups.com/\nsteal my software \u25ba https://github.com/coffeefuelbump\nLINK TO EVERYTHING \u25ba https://linktr.ee/corbin_brown\n\nmy recording setup: https://www.amazon.com/shop/corbinbrown\n\n#corbin #openai #api  \n\nBecome a Builder + Perks \ud83d\udee0\ufe0f\nhttps://www.youtube.com/channel/UCJFMlSxcvlZg5yZUYJT0Pug/join\n\nFine-tuning OpenAI Documentation\nLearn how to customize a model for your application.\nhttps://platform.openai.com/docs/guides/fine-tuning/fine-tuning\n\nData preparation and analysis for chat model fine-tuning\nhttps://cookbook.openai.com/examples/chat_finetuning_data_prep",
+    "channel_name": "corbin",
+    "published_at": "2024-03-05T18:00:22",
+    "duration": null,
+    "view_count": 141667,
+    "thumbnail_url": "https://i.ytimg.com/vi/VVKcSf6r3CM/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=VVKcSf6r3CM",
     "transcript_available": false,
     "transcript_excerpts": [],
     "llm_topics_discussed": [
       {
         "topic": "Open Source LLMs",
-        "relevance_score": 0.3,
-        "keyword_matches": 1,
-        "context_matches": 1
+        "mentions": 1
       }
     ],
-    "technical_depth": "Unknown (no transcript)",
-    "creator_stance": "Unknown (no transcript)",
+    "technical_depth": null,
+    "creator_stance": null,
     "key_claims": [],
-    "practical_insights": "Jean-Baptiste Kempf is lead developer of VLC and president of VideoLAN. Kieran Kunhya is a longtime FFmpeg contributor, codec engineer, and the person behind the now-infamous FFmpeg account on X.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep496-sb\nSee below for"
+    "practical_insights": "How To Fine-Tune ChatGPT For Beginners subscribe for more \u25ba https://bit.ly/3zlUmiS\nwatch me live \u25ba https://www.twitch.tv/itscorbinbrown\nfollow me on twitter \u25ba https://twitter.com/corbin_braun\nfollow me on instagram \u25ba https://www.instagram.com/corbin_braunlich\nfollow me on tiktok \u25ba https://www.tiktok"
   },
   {
-    "id": "iKx3gAODybU",
-    "title": "Vikings, Ragnar, Berserkers, Valhalla & the Warriors of the Viking Age | Lex Fri",
-    "description": "Lars Brownworth is a historian, teacher, podcaster, and author specializing in Viking history, medieval Europe, and the Byzantine Empire.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep495-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcript:*\nhttps://lexfridman.com/lars-brownworth-transcript\n\n*CONTACT LEX:*\n*Feedback* - give feedback to Lex: https://lexfridman.com/survey\n*AMA* - submit questions, videos or call-in: https://lexfridman.com/ama\n*Hiring* - join our team: https://lexfridman.com/hiring\n*Other* - other ways to get in touch: https://lexfridman.com/contact\n\n*EPISODE LINKS:*\nLars's Website: https://larsbrownworth.com/\nThe Sea Wolves (book): https://www.amazon.com/Sea-Wolves-History-Vikings/dp/1909979120\nLars's Books: https://amzn.to/4sHY0xw\n12 Byzantine Rulers Podcast : https://12byzantinerulers.com/\nNorman Centuries Podcast: https://apple.co/4sgSxNi\n\n*SPONSORS:*\nTo support this podcast, check out our sponsors & get discounts:\n*Larridin:* Measure AI adoption in your business.\nGo to https://lexfridman.com/s/larridin-ep495-sb\n*BetterHelp:* Online therapy and counseling.\nGo to https://lexfridman.com/s/betterhelp-ep495-sb\n*LMNT:* Zero-sugar electrolyte drink mix.\nGo to https://lexfridman.com/s/lmnt-ep495-sb\n*Fin:* AI agent for customer service.\nGo to https://lexfridman.com/s/fin-ep495-sb\n*Shopify:* Sell stuff online.\nGo to https://lexfridman.com/s/shopify-ep495-sb\n*Perplexity:* AI-powered answer engine.\nGo to https://lexfridman.com/s/perplexity-ep495-sb\n\n*OUTLINE:*\n0:00 - Episode highlight\n1:17 - Introduction\n2:37 - The start of the Viking Age\n12:30 - Viking military strategy, tactics & technology\n26:13 - Ragnar Lothbrok\n35:40 - The Great Heathen Army\n40:23 - Rollo and Normandy\n50:34 - Viking religion and Valhalla\n1:01:06 - Viking explorers\n1:06:13 - Vikings in North America\n1:19:35 - Vikings in the East\n1:39:14 - Byzantine Empire\n1:47:57 - History and human nature\n\n*PODCAST LINKS:*\n- Podcast Website: https://lexfridman.com/podcast\n- Apple Podcasts: https://apple.co/2lwqZIr\n- Spotify: https://spoti.fi/2nEwCF8\n- RSS: https://lexfridman.com/feed/podcast/\n- Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4\n- Clips Channel: https://www.youtube.com/lexclips\n\n*SOCIAL LINKS:*\n- X: https://x.com/lexfridman\n- Instagram: https://instagram.com/lexfridman\n- TikTok: https://tiktok.com/@lexfridman\n- LinkedIn: https://linkedin.com/in/lexfridman\n- Facebook: https://facebook.com/lexfridman\n- Patreon: https://patreon.com/lexfridman\n- Telegram: https://t.me/lexfridman\n- Reddit: https://reddit.com/r/lexfridman",
-    "channel_name": "Lex Fridman",
-    "published_at": "2026-04-09T17:35:20",
+    "id": "fjJOgb-E41w",
+    "title": "Attention mechanism: Overview",
+    "description": "This video introduces you to the attention mechanism, a powerful technique that allows neural networks to focus on specific parts of an input sequence. Attention is used to improve the performance of a variety of machine learning tasks, including machine translation, text summarization, and question answering.\n\nEnroll in this course on Google Cloud Skills Boost \u2192 https://goo.gle/436ZFPR\nView the Generative AI Learning path playlist \u2192 https://goo.gle/LearnGenAI\n\nSubscribe to Google Cloud Tech \u2192 https://goo.gle/GoogleCloudTech",
+    "channel_name": "Google Cloud Tech",
+    "published_at": "2023-06-05T18:21:12",
     "duration": null,
-    "view_count": 987169,
-    "thumbnail_url": "https://i.ytimg.com/vi/iKx3gAODybU/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=iKx3gAODybU",
+    "view_count": 239297,
+    "thumbnail_url": "https://i.ytimg.com/vi/fjJOgb-E41w/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=fjJOgb-E41w",
     "transcript_available": false,
     "transcript_excerpts": [],
-    "llm_topics_discussed": [],
-    "technical_depth": "Unknown (no transcript)",
-    "creator_stance": "Unknown (no transcript)",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 3
+      },
+      {
+        "topic": "LLM Applications",
+        "mentions": 2
+      },
+      {
+        "topic": "Model Evaluation",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
     "key_claims": [],
-    "practical_insights": "Lars Brownworth is a historian, teacher, podcaster, and author specializing in Viking history, medieval Europe, and the Byzantine Empire.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep495-sb\nSee below for timestamps, transcript, and to give feedback, submit ques"
-  },
-  {
-    "id": "vif8NQcjVf0",
-    "title": "Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman",
-    "description": "Jensen Huang is the co-founder and CEO of NVIDIA, the world's most valuable company and the engine powering the AI computing revolution.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep494-sb\nSee below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc.\n\n*Transcript:*\nhttps://lexfridman.com/jensen-huang-transcript\n\n*CONTACT LEX:*\n*Feedback* - give feedback to Lex: https://lexfridman.com/survey\n*AMA* - submit questions, videos or call-in: https://lexfridman.com/ama\n*Hiring* - join our team: https://lexfridman.com/hiring\n*Other* - other ways to get in touch: https://lexfridman.com/contact\n\n*EPISODE LINKS:*\nNVIDIA: https://nvidia.com\nNVIDIA on X: https://x.com/nvidia\nNVIDIA AI on X: https://x.com/NVIDIAAI\nNVIDIA on YouTube: https://youtube.com/@NVIDIA\nNVIDIA on Instagram: https://www.instagram.com/nvidia/\nNVIDIA on LinkedIn: https://www.linkedin.com/company/nvidia/\nNVIDIA on Facebook: https://www.facebook.com/NVIDIA/\nNVIDIA on GitHub: https://github.com/NVIDIA\nNemotron: https://developer.nvidia.com/nemotron\n\n*SPONSORS:*\nTo support this podcast, check out our sponsors & get discounts:\n*Perplexity:* AI-powered answer engine.\nGo to https://lexfridman.com/s/perplexity-ep494-sb\n*Shopify:* Sell stuff online.\nGo to https://lexfridman.com/s/shopify-ep494-sb\n*LMNT:* Zero-sugar electrolyte drink mix.\nGo to https://lexfridman.com/s/lmnt-ep494-sb\n*Fin:* AI agent for customer service.\nGo to https://lexfridman.com/s/fin-ep494-sb\n*Quo:* Phone system (calls, texts, contacts) for businesses.\nGo to https://lexfridman.com/s/quo-ep494-sb\n\n*OUTLINE:*\n0:00 - Introduction\n0:33 - Extreme co-design and rack-scale engineering\n3:18 - How Jensen runs NVIDIA\n22:40 - AI scaling laws\n37:40 - Biggest blockers to AI scaling laws\n39:23 - Supply chain\n41:18 - Memory\n47:24 - Power\n52:43 - Elon and Colossus\n56:11 - Jensen's approach to engineering and leadership\n1:01:37 - China\n1:09:50 - TSMC and Taiwan\n1:15:04 - NVIDIA's moat\n1:20:41 - AI data centers in space\n1:24:30 - Will NVIDIA be worth $10 trillion?\n1:34:39 - Leadership under pressure\n1:48:25 - Video games\n1:55:16 - AGI timeline\n1:57:29 - Future of programming\n2:11:01 - Consciousness\n2:17:22 - Mortality\n\n*PODCAST LINKS:*\n- Podcast Website: https://lexfridman.com/podcast\n- Apple Podcasts: https://apple.co/2lwqZIr\n- Spotify: https://spoti.fi/2nEwCF8\n- RSS: https://lexfridman.com/feed/podcast/\n- Podcast Playlist: https://www.youtube.com/playlist?list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4\n- Clips Channel: https://www.youtube.com/lexclips\n\n*SOCIAL LINKS:*\n- X: https://x.com/lexfridman\n- Instagram: https://instagram.com/lexfridman\n- TikTok: https://tiktok.com/@lexfridman\n- LinkedIn: https://linkedin.com/in/lexfridman\n- Facebook: https://facebook.com/lexfridman\n- Patreon: https://patreon.com/lexfridman\n- Telegram: https://t.me/lexfridman\n- Reddit: https://reddit.com/r/lexfridman",
-    "channel_name": "Lex Fridman",
-    "published_at": "2026-03-23T16:24:14",
-    "duration": null,
-    "view_count": 1159581,
-    "thumbnail_url": "https://i.ytimg.com/vi/vif8NQcjVf0/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=vif8NQcjVf0",
-    "transcript_available": false,
-    "transcript_excerpts": [],
-    "llm_topics_discussed": [],
-    "technical_depth": "Unknown (no transcript)",
-    "creator_stance": "Unknown (no transcript)",
-    "key_claims": [],
-    "practical_insights": "Jensen Huang is the co-founder and CEO of NVIDIA, the world's most valuable company and the engine powering the AI computing revolution.\nThank you for listening \u2764 Check out our sponsors: https://lexfridman.com/sponsors/ep494-sb\nSee below for timestamps, transcript, and to give feedback, submit quest"
+    "practical_insights": "Attention mechanism: Overview This video introduces you to the attention mechanism, a powerful technique that allows neural networks to focus on specific parts of an input sequence. Attention is used to improve the performance of a variety of machine learning tasks, including machine translation, te"
   }
 ]
