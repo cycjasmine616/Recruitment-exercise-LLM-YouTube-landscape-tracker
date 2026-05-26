@@ -6,7 +6,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-05-06T22:03:16",
     "duration": null,
-    "view_count": 264124,
+    "view_count": 264215,
     "thumbnail_url": "https://i.ytimg.com/vi/nepKKz-MzFM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=nepKKz-MzFM",
     "transcript_available": false,
@@ -24,7 +24,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-04-09T17:35:20",
     "duration": null,
-    "view_count": 989331,
+    "view_count": 989399,
     "thumbnail_url": "https://i.ytimg.com/vi/iKx3gAODybU/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=iKx3gAODybU",
     "transcript_available": false,
@@ -42,7 +42,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-03-23T16:24:14",
     "duration": null,
-    "view_count": 1162216,
+    "view_count": 1162298,
     "thumbnail_url": "https://i.ytimg.com/vi/vif8NQcjVf0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=vif8NQcjVf0",
     "transcript_available": false,
@@ -60,7 +60,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-03-11T20:21:39",
     "duration": null,
-    "view_count": 877010,
+    "view_count": 877041,
     "thumbnail_url": "https://i.ytimg.com/vi/H9rF1CSSh-w/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=H9rF1CSSh-w",
     "transcript_available": false,
@@ -78,7 +78,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-03-03T12:30:21",
     "duration": null,
-    "view_count": 49878,
+    "view_count": 49882,
     "thumbnail_url": "https://i.ytimg.com/vi/SHlrUAkkWI0/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=SHlrUAkkWI0",
     "transcript_available": false,
@@ -177,33 +177,6 @@
     "practical_insights": "How I Built a Profitable AI Product in 43 Days I built my SaaS Newsletter Hero in 43 days in order to prepare for the massive AI disruption I see coming. This was my process, the lows and the highs. \n\nCheck it out here: https://www.newsletterhero.ai/ \nCode: BETA45 ($99 for the full year - more than "
   },
   {
-    "id": "pddeyCqevnw",
-    "title": "How To Fine-Tune A Large Language Model (Step-By-Step)",
-    "description": "Let Notion Agent do your work for you at: https://ntn.so/MattWolfe\n\n\nReady to make your AI model sound just like you? In this video, I walk you through the complete process, from collecting your own tweets and scripts, to cleaning your data, and fine-tuning a language model with simple, accessible tools. No tech wizardry required!\n\nWatch as I share real results from training an LLM on my own content, plus actionable tips for creators who want their AI output to match their authentic voice. Whether it\u2019s for copywriting, social media, or video scripts, you\u2019ll see how easy it is to give your AI some personality.\n\nWant more tutorials on AI, automation, and creator tech? Don't forget to like, comment, and subscribe for fresh content every week!\n\n00:00 Intro\n00:48 Fine-Tuning Explained\n02:56 Demo: My Tuned Model\n08:46 Step-by-Step Walkthrough\n10:42 Step 1: Export X Data\n12:25 Step 2: Prep Tweets with ChatGPT\n15:09 Step 3: Upload Files to Nebius\n19:57 Step 5: Download Model Weights\n21:11 Step 6: Test in Playground\n26:04 Outro\n\nDiscover More:\n\ud83d\udee0\ufe0f Explore AI Tools & News: https://futuretools.io/\n\ud83d\udcf0 Weekly Newsletter: https://futuretools.io/newsletter\n\ud83c\udf99\ufe0f The Next Wave Podcast: https://youtube.com/@TheNextWavePod\n\nSocials:\n\u274c Twiter/X: https://x.com/mreflow\n\ud83d\uddbc\ufe0f Instagram: https://instagram.com/mr.eflow\n\ud83e\uddf5 Threads: https://www.threads.net/@mr.eflow\n\ud83d\udfe6 LinkedIn: https://www.linkedin.com/in/matt-wolfe-30841712/\n\ud83d\udc4d Facebook: https://www.facebook.com/mattrwolfe\n\nLet\u2019s work together!\n- Brand, sponsorship & business inquiries: mattwolfe@smoothmedia.co\n\n#AINews #AITools #ArtificialIntelligence",
-    "channel_name": "Matt Wolfe",
-    "published_at": "2025-11-14T22:20:01",
-    "duration": null,
-    "view_count": 36807,
-    "thumbnail_url": "https://i.ytimg.com/vi/pddeyCqevnw/hqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=pddeyCqevnw",
-    "transcript_available": false,
-    "transcript_excerpts": [],
-    "llm_topics_discussed": [
-      {
-        "topic": "Model Training",
-        "mentions": 2
-      },
-      {
-        "topic": "AI Agents",
-        "mentions": 1
-      }
-    ],
-    "technical_depth": null,
-    "creator_stance": null,
-    "key_claims": [],
-    "practical_insights": "How To Fine-Tune A Large Language Model (Step-By-Step) Let Notion Agent do your work for you at: https://ntn.so/MattWolfe\n\n\nReady to make your AI model sound just like you? In this video, I walk you through the complete process, from collecting your own tweets and scripts, to cleaning your data, and"
-  },
-  {
     "id": "S2Cm5ogG3Ps",
     "title": "Why I\u2019m Building a SaaS (before AI takes over)",
     "description": "I'm starting over. I'm building a SaaS before AI takes over. \n\nI believe we have a 1.5 - 2 year window where technical skills are still a valuable advantage for creating. I'm going to capitalize on this golden window with my new company Newsletter hero. \n\nMy goal is to get good at building and scaling companies in this window. I would like to spin up 3-5 before we face the mass uncertainty that AI brings. \n\nAfter that, I'm buying a farm! Like/ Subscribe if you want to join me there :)\n\nFollow my Journey Here:\n\ud83e\uddb8Newsletter Hero - https://www.newsletterhero.ai/ - If you're interested in newsletters, check us out! \n\ud83d\udc24My Twitter - https://twitter.com/KenJee_DS\n\ud83d\udc54 LinkedIn -  https://www.linkedin.com/in/kenjee/",
@@ -228,7 +201,7 @@
     "channel_name": "David Ondrej",
     "published_at": "2025-10-13T09:35:47",
     "duration": null,
-    "view_count": 146157,
+    "view_count": 146167,
     "thumbnail_url": "https://i.ytimg.com/vi/g80Q1sVtikE/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=g80Q1sVtikE",
     "transcript_available": false,
@@ -249,13 +222,36 @@
     "practical_insights": "Fine-tune your own LLM in 13 minutes, here\u2019s how Wanna master AI coding? Go here: https://www.skool.com/new-society\n\nFollow me on Instagram - https://www.instagram.com/davidondrej1/\nFollow me on Twitter - https://x.com/DavidOndrej1\n\nHost your n8n agents on Hostinger: https://www.hostinger.com/david\n"
   },
   {
+    "id": "vK_qvUeuNRE",
+    "title": "How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide",
+    "description": "Learn how to easily generate AI transcripts for YouTube videos using OpenAI\u2019s Whisper API and DaVinci Resolve. In this step-by-step tutorial, I\u2019ll show you how to split audio into one-minute chunks, process them through Whisper, and use the transcripts to boost your SEO with titles, hashtags, and more.\n\nThis method is perfect if you want to:\n\nImprove YouTube search rankings with full transcripts.\n\nSave time and money with free tools like DaVinci Resolve.\n\nGet better suggestions from AI for titles, tags, and descriptions.\n\n\ud83d\udca1 Cost example: About $0.08 for 3 minutes of video (prices vary).\n\u26a1 Bonus tip: Automate multiple audio chunks on Windows for faster processing.\n\n\ud83d\udc49 Stick around to the end for the exact export settings I used in DaVinci Resolve to make Whisper work smoothly.\n\n0:00 \u2013 Why transcripts help SEO & YouTube growth\n0:25 \u2013 Using GPT for SEO title + hashtag ideas\n0:35 \u2013 Whisper API for transcription (limitations & timeouts)\n1:03 \u2013 Fix: Splitting video/audio into 1-minute chunks in DaVinci Resolve\n1:31 \u2013 Exporting audio clips (MP3 settings)\n2:10 \u2013 Cost breakdown & final workflow\n2:22 \u2013 Running Whisper API on all chunks at once\n\n#YouTubeSEO #WhisperAI #DaVinciResolve #AITranscripts #contentcreation \n\nFull Transcript (auto-caption backup):\nHey everybody, just a quick note on how to get audio transcripts easily from an AI. \nI have been wanting to increase the views of my YouTube videos so I asked GPT for \nsome SEO suggestions. One thing it suggested which is both helpful for search engines and nice was to \nput a transcript to everybody was to put a transcript with each video. The other good thing this does\nis when you have a transcript, you can hand it to GPT and GPT can suggest a good title and hashtags \nand all that kind of good SEO stuff.\nSo, I needed a transcript and I work with AIs all the time and so the first thing that occurred to me was that I had a \ncommand line tool called that Simon Willison wrote and that it interacted with \nthe OpenAI API and had something called in uses OpenAI's Whisper API, awesome. \nSo I went off, I asked that to make me a transcript, that's what Whisper can do, and it \nkept timing out over and over and over. That is when I surmised, and I was correct, I looked it up, \nthat Whisper likes about one minute chunks of audio at a time. And so this is where DaVinci Resolve comes in. \nDaVinci Resolve is a free download video editor, and I went into DaVinci Resolve and I split my audio, or my video, \nwith the audio into one minute chunks using breaks, or Ctrl-B. So I went Ctrl-B, Ctrl-B, Ctrl-B. Then \nI went to the delivery section and turned off video export, told it I did want to export audio. I made sure that I...\nI'm that this is mp3 and mp3 and they matched went to the file section said I wanted individual clips \nSo now each break is going to be an individual clip Told it to use custom names. So they're easy to work with \nAnd told it to use unique file names. So my custom name is going to come from up here And lo and behold \nI got the entire transcript out there it is just so you know As far as I know, the cost was about \n$0.08 for about 3 minutes of video For me, on this weekend. I know the costs change over time \nNow, for folks like me that are stuck on Windows You can have it work on all the blocks at once \nHave the LLM Whisper API work on all the blocks at once You have to jump through a few hoops \nYou have to tell it to do something\nDo something like this which which gets all the mp3s and then passes it through this for api \nAnd that is all thanks everybody. Have a good day",
+    "channel_name": "antigravkids",
+    "published_at": "2025-09-15T20:48:28",
+    "duration": null,
+    "view_count": 278,
+    "thumbnail_url": "https://i.ytimg.com/vi/vK_qvUeuNRE/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=vK_qvUeuNRE",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Multimodal",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "How to Get Transcripts from AI with Whisper & DaVinci Resolve Step by Step Guide Learn how to easily generate AI transcripts for YouTube videos using OpenAI\u2019s Whisper API and DaVinci Resolve. In this step-by-step tutorial, I\u2019ll show you how to split audio into one-minute chunks, process them through"
+  },
+  {
     "id": "RNF0FvRjGZk",
     "title": "I Visualised Attention in Transformers",
     "description": "To try everything Brilliant has to offer\u2014free\u2014for a full 30 days, visit https://brilliant.org/GalLahat/ . You\u2019ll also get 20% off an annual premium subscription.\n\nVoice type with Peach Beta \ud83c\udf51:\nhttps://peach-voice.com\n\nThis video was sponsored by Brilliant\n\nThe music is created by my partner (AI) and me, feel free to use it commercially for your own projects but make sure to credit this video when you do:\nhttps://drive.google.com/drive/folders/1WSKmpkQGOHb_jij4Ut2NpivTcljc7qLS?usp=sharing",
     "channel_name": "Gal Lahat",
     "published_at": "2025-06-30T16:24:54",
     "duration": null,
-    "view_count": 268673,
+    "view_count": 268688,
     "thumbnail_url": "https://i.ytimg.com/vi/RNF0FvRjGZk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=RNF0FvRjGZk",
     "transcript_available": false,
@@ -282,7 +278,7 @@
     "channel_name": "Under The Hood",
     "published_at": "2025-03-08T08:54:17",
     "duration": null,
-    "view_count": 111629,
+    "view_count": 111634,
     "thumbnail_url": "https://i.ytimg.com/vi/KMHkbXzHn7s/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=KMHkbXzHn7s",
     "transcript_available": false,
@@ -305,7 +301,7 @@
     "channel_name": "Curious Steve",
     "published_at": "2025-02-05T17:33:57",
     "duration": null,
-    "view_count": 577244,
+    "view_count": 577269,
     "thumbnail_url": "https://i.ytimg.com/vi/WoCtFUZXVsY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=WoCtFUZXVsY",
     "transcript_available": false,
@@ -317,36 +313,13 @@
     "practical_insights": "How LLM Works (Explained) | The Ultimate Guide To LLM | Day 1:Tokenization \ud83d\udd25 #sh \ud83d\ude80 **Master Large Language Models (LLMs) in Minutes!** \ud83d\ude80  \nConfused about ChatGPT, Gemini, or DeepSeek R1? This **ultimate guide** breaks down LLMs from scratch \u2014 no jargon, no fluff. Learn how these AI models work, why "
   },
   {
-    "id": "jiYqbEDPw7A",
-    "title": "Fine-Tune GPT-4o Model Step by Step",
-    "description": "Learn how to fine-tune OpenAI's GPT models with this step-by-step Python tutorial. Perfect for developers and data scientists working with custom datasets.\n\n\ud83d\udd0d What you'll learn:\n- Complete fine-tuning process from start to finish\n- Converting CSV data to JSONL format\n- Uploading training files to OpenAI\n- Creating and monitoring fine-tuning jobs\n- Testing your custom model\n\n\u26a1 Practical example: Medical report data extraction\n\u2728 Working Python code included\n\ud83d\ude80 Real-world implementation\n\nCode and Data: https://blog.futuresmart.ai/how-to-fine-tune-openai-gpt-4o-model-a-step-by-step-guide",
-    "channel_name": "Pradip Nichite",
-    "published_at": "2024-10-26T06:04:32",
-    "duration": null,
-    "view_count": 16164,
-    "thumbnail_url": "https://i.ytimg.com/vi/jiYqbEDPw7A/hqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=jiYqbEDPw7A",
-    "transcript_available": false,
-    "transcript_excerpts": [],
-    "llm_topics_discussed": [
-      {
-        "topic": "Model Training",
-        "mentions": 3
-      }
-    ],
-    "technical_depth": null,
-    "creator_stance": null,
-    "key_claims": [],
-    "practical_insights": "Fine-Tune GPT-4o Model Step by Step Learn how to fine-tune OpenAI's GPT models with this step-by-step Python tutorial. Perfect for developers and data scientists working with custom datasets.\n\n\ud83d\udd0d What you'll learn:\n- Complete fine-tuning process from start to finish\n- Converting CSV data to JSONL for"
-  },
-  {
     "id": "ygUEbCpOOLg",
     "title": "LM Studio Tutorial: Run Large Language Models (LLM) on Your Laptop",
     "description": "In this video, I'll show you how to run large language models (LLMs) right on your laptop using LM Studio! LM Studio uses GPU offloading to break down complex AI models, allowing you to run them smoothly on almost any laptop. With LM Studio accelerated by NVIDIA RTX GPUs, you unlock faster performance and better handling of larger models, giving you power and speed for advanced workflows. Whether you're generating text, summarizing documents, or asking questions, I'll guide you through the installation process, how to load and use models like Llama and Gemma, and even how to upload files for analysis\u2014all while keeping your data secure on your PC. Perfect for those who want to explore AI without relying on cloud services!\n\nHost: Kevin Stratvert\n\n\ud83d\udcda RESOURCES\n- Learn more and download LM Studio here: https://nvda.ws/3YhC91P\n\n\u231a TIMESTAMPS\n0:00 - Introduce LM Studio\n0:41 - Download and Install LM Studio\n1:41 - Download and Load Your First LLM (Llama 3.2 1B)\n2:48 - Interact with AI in LM Studio (Chocolate Chip Cookie Example)\n3:18 - Upload Documents and Interact with Them\n3:50 - Explore Other LLMs in LM Studio (Mistral, Gemma)\n5:36 - Wrap Up\n \n\ud83d\udce9 NEWSLETTER\n- Get the latest high-quality tutorial and tips and tricks videos emailed to your inbox each week: https://kevinstratvert.com/newsletter/\n\n\ud83d\udd3d CONNECT WITH ME\n- Official website: http://www.kevinstratvert.com\n- LinkedIn: https://www.linkedin.com/in/kevinstratvert/\n- Discord: https://bit.ly/KevinStratvertDiscord\n- Twitter: https://twitter.com/kevstrat\n- Facebook: https://www.facebook.com/Kevin-Stratvert-101912218227818\n- TikTok: https://www.tiktok.com/@kevinstratvert\n- Instagram: https://www.instagram.com/kevinstratvert/\n\n\ud83c\udf81 TOOLS AND DISCOUNTS\n\u2705 \ud83c\udf99\ufe0f Voicemod AI Voice Changer | 5% off | https://link.xsolla.com/KZBi89AY\n\u2705 \ud83d\udcfa Descript AI Video Editor | https://get.descript.com/sf22jb63w2tx\n\u2705 \ud83d\udcb5 QuickBooks Online: https://bit.ly/intuitquickbooksonline\n\u2705 \ud83c\udf10 Squarespace Websites | https://squarespace.syuh.net/XYaqYM\n\u2705 \ud83d\udd0d Grammarly | https://grammarly.go2cloud.org/SH3nL\n\u2705 \ud83d\udcf9 CapCut Video Editor | https://bit.ly/installcapcut\n\u2705 \ud83d\udecd\ufe0f Shopify | https://shopify.pxf.io/XY9rPa\n\u2705 \ud83d\udccb Notion | https://affiliate.notion.so/rffva4tr71ax\n\u2705 \ud83e\udd16 ElevenLabs Text-to-Speech | https://try.elevenlabs.io/taqepq60mptr\n\n\ud83c\udf92 MY COURSES\n- Go from Excel novice to data analysis ninja in just 2 hours: https://kevinstratvert.thinkific.com/\n\n\ud83d\ude4f REQUEST VIDEOS\nhttps://forms.gle/BDrTNUoxheEoMLGt5\n\n\ud83d\udd14 SUBSCRIBE ON YOUTUBE\nhttps://www.youtube.com/user/kevlers?sub_confirmation=1\n\n\ud83d\ude4c SUPPORT THE CHANNEL\n- Hit the THANKS button in any video!\n- Amazon affiliate link: https://amzn.to/3kCP2yz\n\n\u2696 DISCLOSURE\nSome links are affiliate links. Purchasing through these links gives me a small commission to support videos on this channel. The price to you is the same.\n\n#stratvert #lmstudio",
     "channel_name": "Kevin Stratvert",
     "published_at": "2024-10-24T07:00:37",
     "duration": null,
-    "view_count": 184567,
+    "view_count": 184596,
     "thumbnail_url": "https://i.ytimg.com/vi/ygUEbCpOOLg/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=ygUEbCpOOLg",
     "transcript_available": false,
@@ -369,7 +342,7 @@
     "channel_name": "Dave's Garage",
     "published_at": "2024-10-08T20:55:18",
     "duration": null,
-    "view_count": 922362,
+    "view_count": 922375,
     "thumbnail_url": "https://i.ytimg.com/vi/fFgyOucIFuk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=fFgyOucIFuk",
     "transcript_available": false,
@@ -437,7 +410,7 @@
     "channel_name": "Warp",
     "published_at": "2024-09-12T14:30:31",
     "duration": null,
-    "view_count": 801564,
+    "view_count": 801573,
     "thumbnail_url": "https://i.ytimg.com/vi/pxhkDaKzBaY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=pxhkDaKzBaY",
     "transcript_available": false,
@@ -458,13 +431,40 @@
     "practical_insights": "EASIEST Way to Fine-Tune a LLM and Use It With Ollama In this video, we go over how you can fine-tune Llama 3.1 and run it locally on your machine using Ollama! We use the open source repository \"Unsloth\" to do all of the fine tuning on an SQL dataset!\n\nThroughout this video, we discuss the ins and "
   },
   {
+    "id": "00Q0G84kq3M",
+    "title": "RAG vs. Fine Tuning",
+    "description": "Get the guide to GAI, learn more \u2192 https://ibm.biz/BdKTbF\nLearn more about the technology \u2192 https://ibm.biz/BdKTbX\n\nJoin Cedric Clyburn as he explores the differences and use cases of Retrieval Augmented Generation (RAG) and fine-tuning in enhancing large language models. This video covers the strengths, weaknesses, and common applications of both techniques, and provides insights on how to choose between them using machine learning and natural language processing principles\n\nAI news moves fast. Sign up for a monthly newsletter for AI updates from IBM \u2192 https://www.ibm.com/account/reg/us-en/signup?formid=news-urx-52120\n\n#AI #LargeLanguageModels #FineTuning #RAG #ReinforcementLearning #MachineLearning #NaturalLanguageProcessing",
+    "channel_name": "IBM Technology",
+    "published_at": "2024-09-09T15:00:00",
+    "duration": null,
+    "view_count": 427612,
+    "thumbnail_url": "https://i.ytimg.com/vi/00Q0G84kq3M/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=00Q0G84kq3M",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Model Training",
+        "mentions": 1
+      },
+      {
+        "topic": "RAG Systems",
+        "mentions": 1
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "RAG vs. Fine Tuning Get the guide to GAI, learn more \u2192 https://ibm.biz/BdKTbF\nLearn more about the technology \u2192 https://ibm.biz/BdKTbX\n\nJoin Cedric Clyburn as he explores the differences and use cases of Retrieval Augmented Generation (RAG) and fine-tuning in enhancing large language models. This vi"
+  },
+  {
     "id": "eMlx5fFNoYc",
     "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
     "description": "Demystifying attention, the key mechanism inside transformers and LLMs.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\nSpecial thanks to these supporters: https://www.3blue1brown.com/lessons/attention#thanks\nAn equally valuable form of support is to simply share the videos.\n\nDemystifying self-attention, multiple heads, and cross-attention.\nInstead of sponsored ad reads, these lessons are funded directly by viewers: https://3b1b.co/support\n\nThe first pass for the translated subtitles here is machine-generated and, therefore, notably imperfect. To contribute edits or fixes, visit https://www.criblate.com\n\n\u0417\u0432\u0443\u043a\u043e\u0432\u0430\u044f \u0434\u043e\u0440\u043e\u0436\u043a\u0430 \u043d\u0430 \u0440\u0443\u0441\u0441\u043a\u043e\u043c \u044f\u0437\u044b\u043a\u0435: \u0412\u043b\u0430\u0434 \u0411\u0443\u0440\u043c\u0438\u0441\u0442\u0440\u043e\u0432.\n\n------------------\n\nHere are a few other relevant resources\n\nBuild a GPT from scratch, by Andrej Karpathy\nhttps://youtu.be/kCc8FmEb1nY\n\nIf you want a conceptual understanding of language models from the ground up, @vcubingx just started a short series of videos on the topic:\nhttps://youtu.be/1il-s4mgNdI?si=XaVxj6bsdy3VkgEX\n\nIf you're interested in the herculean task of interpreting what these large networks might actually be doing, the Transformer Circuits posts by Anthropic are great. In particular, it was only after reading one of these that I started thinking of the combination of the value and output matrices as being a combined low-rank map from the embedding space to itself, which, at least in my mind, made things much clearer than other sources.\nhttps://transformer-circuits.pub/2021/framework/index.html\n\nSite with exercises related to ML programming and GPTs\nhttps://www.gptandchill.ai/codingproblems\n\nHistory of language models by Brit Cruise, \u00a0@ArtOfTheProblem\u00a0 \nhttps://youtu.be/OFS90-FX6pg\n\nAn early paper on how directions in embedding spaces have meaning:\nhttps://arxiv.org/pdf/1301.3781.pdf\n\n------------------\n\nTimestamps:\n0:00 - Recap on embeddings\n1:39 - Motivating examples\n4:29 - The attention pattern\n11:08 - Masking\n12:42 - Context size\n13:10 - Values\n15:44 - Counting parameters\n18:21 - Cross-attention\n19:19 - Multiple heads\n22:16 - The output matrix\n23:19 - Going deeper\n24:54 - Ending\n\n------------------\n\nThese animations are largely made using a custom Python library, manim.  See the FAQ comments here:\nhttps://3b1b.co/faq#manim\nhttps://github.com/3b1b/manim\nhttps://github.com/ManimCommunity/manim/\n\nAll code for specific videos is visible here:\nhttps://github.com/3b1b/videos/\n\nThe music is by Vincent Rubinetti.\nhttps://www.vincentrubinetti.com\nhttps://vincerubinetti.bandcamp.com/album/the-music-of-3blue1brown\nhttps://open.spotify.com/album/1dVyjwS8FBqXhRunaG5W5u\n\n------------------\n\n3blue1brown is a channel about animating math, in all senses of the word animate. If you're reading the bottom of a video description, I'm guessing you're more interested than the average viewer in lessons here. It would mean a lot to me if you chose to stay up to date on new ones, either by subscribing here on YouTube or otherwise following on whichever platform below you check most regularly.\n\nMailing list: https://3blue1brown.substack.com\nTwitter: https://twitter.com/3blue1brown\nInstagram: https://www.instagram.com/3blue1brown\nReddit: https://www.reddit.com/r/3blue1brown\nFacebook: https://www.facebook.com/3blue1brown\nPatreon: https://patreon.com/3blue1brown\nWebsite: https://www.3blue1brown.com",
     "channel_name": "3Blue1Brown",
     "published_at": "2024-04-07T12:53:54",
     "duration": null,
-    "view_count": 4119755,
+    "view_count": 4119890,
     "thumbnail_url": "https://i.ytimg.com/vi/eMlx5fFNoYc/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
     "transcript_available": false,
@@ -537,7 +537,7 @@
     "channel_name": "Google Cloud Tech",
     "published_at": "2023-06-05T18:21:12",
     "duration": null,
-    "view_count": 239312,
+    "view_count": 239308,
     "thumbnail_url": "https://i.ytimg.com/vi/fjJOgb-E41w/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=fjJOgb-E41w",
     "transcript_available": false,
