@@ -2,6 +2,8 @@ name: Deploy LLM Tracker
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main] 
   schedule:
     - cron: '0 */12 * * *'
 
@@ -31,24 +33,6 @@ jobs:
         python run_pipeline_standalone.py || true
         python generate_static_report.py || true
     
-    - name: Create index.html if missing
-      run: |
-        if [ ! -f "public/index.html" ]; then
-          echo "Creating fallback index.html"
-          mkdir -p public
-          cat > public/index.html << 'EOF'
-        <!DOCTYPE html>
-        <html>
-        <head><title>LLM Tracker</title></head>
-        <body>
-        <h1> LLM YouTube Tracker</h1>
-        <p>Data is being collected. Check back soon!</p>
-        <p>Last attempt: $(date)</p>
-        </body>
-        </html>
-        EOF
-        fi
-    
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
@@ -56,5 +40,3 @@ jobs:
         publish_dir: ./public
         publish_branch: gh-pages
         force_orphan: true
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
