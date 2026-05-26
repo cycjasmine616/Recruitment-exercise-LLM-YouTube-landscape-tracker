@@ -18,14 +18,14 @@ def main():
     
     try:
         from config import Config
-        from database import Video, ChannelRelation, SessionLocal, Base, engine
+        from database import Video, Base, engine, SessionLocal
         from youtube_fetcher import YouTubeFetcher
         from transcript_fetcher import TranscriptFetcher
         from ai_analyzer_hf_light import LightweightAnalyzer
         
         if not Config.YOUTUBE_API_KEY:
-            logger.error("No API key!")
-            create_fallback_files()
+            logger.error("No YouTube API key!")
+            create_empty_files()
             return
         
         Base.metadata.create_all(engine)
@@ -34,32 +34,31 @@ def main():
         transcript_fetcher = TranscriptFetcher()
         analyzer = LightweightAnalyzer()
         
+        logger.info("✓ Components initialized\n")
+        
         all_videos = []
         
-        if Config.LLM_CHANNELS:
-            logger.info("Fetching from LLM channels...")
-            for channel_id, channel_name in Config.LLM_CHANNELS.items():
-                try:
-                    videos = fetcher.fetch_channel_videos(channel_id, Config.MAX_VIDEOS_PER_CHANNEL)
+        logger.info("📡 FETCHING FROM LLM CHANNELS...")
+        for channel_id, channel_name in Config.LLM_CHANNELS.items():
+            try:
+                videos = fetcher.fetch_channel_videos(channel_id, Config.MAX_VIDEOS_PER_CHANNEL)
+                if videos:
+                    logger.info(f"  ✓ {channel_name}: {len(videos)} videos")
                     all_videos.extend(videos)
-                    logger.info(f"  {channel_name}: {len(videos)} videos")
-                except Exception as e:
-                    logger.error(f"  {channel_name}: Failed - {e}")
+                else:
+                    logger.info(f"  ✗ {channel_name}: No videos found")
+            except Exception as e:
+                logger.error(f"  ✗ {channel_name}: Error - {e}")
         
-        if not all_videos and Config.USE_SEARCH:
-            logger.info("No channel videos found. Using search...")
-            for query in Config.LLM_SEARCH_QUERIES[:2]:  
-                try:
-                    videos = fetcher.search_videos(query, Config.MAX_SEARCH_RESULTS)
+        logger.info("\n🔍 SEARCHING FOR LLM CONTENT...")
+        for query in Config.SEARCH_QUERIES[:3]:
+            try:
+                videos = fetcher.search_videos(query, Config.MAX_SEARCH_RESULTS)
+                if videos:
+                    logger.info(f"  ✓ '{query[:40]}...': {len(videos)} videos")
                     all_videos.extend(videos)
-                except Exception as e:
-                    logger.error(f"Search failed: {e}")
-        
-        if not all_videos:
-            logger.warning("No videos found. Creating sample data.")
-            create_fallback_files()
-            db.close()
-            return
+            except Exception as e:
+                logger.error(f"  ✗ Search error: {e}")
         
         seen = set()
         unique_videos = []
@@ -68,56 +67,82 @@ def main():
                 seen.add(v['id'])
                 unique_videos.append(v)
         
-        logger.info(f"\nProcessing {len(unique_videos)} unique videos...")
+        logger.info(f"\n📊 TOTAL UNIQUE VIDEOS: {len(unique_videos)}")
+        
+        if not unique_videos:
+            logger.warning("No videos found!")
+            create_empty_files()
+            db.close()
+            return
+        
+        logger.info("\n🔍 ANALYZING TRANSCRIPTS...")
         logger.info("-" * 60)
         
         processed = 0
+        with_transcript = 0
+        
         for i, video_data in enumerate(unique_videos, 1):
             try:
                 vid = video_data['id']
-                title = video_data.get('title', 'Unknown')[:80]
-                channel = video_data.get('channel_name', 'Unknown')
+                title = video_data['title'][:80]
+                channel = video_data['channel_name']
                 
-                logger.info(f"[{i}/{len(unique_videos)}] {channel}: {title}")
+                logger.info(f"\n[{i}/{len(unique_videos)}] {channel}")
+                logger.info(f"  📹 {title}")
                 
                 existing = db.query(Video).filter(Video.id == vid).first()
                 if existing and existing.transcript_available:
-                    logger.info("  Already has transcript - skipping")
+                    logger.info("  ✓ Already analyzed with transcript")
+                    processed += 1
+                    with_transcript += 1
                     continue
                 
-                logger.info("  Fetching transcript...")
+                logger.info("  📝 Fetching transcript...")
                 transcript, has_transcript = transcript_fetcher.get_transcript(vid)
                 
                 if has_transcript:
-                    logger.info(f"  ✓ Got {len(transcript)} chars")
+                    logger.info(f"  ✓ Got transcript ({len(transcript)} chars)")
+                    with_transcript += 1
                     
-                    analysis = analyzer.analyze_transcript_deep(
+                    analysis = analyzer.analyze_transcript(
                         transcript, title, video_data.get('description', '')
                     )
+                    
+                    summary = analysis['summary']
+                    topics = analysis['topics']
+                    quotes = analysis['key_quotes']
+                    
+                    if topics:
+                        topic_names = [t['topic'] for t in topics[:3]]
+                        logger.info(f"  📊 Topics: {', '.join(topic_names)}")
+                    
+                    if quotes:
+                        logger.info(f"  💬 Key quotes: {len(quotes)} extracted")
                 else:
                     logger.info("  ⚠ No transcript")
-                    analysis = analyzer._analyze_from_description(
+                    analysis = analyzer._fallback_analysis(
                         title, video_data.get('description', '')
                     )
+                    summary = analysis['summary']
+                    topics = analysis['topics']
+                    quotes = []
                 
                 record = {
                     'id': vid,
-                    'title': title,
+                    'title': video_data['title'],
                     'description': video_data.get('description', ''),
                     'channel_id': video_data.get('channel_id', ''),
                     'channel_name': channel,
-                    'published_at': video_data.get('published_at', datetime.utcnow()),
+                    'published_at': video_data['published_at'],
                     'view_count': video_data.get('view_count', 0),
                     'thumbnail_url': video_data.get('thumbnail_url', ''),
-                    'url': video_data.get('url', ''),
+                    'url': video_data['url'],
                     'transcript': transcript,
                     'transcript_available': has_transcript,
-                    'transcript_excerpts': json.dumps(analysis.get('transcript_excerpts', [])),
-                    'llm_topics_discussed': json.dumps(analysis.get('topics_discussed', [])),
-                    'technical_depth': analysis.get('technical_depth', 'Unknown'),
-                    'creator_stance': analysis.get('creator_stance', 'Unknown'),
-                    'key_claims': json.dumps(analysis.get('key_claims', [])),
-                    'practical_insights': analysis.get('practical_insights', ''),
+                    'transcript_excerpts': json.dumps(quotes),
+                    'llm_topics_discussed': json.dumps(topics),
+                    'key_claims': json.dumps([q['text'] for q in quotes]),
+                    'practical_insights': summary,
                     'fetched_at': datetime.utcnow(),
                     'updated_at': datetime.utcnow()
                 }
@@ -130,74 +155,44 @@ def main():
                 
                 db.commit()
                 processed += 1
-                logger.info("   Saved")
+                logger.info("  ✅ Saved")
                 
             except Exception as e:
-                logger.error(f"   Error: {e}")
+                logger.error(f"  ❌ Error: {e}")
                 db.rollback()
                 continue
         
-        logger.info(f"\n Processed {processed} videos")
+        logger.info(f"\n✅ Processed {processed} videos ({with_transcript} with transcripts)")
         
-        try:
-            from database import Video as V, ChannelRelation as CR
-            channels = db.query(V.channel_id, V.channel_name).distinct().all()
-            
-            channel_data = {}
-            for ch_id, ch_name in channels:
-                videos_list = db.query(V).filter(
-                    V.channel_id == ch_id,
-                    V.llm_topics_discussed.isnot(None)
-                ).all()
-                if videos_list:
-                    channel_data[ch_id] = videos_list
-            
-            relationships = analyzer.calculate_channel_relationships(channel_data)
-            
-            for rel in relationships:
-                existing_rel = db.query(CR).filter(
-                    ((CR.channel_name_1 == rel['channel_1']) & (CR.channel_name_2 == rel['channel_2'])) |
-                    ((CR.channel_name_1 == rel['channel_2']) & (CR.channel_name_2 == rel['channel_1']))
-                ).first()
-                
-                if existing_rel:
-                    existing_rel.similarity_score = rel['similarity_score']
-                    existing_rel.common_topics = json.dumps(rel['common_topics'])
-                    existing_rel.relationship_description = rel.get('description', '')
-                    existing_rel.last_updated = datetime.utcnow()
-                else:
-                    db.add(CR(
-                        channel_name_1=rel['channel_1'],
-                        channel_name_2=rel['channel_2'],
-                        similarity_score=rel['similarity_score'],
-                        common_topics=json.dumps(rel['common_topics']),
-                        relationship_description=rel.get('description', '')
-                    ))
-            
-            db.commit()
-            logger.info(f"Saved {len(relationships)} channel relationships")
-        except Exception as e:
-            logger.error(f"Relationship calculation error: {e}")
+        logger.info("\n🔗 FINDING CHANNEL RELATIONSHIPS...")
+        relationships = analyzer.find_channel_relationships(
+            [v.to_dict() for v in db.query(Video).all()]
+        )
         
-        export_data(db)
+        for rel in relationships[:10]:
+            logger.info(f"  {rel['channel_1']} ↔ {rel['channel_2']}: {rel['similarity']:.0%} similar")
+            logger.info(f"    {rel['relationship']}")
+        
+        export_data(db, relationships)
+        
         db.close()
-        
-        logger.info("\n PIPELINE COMPLETE")
+        logger.info("\n✅ PIPELINE COMPLETE")
         
     except Exception as e:
         logger.error(f"Fatal error: {e}")
         import traceback
         traceback.print_exc()
-        create_fallback_files()
+        create_empty_files()
 
-def export_data(db):
-    """Export all data to JSON"""
-    from database import Video, ChannelRelation
+def export_data(db, relationships):
+    """Export to JSON files"""
+    from database import Video
     
     os.makedirs('public/data', exist_ok=True)
     
     videos = db.query(Video).order_by(Video.published_at.desc()).all()
     videos_data = []
+    
     for v in videos:
         try:
             d = v.to_dict()
@@ -208,43 +203,32 @@ def export_data(db):
     with open('public/data/videos.json', 'w') as f:
         json.dump(videos_data, f, indent=2, default=str)
     
-    relations = db.query(ChannelRelation).all()
-    relations_data = []
-    for r in relations:
-        relations_data.append({
-            'channel_1': r.channel_name_1,
-            'channel_2': r.channel_name_2,
-            'similarity_score': r.similarity_score,
-            'common_topics': json.loads(r.common_topics) if isinstance(r.common_topics, str) else r.common_topics,
-            'description': r.relationship_description
-        })
-    
     with open('public/data/relations.json', 'w') as f:
-        json.dump(relations_data, f, indent=2)
+        json.dump(relationships, f, indent=2)
     
-    channels_count = len(set(v.get('channel_name', '') for v in videos_data))
+    channels = list(set(v.get('channel_name', '') for v in videos_data))
     metadata = {
         'last_updated': datetime.utcnow().isoformat(),
         'total_videos': len(videos_data),
-        'total_channels': channels_count,
-        'total_relations': len(relations_data)
+        'total_channels': len(channels),
+        'channels': channels,
+        'total_relations': len(relationships),
+        'videos_with_transcripts': sum(1 for v in videos_data if v.get('transcript_available'))
     }
     
     with open('public/data/metadata.json', 'w') as f:
         json.dump(metadata, f, indent=2)
     
-    logger.info(f" Exported {len(videos_data)} videos, {len(relations_data)} relations")
+    logger.info(f"✅ Exported {len(videos_data)} videos and {len(relationships)} relationships")
 
-def create_fallback_files():
-    """Create fallback files if pipeline fails"""
+def create_empty_files():
+    """Create empty data files"""
     os.makedirs('public/data', exist_ok=True)
     
     with open('public/data/videos.json', 'w') as f:
         json.dump([], f)
-    
     with open('public/data/relations.json', 'w') as f:
         json.dump([], f)
-    
     with open('public/data/metadata.json', 'w') as f:
         json.dump({
             'last_updated': datetime.utcnow().isoformat(),
@@ -252,8 +236,6 @@ def create_fallback_files():
             'total_channels': 0,
             'total_relations': 0
         }, f)
-    
-    logger.info("Created fallback data files")
 
 if __name__ == "__main__":
     main()
