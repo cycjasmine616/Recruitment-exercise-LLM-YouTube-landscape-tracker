@@ -43,14 +43,14 @@ def main():
             try:
                 videos = fetcher.fetch_channel_videos(channel_id, Config.MAX_VIDEOS_PER_CHANNEL)
                 if videos:
-                    logger.info(f"  ✓ {channel_name}: {len(videos)} videos")
+                    logger.info(f"   {channel_name}: {len(videos)} videos")
                     all_videos.extend(videos)
                 else:
-                    logger.info(f"  ✗ {channel_name}: No videos found")
+                    logger.info(f"   {channel_name}: No videos found")
             except Exception as e:
-                logger.error(f"  ✗ {channel_name}: Error - {e}")
+                logger.error(f"   {channel_name}: Error - {e}")
         
-        logger.info("\n🔍 SEARCHING FOR LLM CONTENT...")
+        logger.info("\n SEARCHING FOR LLM CONTENT...")
         for query in Config.SEARCH_QUERIES[:3]:
             try:
                 videos = fetcher.search_videos(query, Config.MAX_SEARCH_RESULTS)
@@ -67,7 +67,7 @@ def main():
                 seen.add(v['id'])
                 unique_videos.append(v)
         
-        logger.info(f"\n📊 TOTAL UNIQUE VIDEOS: {len(unique_videos)}")
+        logger.info(f"\n TOTAL UNIQUE VIDEOS: {len(unique_videos)}")
         
         if not unique_videos:
             logger.warning("No videos found!")
@@ -75,7 +75,7 @@ def main():
             db.close()
             return
         
-        logger.info("\n🔍 ANALYZING TRANSCRIPTS...")
+        logger.info("\n ANALYZING TRANSCRIPTS...")
         logger.info("-" * 60)
         
         processed = 0
@@ -88,20 +88,20 @@ def main():
                 channel = video_data['channel_name']
                 
                 logger.info(f"\n[{i}/{len(unique_videos)}] {channel}")
-                logger.info(f"  📹 {title}")
+                logger.info(f"   {title}")
                 
                 existing = db.query(Video).filter(Video.id == vid).first()
                 if existing and existing.transcript_available:
-                    logger.info("  ✓ Already analyzed with transcript")
+                    logger.info("   Already analyzed with transcript")
                     processed += 1
                     with_transcript += 1
                     continue
                 
-                logger.info("  📝 Fetching transcript...")
+                logger.info("   Fetching transcript...")
                 transcript, has_transcript = transcript_fetcher.get_transcript(vid)
                 
                 if has_transcript:
-                    logger.info(f"  ✓ Got transcript ({len(transcript)} chars)")
+                    logger.info(f"   Got transcript ({len(transcript)} chars)")
                     with_transcript += 1
                     
                     analysis = analyzer.analyze_transcript(
@@ -114,10 +114,10 @@ def main():
                     
                     if topics:
                         topic_names = [t['topic'] for t in topics[:3]]
-                        logger.info(f"  📊 Topics: {', '.join(topic_names)}")
+                        logger.info(f"   Topics: {', '.join(topic_names)}")
                     
                     if quotes:
-                        logger.info(f"  💬 Key quotes: {len(quotes)} extracted")
+                        logger.info(f"   Key quotes: {len(quotes)} extracted")
                 else:
                     logger.info("  ⚠ No transcript")
                     analysis = analyzer._fallback_analysis(
@@ -155,14 +155,14 @@ def main():
                 
                 db.commit()
                 processed += 1
-                logger.info("  ✅ Saved")
+                logger.info("   Saved")
                 
             except Exception as e:
-                logger.error(f"  ❌ Error: {e}")
+                logger.error(f"   Error: {e}")
                 db.rollback()
                 continue
         
-        logger.info(f"\n✅ Processed {processed} videos ({with_transcript} with transcripts)")
+        logger.info(f"\n Processed {processed} videos ({with_transcript} with transcripts)")
         
         logger.info("\n🔗 FINDING CHANNEL RELATIONSHIPS...")
         relationships = analyzer.find_channel_relationships(
@@ -176,7 +176,7 @@ def main():
         export_data(db, relationships)
         
         db.close()
-        logger.info("\n✅ PIPELINE COMPLETE")
+        logger.info("\n PIPELINE COMPLETE")
         
     except Exception as e:
         logger.error(f"Fatal error: {e}")
@@ -219,7 +219,7 @@ def export_data(db, relationships):
     with open('public/data/metadata.json', 'w') as f:
         json.dump(metadata, f, indent=2)
     
-    logger.info(f"✅ Exported {len(videos_data)} videos and {len(relationships)} relationships")
+    logger.info(f" Exported {len(videos_data)} videos and {len(relationships)} relationships")
 
 def create_empty_files():
     """Create empty data files"""
