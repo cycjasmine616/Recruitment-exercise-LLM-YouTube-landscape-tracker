@@ -10,61 +10,49 @@ class YouTubeFetcher:
         self.api_key = Config.YOUTUBE_API_KEY
         self.base_url = "https://www.googleapis.com/youtube/v3"
     
-    def fetch_channel_videos(self, channel_id, max_results=8):
+    def fetch_channel_videos(self, channel_id, max_results=5):
+        """Fetch recent videos from a channel"""
         videos = []
-        
         try:
-            channel_url = f"{self.base_url}/channels"
-            params = {
-                'part': 'contentDetails,snippet',
-                'id': channel_id,
-                'key': self.api_key
-            }
+            channel_response = requests.get(
+                f"{self.base_url}/channels",
+                params={'part': 'contentDetails,snippet', 'id': channel_id, 'key': self.api_key},
+                timeout=10
+            )
             
-            response = requests.get(channel_url, params=params, timeout=10)
-            if response.status_code != 200:
-                logger.error(f"Channel API error: {response.status_code}")
+            if channel_response.status_code != 200:
                 return videos
             
-            data = response.json()
-            if not data.get('items'):
-                logger.warning(f"Channel {channel_id} not found")
+            channel_data = channel_response.json()
+            if not channel_data.get('items'):
                 return videos
             
-            channel_info = data['items'][0]
+            channel_info = channel_data['items'][0]
             channel_name = channel_info['snippet']['title']
-            uploads_playlist = channel_info['contentDetails']['relatedPlaylists']['uploads']
+            uploads_id = channel_info['contentDetails']['relatedPlaylists']['uploads']
             
-            playlist_url = f"{self.base_url}/playlistItems"
-            playlist_params = {
-                'part': 'snippet',
-                'playlistId': uploads_playlist,
-                'maxResults': max_results,
-                'key': self.api_key
-            }
+            playlist_response = requests.get(
+                f"{self.base_url}/playlistItems",
+                params={'part': 'snippet', 'playlistId': uploads_id, 'maxResults': max_results, 'key': self.api_key},
+                timeout=10
+            )
             
-            playlist_response = requests.get(playlist_url, params=playlist_params, timeout=10)
             if playlist_response.status_code != 200:
                 return videos
             
             playlist_data = playlist_response.json()
-            video_ids = []
-            
-            for item in playlist_data.get('items', []):
-                vid = item['snippet']['resourceId']['videoId']
-                video_ids.append(vid)
+            video_ids = [item['snippet']['resourceId']['videoId'] 
+                        for item in playlist_data.get('items', [])]
             
             if not video_ids:
                 return videos
             
-            details_url = f"{self.base_url}/videos"
-            details_params = {
-                'part': 'snippet,statistics,contentDetails',
-                'id': ','.join(video_ids),
-                'key': self.api_key
-            }
+            details_response = requests.get(
+                f"{self.base_url}/videos",
+                params={'part': 'snippet,statistics', 'id': ','.join(video_ids), 'key': self.api_key},
+                timeout=10
+            )
             
-            details_response = requests.get(details_url, params=details_params, timeout=10)
             if details_response.status_code != 200:
                 return videos
             
@@ -75,125 +63,93 @@ class YouTubeFetcher:
                 stats = video.get('statistics', {})
                 
                 thumbnails = snippet.get('thumbnails', {})
-                thumbnail_url = ''
-                for quality in ['maxres', 'high', 'medium', 'default']:
-                    if quality in thumbnails:
-                        thumbnail_url = thumbnails[quality]['url']
+                thumb = ''
+                for q in ['high', 'medium', 'default']:
+                    if q in thumbnails:
+                        thumb = thumbnails[q]['url']
                         break
                 
-                video_obj = {
+                videos.append({
                     'id': video['id'],
                     'title': snippet['title'],
                     'description': snippet.get('description', ''),
                     'channel_id': channel_id,
                     'channel_name': channel_name,
-                    'published_at': datetime.fromisoformat(
-                        snippet['publishedAt'].replace('Z', '+00:00')
-                    ),
+                    'published_at': datetime.fromisoformat(snippet['publishedAt'].replace('Z', '+00:00')),
                     'view_count': int(stats.get('viewCount', 0)),
-                    'like_count': int(stats.get('likeCount', 0)),
-                    'thumbnail_url': thumbnail_url,
+                    'thumbnail_url': thumb,
                     'url': f"https://www.youtube.com/watch?v={video['id']}"
-                }
-                
-                videos.append(video_obj)
-                logger.info(f"   {snippet['title'][:80]}")
+                })
             
-            logger.info(f"Fetched {len(videos)} videos from {channel_name}")
+            logger.info(f"Fetched {len(videos)} from {channel_name}")
             
         except Exception as e:
-            logger.error(f"Error fetching channel {channel_id}: {e}")
+            logger.error(f"Channel error: {e}")
         
         return videos
     
-    def fetch_all_channels(self):
-        from config import Config
-        
-        all_videos = []
-        
-        for channel_id, channel_name in Config.LLM_CHANNELS.items():
-            logger.info(f"\n Fetching from: {channel_name}")
-            try:
-                videos = self.fetch_channel_videos(channel_id, Config.MAX_VIDEOS_PER_CHANNEL)
-                all_videos.extend(videos)
-            except Exception as e:
-                logger.error(f"Failed for {channel_name}: {e}")
-        
-        logger.info(f"\n Total videos fetched: {len(all_videos)}")
-        return all_videos
-
-def search_videos(self, query, max_results=3):
-    """Search YouTube for videos"""
-    import requests
-    from datetime import datetime
-    
-    videos = []
-    try:
-        search_params = {
-            'part': 'snippet',
-            'q': query,
-            'type': 'video',
-            'maxResults': max_results,
-            'relevanceLanguage': 'en',
-            'key': self.api_key
-        }
-        
-        response = requests.get(f"{self.base_url}/search", params=search_params, timeout=10)
-        
-        if response.status_code != 200:
-            return videos
-        
-        data = response.json()
-        
-        if 'error' in data:
-            logger.error(f"API Error: {data['error'].get('message', '')}")
-            return videos
-        
-        video_ids = []
-        for item in data.get('items', []):
-            if 'id' in item and 'videoId' in item['id']:
-                video_ids.append(item['id']['videoId'])
-        
-        if not video_ids:
-            return videos
-        
-        details_params = {
-            'part': 'snippet,statistics',
-            'id': ','.join(video_ids),
-            'key': self.api_key
-        }
-        
-        details_response = requests.get(f"{self.base_url}/videos", params=details_params, timeout=10)
-        
-        if details_response.status_code != 200:
-            return videos
-        
-        details_data = details_response.json()
-        
-        for video in details_data.get('items', []):
-            snippet = video['snippet']
-            stats = video.get('statistics', {})
+    def search_videos(self, query, max_results=5):
+        """Search for LLM videos"""
+        videos = []
+        try:
+            search_response = requests.get(
+                f"{self.base_url}/search",
+                params={'part': 'snippet', 'q': query, 'type': 'video', 
+                       'maxResults': max_results, 'relevanceLanguage': 'en', 'key': self.api_key},
+                timeout=10
+            )
             
-            thumbnails = snippet.get('thumbnails', {})
-            thumbnail_url = ''
-            for q in ['high', 'medium', 'default']:
-                if q in thumbnails:
-                    thumbnail_url = thumbnails[q]['url']
-                    break
+            if search_response.status_code != 200:
+                return videos
             
-            videos.append({
-                'id': video['id'],
-                'title': snippet['title'],
-                'description': snippet.get('description', ''),
-                'channel_id': snippet['channelId'],
-                'channel_name': snippet['channelTitle'],
-                'published_at': datetime.fromisoformat(snippet['publishedAt'].replace('Z', '+00:00')),
-                'view_count': int(stats.get('viewCount', 0)),
-                'thumbnail_url': thumbnail_url,
-                'url': f"https://www.youtube.com/watch?v={video['id']}"
-            })
+            search_data = search_response.json()
+            
+            if 'error' in search_data:
+                return videos
+            
+            video_ids = [item['id']['videoId'] for item in search_data.get('items', []) 
+                        if 'videoId' in item.get('id', {})]
+            
+            if not video_ids:
+                return videos
+            
+            details_response = requests.get(
+                f"{self.base_url}/videos",
+                params={'part': 'snippet,statistics', 'id': ','.join(video_ids), 'key': self.api_key},
+                timeout=10
+            )
+            
+            if details_response.status_code != 200:
+                return videos
+            
+            details_data = details_response.json()
+            
+            for video in details_data.get('items', []):
+                snippet = video['snippet']
+                stats = video.get('statistics', {})
+                
+                thumbnails = snippet.get('thumbnails', {})
+                thumb = ''
+                for q in ['high', 'medium', 'default']:
+                    if q in thumbnails:
+                        thumb = thumbnails[q]['url']
+                        break
+                
+                videos.append({
+                    'id': video['id'],
+                    'title': snippet['title'],
+                    'description': snippet.get('description', ''),
+                    'channel_id': snippet['channelId'],
+                    'channel_name': snippet['channelTitle'],
+                    'published_at': datetime.fromisoformat(snippet['publishedAt'].replace('Z', '+00:00')),
+                    'view_count': int(stats.get('viewCount', 0)),
+                    'thumbnail_url': thumb,
+                    'url': f"https://www.youtube.com/watch?v={video['id']}"
+                })
+            
+            logger.info(f"Search found {len(videos)} videos")
+            
+        except Exception as e:
+            logger.error(f"Search error: {e}")
         
-    except Exception as e:
-        logger.error(f"Search error: {e}")
-    
-    return videos
+        return videos
