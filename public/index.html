@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLM YouTube Landscape Tracker</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; background:#f0f2f5; padding:20px; }
+        .container { max-width:1400px; margin:0 auto; }
+        .header { background:linear-gradient(135deg,#1a1a2e,#16213e); color:white; padding:30px; border-radius:12px; margin-bottom:25px; text-align:center; }
+        .stats { display:flex; justify-content:center; gap:25px; margin-top:20px; flex-wrap:wrap; }
+        .stat { background:rgba(255,255,255,0.12); padding:15px 25px; border-radius:10px; }
+        .stat-num { font-size:30px; font-weight:bold; }
+        table { width:100%; background:white; border-collapse:collapse; border-radius:10px; overflow:hidden; box-shadow:0 2px 12px rgba(0,0,0,0.08); margin-bottom:30px; }
+        th { background:#1a1a2e; color:white; padding:12px; text-align:left; font-size:13px; }
+        td { padding:10px 12px; border-bottom:1px solid #eee; font-size:13px; vertical-align:top; }
+        tr:hover { background:#f8f9ff; }
+        .channel-badge { background:#e8eaf6; color:#3949ab; padding:4px 12px; border-radius:12px; font-weight:600; font-size:12px; }
+        .topic-tag { background:#e8f5e9; color:#2e7d32; padding:3px 9px; border-radius:10px; font-size:11px; margin:2px; display:inline-block; }
+        .quote { font-size:12px; color:#555; font-style:italic; }
+        .quote::before { content:'"'; }
+        .quote::after { content:'"'; }
+        .relations-grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(350px,1fr)); gap:15px; }
+        .relation-card { background:white; padding:20px; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.06); border-left:4px solid #667eea; }
+        .transcript-yes { background:#e8f5e9; color:#2e7d32; padding:2px 8px; border-radius:8px; font-size:11px; }
+        .transcript-no { background:#fff3e0; color:#e65100; padding:2px 8px; border-radius:8px; font-size:11px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 LLM YouTube Landscape Tracker</h1>
+            <p>Real transcript analysis of what popular creators say about Large Language Models</p>
+            <div class="stats">
+                <div class="stat"><div class="stat-num">6</div><div class="stat-label">Videos Analyzed</div></div>
+                <div class="stat"><div class="stat-num">4</div><div class="stat-label">Channels</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-label">With Transcripts</div></div>
+                <div class="stat"><div class="stat-num">0</div><div class="stat-label">Relations</div></div>
+            </div>
+        </div>
+        
+        <h2 style="margin:25px 0 15px 0;">📊 What Creators Actually Say About LLMs (From Transcripts)</h2>
+        <table>
+            <thead>
+                <tr><th>Speaker</th><th>Video</th><th>LLM Topics Discussed</th><th>What They Said (from transcript)</th></tr>
+            </thead>
+            <tbody>
+                
+            <tr>
+                <td><span class="channel-badge">Andrej Karpathy</span></td>
+                <td><a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" style="color:#1a73e8;">[1hr Talk] Intro to Large Language Models</a></td>
+                <td>-</td>
+                <td style="font-size:12px;">Transcript unavailable for: [1hr Talk] Intro to Large Language Models<br><small><span class="transcript-no">No transcript</span></small></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Andrej Karpathy</span></td>
+                <td><a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" style="color:#1a73e8;">Let's build GPT: from scratch, in code, spelled out.</a></td>
+                <td>-</td>
+                <td style="font-size:12px;">Transcript unavailable for: Let's build GPT: from scratch, in code, spelled out.<br><small><span class="transcript-no">No transcript</span></small></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Microsoft Developer</span></td>
+                <td><a href="https://www.youtube.com/watch?v=bZQun8Y4L2A" target="_blank" style="color:#1a73e8;">State of GPT | BRK216HFS</a></td>
+                <td>-</td>
+                <td style="font-size:12px;">Transcript unavailable for: State of GPT | BRK216HFS<br><small><span class="transcript-no">No transcript</span></small></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">3Blue1Brown</span></td>
+                <td><a href="https://www.youtube.com/watch?v=wjZofJX0v4M" target="_blank" style="color:#1a73e8;">Transformers, the tech behind LLMs | Deep Learning Chapter 5</a></td>
+                <td>-</td>
+                <td style="font-size:12px;">Transcript unavailable for: Transformers, the tech behind LLMs | Deep Learning Chapter 5<br><small><span class="transcript-no">No transcript</span></small></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Unknown Channel</span></td>
+                <td><a href="https://www.youtube.com/watch?v=cH1p1kGZlUc" target="_blank" style="color:#1a73e8;">Video cH1p1kGZlUc</a></td>
+                <td>-</td>
+                <td style="font-size:12px;">Transcript unavailable for: Video cH1p1kGZlUc<br><small><span class="transcript-no">No transcript</span></small></td>
+            </tr>
+        
+            <tr>
+                <td><span class="channel-badge">Unknown Channel</span></td>
+                <td><a href="https://www.youtube.com/watch?v=ptuGllU5SQQ" target="_blank" style="color:#1a73e8;">Video ptuGllU5SQQ</a></td>
+                <td>-</td>
+                <td style="font-size:12px;">Transcript unavailable for: Video ptuGllU5SQQ<br><small><span class="transcript-no">No transcript</span></small></td>
+            </tr>
+        
+            </tbody>
+        </table>
+        
+        <h2 style="margin:25px 0 15px 0;">🔗 How Channels Relate on LLM Themes</h2>
+        <div class="relations-grid">
+            <p>No relationships found yet</p>
+        </div>
+    </div>
+</body>
+</html>
