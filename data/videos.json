@@ -6,7 +6,7 @@
     "channel_name": "Lex Fridman",
     "published_at": "2026-05-06T22:03:16",
     "duration": null,
-    "view_count": 263962,
+    "view_count": 263974,
     "thumbnail_url": "https://i.ytimg.com/vi/nepKKz-MzFM/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=nepKKz-MzFM",
     "transcript_available": false,
@@ -131,29 +131,6 @@
     "practical_insights": "AI Will Take My Job. Here's 5 Things I'm Doing About It In this video I outline my personal strategy for thriving in an AI-dominated future. I shares five actionable approaches: starting AI-powered businesses, building trust through content creation, choosing AI-resistant industries, investing in AI"
   },
   {
-    "id": "avjX3QrYkls",
-    "title": "Transformers Step-by-Step Explained (Attention Is All You Need)",
-    "description": "Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n\n--\nWe just launched the all-in-one tech interview prep platform, covering coding, system design, OOD, and machine learning.\n\nLaunch sale: 50% off. Check it out: https://bit.ly/bbg-yt",
-    "channel_name": "ByteByteGo",
-    "published_at": "2025-12-11T16:30:01",
-    "duration": null,
-    "view_count": 79655,
-    "thumbnail_url": "https://i.ytimg.com/vi/avjX3QrYkls/hqdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=avjX3QrYkls",
-    "transcript_available": false,
-    "transcript_excerpts": [],
-    "llm_topics_discussed": [
-      {
-        "topic": "Transformer Architecture",
-        "mentions": 2
-      }
-    ],
-    "technical_depth": null,
-    "creator_stance": null,
-    "key_claims": [],
-    "practical_insights": "Transformers Step-by-Step Explained (Attention Is All You Need) Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n\n--\nWe just launched the all-in-one tech interview prep platform, covering coding, system design, OOD, and machine learning.\n\nLaunch sale"
-  },
-  {
     "id": "uokE-FiDUVw",
     "title": "How I Built a Profitable AI Product in 43 Days",
     "description": "I built my SaaS Newsletter Hero in 43 days in order to prepare for the massive AI disruption I see coming. This was my process, the lows and the highs. \n\nCheck it out here: https://www.newsletterhero.ai/ \nCode: BETA45 ($99 for the full year - more than 50% off the monthly rate)\n\n00:45 Days 1-10: Foundation & Planning - Team organization took unexpected energy and time - Multiple decisions required before writing any code - Key lesson: \"Working with a human team forced accountability\"\n\n02:15 Days 11-24: Market Research & MVP  - Newsletter market chosen after extensive analysis - Three core pain points identified through creator interviews: - Writing faster in personal voice - Stronger subject lines - Easier multi-platform distribution - [03:45] MVP features: custom templates, subject line generation, user profiles, credits, payments\n\n05:30 Days 25-35: Launch Reality Check - Major assumption proven wrong: Users wanted control, not one-click solutions -  Marketing became unexpectedly difficult despite existing audience - Multiple integrations added: Kit, Mailchimp, podcast uploads - Key insight: \"Building a product and getting people to care about a product are two completely different games\"\n\n07:45 Day 35: First Paying Customer  - Customer acquired through Reddit comment on micro-SaaS celebration post - Validation moment: Stranger paid for the product - Customer feedback immediately integrated, especially onboarding improvements\n\n09:15 Days 36-43: Growth & Learning - Additional paying customers from existing network - Product responsibility realization as users depend on it for income - Honest admission: \"I am currently just ass at marketing\"",
@@ -193,6 +170,33 @@
     "creator_stance": null,
     "key_claims": [],
     "practical_insights": "Why I\u2019m Building a SaaS (before AI takes over) I'm starting over. I'm building a SaaS before AI takes over. \n\nI believe we have a 1.5 - 2 year window where technical skills are still a valuable advantage for creating. I'm going to capitalize on this golden window with my new company Newsletter hero."
+  },
+  {
+    "id": "LudWfvu3ong",
+    "title": "What is Attention Mechanisms in Transformers? (Explained Visually)",
+    "description": "\ud83c\udfaf Learn Attention Mechanisms in Transformers through stunning visual explanations!\n\nIn this 8-minute deep dive, we'll explore:\n\n\u2713 Core concepts explained visually\n\u2713 Real-world examples and applications\n\u2713 Mathematical foundations made intuitive\n\u2713 Practical insights for implementation\n\n\ud83d\udcda CHAPTERS\n\n00:00 - The Telephone Game Problem\n00:19 - The Attention Revolution\n01:17 - Query, Key, Value: The Trinity\n02:48 - The Mathematical Foundation\n03:49 - The Elegant Properties\n04:43 - Multi-Head Attention: Multiple Perspectives\n06:01 - Positional Encoding: Restoring Order\n06:45 - From Translation to ChatGPT\n07:28 - The Attention Revolution\n\n\ud83c\udfac ABOUT THIS SERIES\nThis video is part of \"PracticalAI: Deconstructed\" - a series breaking down complex AI/ML concepts through visual storytelling and clear explanations.\n\n\ud83d\udca1 FOUND THIS HELPFUL?\n\u2192 Subscribe for more visual AI tutorials\n\u2192 Leave a comment with your questions\n\u2192 Share with fellow AI enthusiasts\n\n\ud83c\udff7\ufe0f TAGS\n#AttentionMechanismsinTransformers #MachineLearning #DeepLearning #ArtificialIntelligence #AI #DataScience #MLOps #Tutorial #Education #VisualLearning #TechEducation #Programming #LearnAI #Transformers #NLP\n\n\n\ud83c\udfa8 PRODUCTION (Tools I used)\nCreated with Claude AI & Remotion\nVoice: ElevenLabs Pro\nAnimation: Programmatic video generation\n\n\ud83d\udcdd DISCLAIMER\nThis content is for educational purposes. All concepts are simplified for clarity while maintaining technical accuracy.\n\n\u23f0 Published: October 2025\n\u231b Duration: 8:00\n\n--------------------------------------------------------------------------------\nExplore the world of artificial intelligence with a focus on recent advancements in nlp! This video breaks down how attention mechanisms are used in transformers and self attention models. Understand the core concepts driving modern machine learning.",
+    "channel_name": "Strata",
+    "published_at": "2025-10-22T01:00:29",
+    "duration": null,
+    "view_count": 1634,
+    "thumbnail_url": "https://i.ytimg.com/vi/LudWfvu3ong/hqdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=LudWfvu3ong",
+    "transcript_available": false,
+    "transcript_excerpts": [],
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 5
+      },
+      {
+        "topic": "Multimodal",
+        "mentions": 3
+      }
+    ],
+    "technical_depth": null,
+    "creator_stance": null,
+    "key_claims": [],
+    "practical_insights": "What is Attention Mechanisms in Transformers? (Explained Visually) \ud83c\udfaf Learn Attention Mechanisms in Transformers through stunning visual explanations!\n\nIn this 8-minute deep dive, we'll explore:\n\n\u2713 Core concepts explained visually\n\u2713 Real-world examples and applications\n\u2713 Mathematical foundations made"
   },
   {
     "id": "g80Q1sVtikE",
@@ -301,7 +305,7 @@
     "channel_name": "Curious Steve",
     "published_at": "2025-02-05T17:33:57",
     "duration": null,
-    "view_count": 577149,
+    "view_count": 577146,
     "thumbnail_url": "https://i.ytimg.com/vi/WoCtFUZXVsY/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=WoCtFUZXVsY",
     "transcript_available": false,
@@ -342,7 +346,7 @@
     "channel_name": "Dave's Garage",
     "published_at": "2024-10-08T20:55:18",
     "duration": null,
-    "view_count": 922353,
+    "view_count": 922354,
     "thumbnail_url": "https://i.ytimg.com/vi/fFgyOucIFuk/hqdefault.jpg",
     "url": "https://www.youtube.com/watch?v=fFgyOucIFuk",
     "transcript_available": false,
