@@ -99,7 +99,7 @@ def generate_report():
             </tbody>
         </table>
         
-        <h2 class="section-title"> How Channels Relate on LLM Themes</h2>
+        <h2 class="section-title">🔗 How Channels Relate on LLM Themes</h2>
         <div class="relations-grid">
             {build_relations(relations)}
         </div>
@@ -126,7 +126,7 @@ def load_json(path):
 
 def build_table(videos):
     if not videos:
-        return '<tr><td colspan="5" style="text-align:center;padding:40px;color:#888;">🔄 Collecting and analyzing videos... Check back soon!</td></tr>'
+        return '<tr><td colspan="5" style="text-align:center;padding:40px;color:#888;"> Collecting and analyzing videos... Check back soon!</td></tr>'
     
     rows = []
     for v in videos[:30]:
@@ -135,7 +135,6 @@ def build_table(videos):
         url = v.get('url', '#')
         has_transcript = v.get('transcript_available', False)
         
-        # Topics
         topics = v.get('llm_topics_discussed', [])
         if isinstance(topics, str):
             try:
@@ -188,3 +187,13 @@ def build_relations(relations):
         cards.append(f"""
             <div class="relation-card">
                 <h3>{r.get('channel_1', '')} ↔ {r.get('channel_2', '')}</h3>
+                <span class="relation-score">{(r.get('similarity', 0)*100):.0f}% overlap</span>
+                <p style="margin-top:10px;font-size:13px;color:#555;">{r.get('relationship', '')}</p>
+                <div class="common-topics">{topics_html}</div>
+            </div>
+        """)
+    
+    return ''.join(cards)
+
+if __name__ == "__main__":
+    generate_report()
