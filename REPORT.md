@@ -16,7 +16,7 @@ The pipeline runs in five steps:
    
 2. **Topic Classification**:  A keyword-based analyser scans each video's title and description, slotting it into one or more of 9 LLM categories: Transformer Architecture, Model Training, Prompt Engineering, RAG Systems, Model Evaluation, Safety & Alignment, Open Source LLMs, AI Agents, and LLM Applications.
  
-4. **Transcript Acquisition**: The `youtube-transcript-api` library attempts to fetch auto-generated captions for deeper analysis; videos without transcripts fall back to description-based classification.
+4. **Transcript Acquisition**:  The `youtube-transcript-api` library tries to grab auto-generated captions for deeper analysis. However, when captions aren't available, the system falls back to the video's description.
    
 5. **Channel Relationships**: Jaccard similarity compares the sets of topics each channels covers, so that we can have the channels overlap the most on LLM themes.
    
@@ -37,5 +37,5 @@ The system was evaluated on three aspects, whether every video got tagged with r
 - **Transcript Success Rate**: None of the 25 videos returned usable. This forced the system to rely on titles and descriptions.
 
 ## Experimental Results
-The pipeline successfully classify 25 videos from 17 channels into 9 LLMs topics. Also channel relationship analysis reveals four groupings, they are a technical education group, a practical tutorials group, a general AI Enthusiasts group and an Enterprise & Industry group. 
-However, it is failed to have the AI transcript of the videos or reliable caption due to YouTube API restrictions,  therefore the column of "What They Said About LLMs"" is replaced by the titles and the videos' descriptions.
+The pipeline successfully classified  25 videos from 17 channels into 9 LLMs topics. Also the channel relationship analysis reveals four groupings, they are a technical education group, a practical tutorials group, a general AI Enthusiasts group and an Enterprise & Industry group. Each group talks about LLMs in different way which is reflected by the similarity.
+However, it is unsccessful to have the AI transcript of the videos or reliable caption due to the YouTube API restrictions, therefore the column of "What They Said About LLMs"" is replaced by the titles and the videos' descriptions.
