@@ -1,80 +1,126 @@
 [
   {
-    "id": "zjkBMFhNj_g",
-    "title": "[1hr Talk] Intro to Large Language Models",
-    "channel_name": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=zjkBMFhNj_g",
-    "thumbnail_url": "https://img.youtube.com/vi/zjkBMFhNj_g/hqdefault.jpg",
-    "published_at": "2024",
-    "transcript_available": false,
+    "id": "5sLYAQS9sWQ",
+    "title": "How Large Language Models Work",
+    "channel_name": "IBM Technology",
+    "url": "https://youtube.com/watch?v=5sLYAQS9sWQ",
+    "thumbnail_url": "https://i.ytimg.com/vi/5sLYAQS9sWQ/hqdefault.jpg",
     "llm_topics_discussed": [],
-    "transcript_excerpts": [],
-    "practical_insights": "Transcript unavailable for: [1hr Talk] Intro to Large Language Models",
-    "llm_sentence_count": 0
+    "practical_insights": "Learn in-demand Machine Learning skills now \u2192 https://ibm.biz/BdK65D Learn about watsonx \u2192 https://ibm.biz/BdvxRj Large ...",
+    "transcript_available": false
+  },
+  {
+    "id": "LPZh9BOjkQs",
+    "title": "Large Language Models explained briefly",
+    "channel_name": "3Blue1Brown",
+    "url": "https://youtube.com/watch?v=LPZh9BOjkQs",
+    "thumbnail_url": "https://i.ytimg.com/vi/LPZh9BOjkQs/hqdefault.jpg",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      },
+      {
+        "topic": "Model Training",
+        "mentions": 2
+      }
+    ],
+    "practical_insights": "A light intro to LLMs, chatbots, pretraining, and transformers. Dig deeper here: ...",
+    "transcript_available": false
+  },
+  {
+    "id": "UU1WVnMk4E8",
+    "title": "Create a Large Language Model from Scratch with Python \u2013 Tutorial",
+    "channel_name": "freeCodeCamp.org",
+    "url": "https://youtube.com/watch?v=UU1WVnMk4E8",
+    "thumbnail_url": "https://i.ytimg.com/vi/UU1WVnMk4E8/hqdefault.jpg",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "practical_insights": "Learn how to build your own large language model, from scratch. This course goes into the data handling, math, and transformers ...",
+    "transcript_available": false
+  },
+  {
+    "id": "7xTGNNLPyMI",
+    "title": "Deep Dive into LLMs like ChatGPT",
+    "channel_name": "Andrej Karpathy",
+    "url": "https://youtube.com/watch?v=7xTGNNLPyMI",
+    "thumbnail_url": "https://i.ytimg.com/vi/7xTGNNLPyMI/hqdefault.jpg",
+    "llm_topics_discussed": [],
+    "practical_insights": "This is a general audience deep dive into the Large Language Model (LLM) AI technology that powers ChatGPT and related ...",
+    "transcript_available": false
   },
   {
     "id": "kCc8FmEb1nY",
-    "title": "Let's build GPT: from scratch, in code, spelled out.",
+    "title": "Let&#39;s build GPT: from scratch, in code, spelled out.",
     "channel_name": "Andrej Karpathy",
-    "url": "https://www.youtube.com/watch?v=kCc8FmEb1nY",
-    "thumbnail_url": "https://img.youtube.com/vi/kCc8FmEb1nY/hqdefault.jpg",
-    "published_at": "2024",
-    "transcript_available": false,
-    "llm_topics_discussed": [],
-    "transcript_excerpts": [],
-    "practical_insights": "Transcript unavailable for: Let's build GPT: from scratch, in code, spelled out.",
-    "llm_sentence_count": 0
+    "url": "https://youtube.com/watch?v=kCc8FmEb1nY",
+    "thumbnail_url": "https://i.ytimg.com/vi/kCc8FmEb1nY/hqdefault.jpg",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "practical_insights": "We build a Generatively Pretrained Transformer (GPT), following the paper \"Attention is All You Need\" and OpenAI's GPT-2 ...",
+    "transcript_available": false
   },
   {
-    "id": "bZQun8Y4L2A",
-    "title": "State of GPT | BRK216HFS",
-    "channel_name": "Microsoft Developer",
-    "url": "https://www.youtube.com/watch?v=bZQun8Y4L2A",
-    "thumbnail_url": "https://img.youtube.com/vi/bZQun8Y4L2A/hqdefault.jpg",
-    "published_at": "2024",
-    "transcript_available": false,
+    "id": "zjkBMFhNj_g",
+    "title": "[1hr Talk] Intro to Large Language Models",
+    "channel_name": "Andrej Karpathy",
+    "url": "https://youtube.com/watch?v=zjkBMFhNj_g",
+    "thumbnail_url": "https://i.ytimg.com/vi/zjkBMFhNj_g/hqdefault.jpg",
     "llm_topics_discussed": [],
-    "transcript_excerpts": [],
-    "practical_insights": "Transcript unavailable for: State of GPT | BRK216HFS",
-    "llm_sentence_count": 0
+    "practical_insights": "This is a 1 hour general-audience introduction to Large Language Models: the core technical component behind systems like ...",
+    "transcript_available": false
   },
   {
-    "id": "wjZofJX0v4M",
-    "title": "Transformers, the tech behind LLMs | Deep Learning Chapter 5",
+    "id": "eMlx5fFNoYc",
+    "title": "Attention in transformers, step-by-step | Deep Learning Chapter 6",
     "channel_name": "3Blue1Brown",
-    "url": "https://www.youtube.com/watch?v=wjZofJX0v4M",
-    "thumbnail_url": "https://img.youtube.com/vi/wjZofJX0v4M/hqdefault.jpg",
-    "published_at": "2024",
-    "transcript_available": false,
-    "llm_topics_discussed": [],
-    "transcript_excerpts": [],
-    "practical_insights": "Transcript unavailable for: Transformers, the tech behind LLMs | Deep Learning Chapter 5",
-    "llm_sentence_count": 0
+    "url": "https://youtube.com/watch?v=eMlx5fFNoYc",
+    "thumbnail_url": "https://i.ytimg.com/vi/eMlx5fFNoYc/hqdefault.jpg",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "practical_insights": "Demystifying attention, the key mechanism inside transformers and LLMs. Instead of sponsored ad reads, these lessons are ...",
+    "transcript_available": false
   },
   {
-    "id": "cH1p1kGZlUc",
-    "title": "Video cH1p1kGZlUc",
-    "channel_name": "Unknown Channel",
-    "url": "https://www.youtube.com/watch?v=cH1p1kGZlUc",
-    "thumbnail_url": "https://img.youtube.com/vi/cH1p1kGZlUc/hqdefault.jpg",
-    "published_at": "2024",
-    "transcript_available": false,
-    "llm_topics_discussed": [],
-    "transcript_excerpts": [],
-    "practical_insights": "Transcript unavailable for: Video cH1p1kGZlUc",
-    "llm_sentence_count": 0
+    "id": "avjX3QrYkls",
+    "title": "Transformers Step-by-Step Explained (Attention Is All You Need)",
+    "channel_name": "ByteByteGo",
+    "url": "https://youtube.com/watch?v=avjX3QrYkls",
+    "thumbnail_url": "https://i.ytimg.com/vi/avjX3QrYkls/hqdefault.jpg",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "practical_insights": "Build better full-stack authentication and user management with Clerk: https://go.clerk.com/Q8BtT1n -- We just launched the ...",
+    "transcript_available": false
   },
   {
-    "id": "ptuGllU5SQQ",
-    "title": "Video ptuGllU5SQQ",
-    "channel_name": "Unknown Channel",
-    "url": "https://www.youtube.com/watch?v=ptuGllU5SQQ",
-    "thumbnail_url": "https://img.youtube.com/vi/ptuGllU5SQQ/hqdefault.jpg",
-    "published_at": "2024",
-    "transcript_available": false,
-    "llm_topics_discussed": [],
-    "transcript_excerpts": [],
-    "practical_insights": "Transcript unavailable for: Video ptuGllU5SQQ",
-    "llm_sentence_count": 0
+    "id": "RNF0FvRjGZk",
+    "title": "I Visualised Attention in Transformers",
+    "channel_name": "Gal Lahat",
+    "url": "https://youtube.com/watch?v=RNF0FvRjGZk",
+    "thumbnail_url": "https://i.ytimg.com/vi/RNF0FvRjGZk/hqdefault.jpg",
+    "llm_topics_discussed": [
+      {
+        "topic": "Transformer Architecture",
+        "mentions": 2
+      }
+    ],
+    "practical_insights": "To try everything Brilliant has to offer\u2014free\u2014for a full 30 days, visit https://brilliant.org/GalLahat/ . You'll also get 20% off an annual ...",
+    "transcript_available": false
   }
 ]

@@ -1,1 +1,92 @@
-[]
+[
+  {
+    "channel_1": "3Blue1Brown",
+    "channel_2": "freeCodeCamp.org",
+    "similarity": 0.5,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "3Blue1Brown",
+    "channel_2": "Andrej Karpathy",
+    "similarity": 0.5,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "3Blue1Brown",
+    "channel_2": "ByteByteGo",
+    "similarity": 0.5,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "3Blue1Brown",
+    "channel_2": "Gal Lahat",
+    "similarity": 0.5,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "freeCodeCamp.org",
+    "channel_2": "Andrej Karpathy",
+    "similarity": 1.0,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "freeCodeCamp.org",
+    "channel_2": "ByteByteGo",
+    "similarity": 1.0,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "freeCodeCamp.org",
+    "channel_2": "Gal Lahat",
+    "similarity": 1.0,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "Andrej Karpathy",
+    "channel_2": "ByteByteGo",
+    "similarity": 1.0,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "Andrej Karpathy",
+    "channel_2": "Gal Lahat",
+    "similarity": 1.0,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  },
+  {
+    "channel_1": "ByteByteGo",
+    "channel_2": "Gal Lahat",
+    "similarity": 1.0,
+    "common_topics": [
+      "Transformer Architecture"
+    ],
+    "relationship": "Discuss: Transformer Architecture"
+  }
+]
